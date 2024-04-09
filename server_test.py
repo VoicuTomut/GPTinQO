@@ -11,7 +11,7 @@ input_dict = {"question": "Why is superposition important for quantum computing?
               "user_id":"home"}
 
 # Define the URL of the Flask server endpoint
-url = 'http://localhost:5000/process_answer'
+url = 'http://localhost:800/process_answer'
 
 # Send a POST request with the input dictionary as JSON payload
 response = requests.post(url, json=input_dict)

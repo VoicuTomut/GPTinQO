@@ -15,3 +15,8 @@ pip install -r requirements.txt
 ```bash
 export OPENAI_API_KEY="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"
 ```
+
+5. Run server :
+```bash
+gunicorn -w 4 -b 0.0.0.0:800 server:app
+```

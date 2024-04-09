@@ -5,5 +5,7 @@ rouge==1.0.1
 python-box== 7.1.1
 profanity-check==1.0.3
 toml==0.10.2
+## server
 Flask==3.0.3
 requests~=2.31.0
+gunicorn==21.2.0
