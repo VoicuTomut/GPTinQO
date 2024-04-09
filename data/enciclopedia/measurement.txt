@@ -1,0 +1,51 @@
+
+
+Measurement on quantum systems is fundamentally different than for classical systems. A classical system can be observed without having any noticeable effect on the system, this is something you usually don’t even think about, you don’t expect a cup on a table to do anything different whether you look at it or look away. A nice consequence here, is that if you watch a classical system for long enough, you can know it’s exact state and your precision is only limited by the precision of our instruments. Quantum mechanically, measuring a system does always have an effect on it, and therefore, if you have only one copy of a quantum system it is not possible to know exactly the state it is by measuring repeatedly, since you destroy the state with your first measurement. There are several weird and exciting consequences of the way quantum measurement works.
+
+             
+
+<color=green>Uncertainty principle</color>
+
+The simplest consequence of measurement always disturbing your system is that you cannot know all properties of a quantum system simultaneously. The reason is very simple, if you measure one property (say position of an object), than measure another (say how fast it is going). The second measurement means that the first result can no longer be trusted, you know the one you measured most recently, but the previous measurements may not be right because the system has been ‘disturbed’ since then. Note that this is fundamentally different than measurement errors in classical measurement, which can be corrected by improving the machine you use to measure. Quantum uncertainty exists even if the measurements are perfect, in fact more precise measurements are more disturbing to the system. 
+
+              
+
+<color=green>No cloning</color>
+
+A result of the uncertainty principle is that an unknown quantum state cannot be exactly copied, doing so would allow the copies to be measured differently and would allow the state to be precisely known.
+
+           
+
+<color=green>Quantum Zeno effect</color>
+
+While classically it is a popular saying that “a watched pot never boils” this bit of folklore is actually easily disproven using a stove and a stopwatch. Quantum mechanically however this saying is actually true, a quantum system can be “stopped” by watching it. The reason is a bit complicated, but it comes down to the fact that measuring forces a system into a particular state, so if you measure a system very fast, you keep forcing it back into the state it started in. The quantum Zeno effect is named after a paradox in classical philosophy, the idea being that if someone fires an arrow at you[1], it never gets to you, because it first has to get halfway to you, and before that, halfway to the halfway point, etc... (don’t try this at home, or if you insist on trying this at home, don’t tell anyone Quantum Odyssey gave you the idea). Classically this is an interesting thought experiment, but we know the arrow actually does get to you, with probably less-than-desirable results. Quantum mechanically, if you keep nagging the arrow with “are you there yet?” in the way small children are often known to do on road trips, you can actually stop it entirely by continuously forcing it back to its starting state.
+
+[1] If you want to be pedantic about it, I am technically applying the dichotomy paradox to the situation in the arrow paradox, but the gist is the same, and I like the mental image of stopping an arrow from killing you by nagging it, so I am going to take some historical liberalities.
+
+             
+
+<color=green>Qubit measurement bases</color>
+
+The laws of quantum mechanics unfortunately break down if we measure the particle more than once, hence we need to carefully pick our measurement basis. In Quantum Odyssey, and similar to quantum hardware vendors, we use the Z-basis to mark the state of the qubit (either 0 or 1), while all other bases are used to show quantum phases.  
+
+In the figure below we show Quantum Odyssey’s balls on a Bloch sphere:
+
+-The Z-basis is defined by a single blue ball behind the 0 and 1 state in the Z-basis section. This is what the Quantum Odyssey gates do when applied on the 0 state in this basis:
+
+/[i]all gates in Z
+
+ -The X-basis is defined by two blue balls for 0 state and a blue and a red ball for the 1 state in X-basis section.This is what the Quantum Odyssey gates do when applied on the 0 state in this basis: 
+
+/[i]all gates in x
+
+-The Y-basis is defined by a blue and a green ball for the 0 state and a blue and a red ball for the 1 state in the Y-basis section. This is what the Quantum Odyssey gates do when applied on the 0 state in this basis:
+
+/[i]all gates in y
+
+        
+
+<color=green>Why do we use two balls for X and Y bases?</color>  
+
+This is because as we said, Quantum Odyssey encoded bit measurement only for the Z-basis, like most hardware manufacturers do today, for compatibility reasons. Anything you program in Quantum Odyssey can easily be transferred and run on an actual quantum computer.  
+
+What we care for when we measure a quantum algorithm in the Z-basis, is if a ball (<color=green>of any color!</color>) arrived at one or more than one bit arrays. That will be the output we can retrieve (and remember we can only retrieve a single bit array per execution) from a quantum hardware. The size of the ball determines the likelihood (amplitude) of obtaining that specific bit array, whilst the color does not matter at all on measurement.  

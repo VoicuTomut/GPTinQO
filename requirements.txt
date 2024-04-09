@@ -1,0 +1,9 @@
+bert-score==0.3.13
+nltk==3.8.1
+openai==1.16.2
+rouge==1.0.1
+python-box== 7.1.1
+profanity-check==1.0.3
+toml==0.10.2
+Flask==3.0.3
+requests~=2.31.0

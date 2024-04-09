@@ -1,0 +1,5 @@
+
+
+This is the important part of the Grover's quantum search algorithm. This particular part is able to bring red phase information using quantum interfernce in a manner that is then recoverable in bit arrays after measurement.
+
+/[i]diffusion operator

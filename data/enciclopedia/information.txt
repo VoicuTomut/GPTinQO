@@ -1,0 +1,19 @@
+
+
+All information is ultimately understood and processed as sequences of bits by classical computers. For example, the word “hi” is processed by a computer as two bit arrays of 8 bits ordered as follows: 01001000 01101001.
+
+            
+
+What is information?
+
+Any unit of knowledge and another word for data. Information is summarization of data. Technically, data are raw facts and figures that are processed into information, such as summaries and totals. But since information can also be the raw data for the next job or person, the two terms cannot be precisely defined, and both are used interchangeably.
+
+It may be helpful to view information the way it is structured and used, namely: data, text, spreadsheets, pictures, voice and video. Data are discretely defined fields. Text is a collection of words. Spreadsheets are data in matrix (row, column) form. Pictures are lists of vectors or frames of bits. Voice is a continuous stream of sound waves. Video is a sequence of image frames. Remember that all these higher layers of information, are ultimately converted and processed as sequences of bits on a computer.
+
+             
+
+Why is information important?
+
+(soc.) The character and extent of the recorded information available to a society is a major differentiating feature between types of society. For example, in its possession of written records a literate culture possesses a decisive adaptive advantage compared with a nonliterate culture. This is seen, for example, in the rise to supremacy of the state, which was associated from the outset with the development of recordkeeping and writing. The capacity possessed by modern societies to marshal and store information has grown massively in recent times as the result of major technological innovations such as printing, audio and video recorders, and especially computers. The centrality of knowledge and information in today's modern technological and highly administered societies has led some commentators to coin the term ‘information society’ to describe these societies (post industrial society). A further aspect of the increased capacity of modern societies to collect and store information is greatly increased power of the state in the monitoring and surveillance of its citizens. 
+
+(McGraw-Hill Dictionary of Scientific & Technical Terms, 6E. (2003). Retrieved from https://encyclopedia2.thefreedictionary.com/information)

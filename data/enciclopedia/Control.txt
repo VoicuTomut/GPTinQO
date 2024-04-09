@@ -1,0 +1,11 @@
+
+
+The CTRL gate, short for Control, allows you to create any kind of entanglement scenarios. If placed individually on a row (without any other gates on the same row) it acts as an Identity gate (does nothing to the computation). The CTRL gate designates the qubit it is placed on as the master qubit for that particular row in the computation. If the state of the master qubit is 1, then all the other gates on the row with the CTRL will apply to the computation. If the master qubit is 0, the gates you placed on the same row with CTRL will not do anything to the balls.
+
+     
+
+You can create any sort of logic with multiple CTRL gates and the Computation Map will show you in real time the effects. If placed on multiple qubits in the same row, all master qubits must be 1 for the other gates to apply to the slave qubits.
+
+/[i]ctrl
+
+In the example from above, on the left we have an X gate that does not flip the leftmost qubit, because the middle qubit is not 1. On the right, both the rightmost and the middle qubit are 1, hence the leftmost qubit flips to 1 as well (as shown by the static ball).

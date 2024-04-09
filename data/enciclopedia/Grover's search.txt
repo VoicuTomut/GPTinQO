@@ -1,0 +1,15 @@
+
+
+Grove'rs search is a quantum algorithm which can be used to search an "unstructured database" faster than possible classically. In this case an "unstructured database" means that there is an "oracle" which can tell you whether or not your answer is correct but gives you no other information. Classically the only thing which can be done in this situation is to guess. Quantum mechanically, interference can be used to effectively check the answers "faster". 
+
+While the simplest version of Grover's is a toy algorithm, meaning it doesn't solve real problems, there are ways to build algorithms which can use Grover search to solve real problems, the idea is to build the oracle out of quantum gates which "check" whether the answer is correct, and this information can be used with interference to solve the problem. While this is nice in theory and can be used to estimate scaling, in practice these oracles are usually complicated to build, so Grover search like algorithms is not likely to be used on near term quantum computers, but on longer term machines once the technology gets better.
+
+         
+
+This is an example of a possible Oracle that can be used for Grover's search:
+
+/[i]Oracle
+
+This is an example of a diffusion operator:
+
+/[i]diffusion operator

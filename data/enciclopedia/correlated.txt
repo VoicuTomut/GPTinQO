@@ -1,0 +1,7 @@
+
+
+ In Quantum Odyssey, although the balls look like they travel all over the place, unless you place the CTRL gate on a qubit you want to define as master and other gates on the slave qubits in the same row, the states of your qubits are completely independent from each other. Qubits (or bits) become correlated only if a certain action on a qubit (or bit) happens depending on the status of another.
+
+To achieve the controlled X operation, also called CNOT, we need to place a CTRL gate on any of the qubits we want to define as master and X gate on the qubit we wish to control. The logic is: if the qubit with CTRL is 1 at that particular computational step (row in the Circuit Configuration), the other qubit will flip states. The Computation Map shows the behavior for all possible outcomes.
+
+/[i]Controlled X

@@ -1,0 +1,19 @@
+
+
+A bit (short for "binary digit") is the smallest unit of measurement used to quantify computer data or store information. It contains a single binary value of 0 or 1.
+
+/[i]bit
+
+While a single bit can define a Boolean value of True (1) or False (0), or processes such as the state of a machine being either turned On (1) or Off (0) an individual bit has little other use.  If we were to represent the bit on a sphere, any two single points would do.
+
+             
+
+Therefore, in computer storage, bits are often grouped together in 8-bit clusters called bytes. Since a byte contains eight bits that each have two possible values, a single byte may have 2 to the power of 8 or 256 different values. 
+
+           
+
+The terms "bits" and "bytes" are often confused and are even used interchangeably since they sound similar and are both abbreviated with the letter "B." However, when written correctly, bits are abbreviated with a lowercase "b," while bytes are abbreviated with a capital "B." It is important not to confuse these two terms, since any measurement in bytes contains eight times as many bits. For example, a small text file that is 4 KB in size contains 4,000 bytes, or 32,000 bits. Additionally, bits are also used to describe processor architecture, such as a 32-bit or 64-bit processor. 
+
+(Christensson, P. (2013, April 20). Bit Definition. Retrieved 2020, Nov 3, from https://techterms.com)
+
+The reason modern computers use bits as opposed to say "trits", with three possible values, or using base 10 numbers like modern math does, all comes down to engineering, it turns out that it is easiest to design electronic logic circuits with only two logical values, as opposed to 3 or 10. Mathematically, a computer which uses "trits" or more generally d value "dits" is perfectly well defined. Similarly, many quantum systems have natural binary degrees of freedom, qubits, but nothing stops us from building quantum computers based on qudits, if that is what works best for a particular physical system.

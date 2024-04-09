@@ -1,0 +1,45 @@
+
+
+Bell states: are four specific maximally entangled quantum states of two qubits. They are in a superposition of 0 and 1--that is, a linear combination of the two states. Their entanglement means the following:
+
+      
+
+The qubit held by Alice (subscript "A") can be 0 as well as 1. If Alice measured her qubit in the standard basis, the outcome would be perfectly random, either possibility 0 or 1 having probability 1/2. But if Bob (subscript "B") then measured his qubit, the outcome would be the same as the one Alice got. So, if Bob measured, he would also get a random outcome on first sight, but if Alice and Bob communicated, they would find out that, although their outcomes seemed random, they are perfectly correlated.
+
+This perfect correlation at a distance is special: maybe the two particles "agreed" in advance, when the pair was created (before the qubits were separated), which outcome they would show in case of a measurement.
+
+Hence, following Einstein, Podolsky, and Rosen in 1935 in their famous "EPR paper", there is something missing in the description of the qubit pair given above—namely this "agreement", called more formally a hidden variable.
+
+((2020, October 15). Bell state. Retrieved from https://en.wikipedia.org/wiki/Bell_state)
+
+     
+
+<color=green>Bell inequality</color>: Bell considers correlations between measurement outcomes for systems in separate wings where the measurement axes of the systems differ by angles set locally. In his original paper, essentially using the lemma from EPR governing strict correlations, Bell shows that correlations measured in different runs of an EPRB experiment satisfy a system of constraints, known as the Bell inequalities.
+
+      
+
+<color=green>Bell experiments</color>: Bell’s results have been explored and deepened by various theoretical investigations and they have stimulated a number of increasingly sophisticated and delicate EPRB-type experiments designed to test whether the Bell inequalities hold where quantum theory predicts they should fail. With a few anomalous exceptions, the experiments appear to confirm the quantum violations of the inequalities. The confirmation is quantitatively impressive, although not fully conclusive. There are a number of significant requirements on the experiments whose failures (generally downplayed as “loopholes”) allow for models of the experimental data that embody locality (in Bell’s sense), so-called local realist models. One family of “loopholes” (sampling) arises from possible losses (inefficiency) between emission and detection and from the delicate coincidence timing required to compute correlations. All the early experiments to test the Bell inequalities were subject to this loophole, so all could be modeled locally and realistically.
+
+((2004, May 10). The Einstein-Podolsky-Rosen Argument in Quantum Theory. Retrieved from https://plato.stanford.edu/entries/qt-epr/ ) 
+
+       
+
+<color=green>The big Bell test</color>: 100000 computer gamers helped a team of physicists to close the "freedom-of-choice" loophole that fails the Bell test experiments to entirely negate Albert Einstein's theory of local realism.
+
+The participation of the international team of video gamers resulted to a conclusion that how people choose to measure or put values in certain elements influence, shape, or at least alter the world. This conclusion challenges Einstein's theory of local realism which states that there is already a definite world separate from an entity where people put measurements and give meaning around it.  The Bell test is done with entangled particles, such as photons, being generated and sent to different locations where particles properties or time of arrival are measured. 
+
+"If the measurement results tend to agree, regardless of which properties we choose to measure, it implies something very surprising: either the measurement of one particle instantly affects the other particle (despite being far away), or even stranger, the properties never really existed, but rather were created by the measurement itself," reads the physicists' explanation of the Bell test.
+
+The physicists, led by ICFO-The Institute of Photonic Sciences, in Barcelona, invited 100,000 gamers to contribute unpredictable sequences of zeros and bits by playing an online video game called The Big Bell Test. The participants played through their smartphones or other internet-connected devices from different locations around the world. The unpredictable bits from the participants determined how entangled atoms, photons, and superconducting devices were to be measured by the physicists working in 12 laboratories around the world. This means that the physicists had no free will or the "freedom-of-choice" to apply their own chosen measurement to obtain values of the entangled atoms and photons. Instead, the gamers, in effect, were supplying the measurement to them. 
+
+The gamers contributed more than 90 million bits, creating the strongest test of Einstein's local realism so far, as well as testing other experiments on realism in quantum mechanics. 
+
+Ultimately, the results,... strongly disagree to Einstein's worldview, close the freedom-of-choice loophole for the first time, and demonstrate several new methods in the study of entanglement and local realism.  With the inputs from these gamers, physicists were able to eliminate free will from the Bell test equation, acquire a deeper understanding of quantum physics applications, and determine fundamental principles of quantum cryptography or quantum computing.
+
+(Yenko, A. (2018, May 11). 100,000 Gamers Help Challenge Einstein’s Theory Of Local Realism By Playing The Big Bell Test Video Game. Retrieved from https://www.techtimes.com/articles/ ))
+
+In Quantum Odyssey, the four Bell states are:
+
+/[i]Bell1
+
+/[i]Bell2

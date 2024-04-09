@@ -1,0 +1,9 @@
+
+
+To achieve the controlled X operation, also called CNOT, we need to place a CTRL gate on any of the qubits we want to define as master and X gate on the qubit we wish to control. The logic is: if the qubit with CTRL is 1 at that particular computational step (row in the Circuit Configuration), the other qubit will flip states. The Computation Map shows the behavior for all possible outcomes.
+
+/[i]Controlled X
+
+We can make CNOT work for when the CTRL qubit 0 by flipping it and then reversing the flip:
+
+/[i]0controlledX

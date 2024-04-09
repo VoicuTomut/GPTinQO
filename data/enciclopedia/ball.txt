@@ -1,0 +1,25 @@
+
+
+We call the moving ball the input object that crosses the Computation Map. The object always appears at the bit array and with the properties that define the input of the computation, navigates throughout the circuits created by the user, to then leave the Computation Map at one of the output bit arrays. The moving ball proprieties are: 
+
+                    
+
+<color=green>Size of the ball</color>: for classical computation, the size will remain fixed. For probabilistic machines and quantum computation, the size differs to show either the probability or the amplitude of obtaining certain bit arrays.
+
+            
+
+ <color=green>Location of the ball</color>: for classical computation, it defines the bit array it is under at that particular moment in the computation. For quantum and probabilistic machines, there can be many balls at the same time under different bit arrays, which again describe the exact state the computational input is under at that particular moment in the computation.
+
+                        
+
+ <color=green>Color of the ball</color>: the color of the ball only changes in quantum computation, to define phase. We show both global phase and all effects of quantum interference in Quantum Odyssey with up to floating point precision, pre-measurement.
+
+                        
+
+To describe <color=green>quantum computation</color>: the evolutions in size, color and position of the ball define the exact quantum state at all points throughout the computation. We completely encoded complex number tensoring and multiplication in the game, hence the color proprieties change according to these linear algebra rules. There should be no quantum state that is impossible to describe with our encoding method. 
+
+      
+
+The static ball shown at the Output section in the Circuit Configuration shows the solution to the puzzle. Configure the falling ball the right way to match the static ball on collision in order to solve quantum computation puzzles.
+
+/[i]1output

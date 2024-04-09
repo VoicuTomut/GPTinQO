@@ -1,0 +1,21 @@
+
+
+Using the number which people normally use, you can ask the question “what can I square (multiply by itself) to get −1?”, you quickly find there isn’t anything, (−1) × (−1) = 1, so that doesn’t work, and nothing else works either. Mathematicians realized this and did what mathematicians do best, they invented a new concept. They invented a number they called i, the key property of this number is that i × i = −1. They then asked if you could get math to work when you also included this new number, and found that it does, numbers which in general include both real parts (the kind of numbers we are used to), and imaginary parts parts (parts involving i), are called complex numbers. For example 1 + i is a complex number. Complex numbers can get used anywhere normal real numbers get used. 
+
+           
+
+<color=green>Complex numbers and quantum mechanics</color>
+
+You may wonder why we are talking about complex numbers here, mathematicians invent all kinds of crazy stuff, but this game is about physics, why do we care about this bit of abstract math? It turns out that complex numbers are maybe not so abstract after all, in the early part of the 20th century, when physicists were starting to pin down how quantum mechanics works, they noticed that the best equations they could find to describe quantum systems involved factors of i, in particular the Schrödinger equation works well for describing isolated quantum particles, but also has a factor of i right in the middle of it. 
+
+Since complex numbers are a powerful tool for quantum physics, physicists started using them (technically complex numbers show up naturally in other places in physics as well, such as AC electronics), and because complex numbers are used to describe quantum mechanics, it is worth knowing a little bit about them to know quantum mechanics.
+
+           
+
+<color=green>How “big” is a complex number?</color>
+
+If we are going to start using complex numbers, than we had better have a notion of how “big” they are compared to each other. For real numbers, the notion of size is a fairly straightforward concept, 2 is clearly bigger than 1 for instance, it becomes a little more complicated for negative numbers, but even then you can just ignore the minus sign and define a “magnitude” of a number, for instance −2 is negative, but has a larger magintude than 1, since it has a magnitude of 2.
+
+For complex numbers this is more well... complex. For instance, is i bigger than 1?, what about 1 + i? Fortunately there is a nice way to take the magnitude of a complex number as well. If we take a complex number we can make the i part negative (or positive if it is already negative), than we get what is called the “complex conjugate”. I won’t do it here, but with a little algebra (and recalling the definition that i × i = −1, it is possible to show that a complex number times it’s complex conjugate will always give a positive number. These positive numbers can be compared directly and show us that i×(−i) = 1, so therefore i and 1 are “the same size”. On the other hand (1+i)×(1−i) = 2, so 1 + i is bigger than both 1 and i.
+
+This measure of the size allows us to determine how big to make the different balls in the game, and the color corresponds to the phase, how much of the number is made up of the real part versus the imaginary part.

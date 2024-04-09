@@ -1,0 +1,1557 @@
+Chapter 1: Albert Einstein
+
+Albert Einstein was a German mathematician and theoretical physicist, (1878-1955) who developed the special and general theories of relativity, now considered the cornerstone of modern physics. For his discovery of the photoelectric effect, essentially his contributions to quantum theory, he had been awarded the Nobel Prize in 1921.
+
+A hallmark of Albert Einstein's career was his use of visualized thought experiments (German: Gedankenexperiment) as a fundamental tool for understanding physical issues and for elucidating his concepts to others. Einstein's thought experiments took diverse forms. In his youth, he mentally chased beams of light. For special relativity, he employed moving trains and flashes of lightning to explain his most penetrating insights. For general relativity, he considered a person falling off a roof, accelerating elevators, blind beetles crawling on curved surfaces and the like. In his debates with Niels Bohr on the nature of reality, he proposed imaginary devices intended to show, at least in concept, how the Heisenberg uncertainty principle might be evaded. In a profound contribution to the literature on quantum mechanics, Einstein considered two particles briefly interacting and then flying apart so that their states are correlated, anticipating the phenomenon known as quantum entanglement.
+
+Einstein's early contributions to quantum theory include his heuristic suggestion that light behaves as if it is composed of photons, and his exploration of the quantum structure of the mechanical energies of particles embedded in matter. In 1909, he introduced what was later called the wave-particle duality, the idea that the wave theory of light had to be supplemented by an equally valid yet contradictory quantum theory of light as discrete particles.
+
+
+
+However, he was strongly opposed to the new version of quantum mechanics developed by Werner Heisenberg and Erwin Schroedinger in 1925-26, and from 1926 onwards, Einstein led the opposition to quantum mechanics. He was thus both a major contributor to and a major critic of quantum theory.
+
+
+
+In the three decades prior to his death, Einstein's distrust of quantum theory isolated him from the mainstream developments in physics. All of his greatest contributions to science had been made by 1926, and from this point on, he remained a staunch opponent of the theory he had done so much to build in his earlier years. Einstein focused his efforts instead on developing a unified field theory, a theory which would explain both gravity and electromagnetism in one principled mathematical account. He hoped to resolve the conflict between the smooth continuum of space-time described by his general theory of relativity, and the jittery submicroscopic particle-world where quantum theory reigns. Although he never succeeded in this endeavor, in a sense he was simply ahead of his time: throughout the 1980s and 1990s, the primary goal of theoretical physicists has been the formulation of a grand theory of everything, or TOE, that would account for every element of physical reality.
+
+(Quantum Theory. Retrieved on November 10 2020 from https://www.sparknotes.com/biography/einstein/section9/ )
+
+/[i]Einstein
+
+Trivia:
+
+Einstein was not comfortable in school as he did not like the style of teaching. He did not believe in the systematic training in the worship of authority and instead promoted individuality and free thinking without any bias. He once stated, “A foolish faith in authority is the worst enemy of truth.” Einstein believed and wished that people should be respected for their humanitarian work and thoughts, and not for their nationality and origin. In this context, expressing his cynicism for nationalistic pride, he once said: “If relativity is proved right, the Germans will call me a German, the Swiss will call me a Swiss citizen, and the French will call me a great scientist. If relativity is proved wrong, the French will call me Swiss, the Swiss will call me a German, and the Germans will call me a Jew.”
+
+Einstein did not speak until the age of three. He revealed this fact about the delay of his speech abilities to his biographer. Today there is a term, “Einstein Syndrome,” which was coined by Dr. Thomas Sowell, to describe exceptionally bright people whose speech is delayed. Einstein never learned to swim. However, he loved the violin "I often think in music, I live my daydreams in music, I see my life in terms of music." - and sailing and continued to do so as a hobby throughout his life. Also, Einstein never wore socks and hated haircuts. He thought wearing socks was a pain, and he would often get holes in them.
+
+Einstein could have lived longer: before he died, doctors suggested surgery to him, as he suffered from a burst blood vessel. However, Einstein refused, stating, “It is tasteless to prolong life artificially.” Just after he died in 1955, the recently discovered element with atomic number 99 was given the name ‘einsteinium’ in his honor.
+
+((2020, July 30). 64 interesting facts about Albert Einstein. Retrieved from https://thefactfile.org/albert-einstein-facts/2/ )
+
+Chapter 2: Amplitude
+
+
+In Quantum Odyssey, we do not care about the physical elements that define the qubit (the qubit can be made out of a photon’s polarization, an atom on a lattice, this aspect is not important to us because it is quantum hardware related. We visualise the actual transformations of qubits and quantum algorithms. What we mean when we say amplitude, is <color=green>the size of the ball</color> (which shows the amplitude, that when squared shows the probability) behind obtaining a certain qubit array after measuring the quantum algorithm.
+
+Image shows a series of quantum interference scenarios playing out, where the static ball shows the output. The last image shows a situation in which there are uneven amplitudes on a single qubit undergoing quantum interference.
+
+/[i]Interference
+
+Amplitude as a concept in the physical world:
+
+ In classical physics, waves are usually described by variations in some parameter through space and time—for example, height in a water wave, pressure in a sound wave, or the electromagnetic field in a light wave. The value of this parameter is called the amplitude of the wave, and the wave itself is a function specifying the amplitude at each point. In quantum physics, each quantum particle also has a wave. We use the word amplitude to define the probability of finding the particle in a certain configuration or at a certain location.
+
+ Chapter 3: Ball
+
+
+We call the moving ball the input object that crosses the Computation Map. The object always appears at the bit array and with the properties that define the input of the computation, navigates throughout the circuits created by the user, to then leave the Computation Map at one of the output bit arrays. The moving ball proprieties are:
+
+
+
+<color=green>Size of the ball</color>: for classical computation, the size will remain fixed. For probabilistic machines and quantum computation, the size differs to show either the probability or the amplitude of obtaining certain bit arrays.
+
+
+
+ <color=green>Location of the ball</color>: for classical computation, it defines the bit array it is under at that particular moment in the computation. For quantum and probabilistic machines, there can be many balls at the same time under different bit arrays, which again describe the exact state the computational input is under at that particular moment in the computation.
+
+
+
+ <color=green>Color of the ball</color>: the color of the ball only changes in quantum computation, to define phase. We show both global phase and all effects of quantum interference in Quantum Odyssey with up to floating point precision, pre-measurement.
+
+
+
+To describe <color=green>quantum computation</color>: the evolutions in size, color and position of the ball define the exact quantum state at all points throughout the computation. We completely encoded complex number tensoring and multiplication in the game, hence the color proprieties change according to these linear algebra rules. There should be no quantum state that is impossible to describe with our encoding method.
+
+
+
+The static ball shown at the Output section in the Circuit Configuration shows the solution to the puzzle. Configure the falling ball the right way to match the static ball on collision in order to solve quantum computation puzzles.
+
+/[i]1output
+Chapter 4: Basis Transforms
+
+
+We want you to think of an even superposition in the Z-basis as a definite state on the X or Y basis for the purpose of thinking about better quantum algorithms.
+
+The laws of quantum mechanics unfortunately break down if we measure the particle more than once, hence we need to carefully pick our measurement basis. In Quantum Odyssey, and similar to quantum hardware vendors, we use the Z-basis to mark the state of the qubit (either 0 or 1), while all other bases are used to show quantum phases.
+
+In the figures below we show Quantum Odyssey’s balls on a Bloch sphere. This is how we represent it:
+
+-The Z-basis is defined by a single blue ball behind the 0 and 1 state in the Z-basis section. This is what the Quantum Odyssey gates do when applied on the 0 state in this basis. Notice that using the H gate we can exit this basis.
+
+/[i]all gates in Z
+
+ -The X-basis is defined by two blue balls for 0 state and a blue and a red ball for the 1 state in X-basis section.This is what the Quantum Odyssey gates do when applied on the 0 state in this basis. Notice that using either H or S gates we can exit this basis.
+
+/[i]all gates in x
+
+-The Y-basis is defined by a blue and a green ball for the 0 state and a blue and a red ball for the 1 state in the Y-basis section. This is what the Quantum Odyssey gates do when applied on the 0 state in this basis. Notice that using H or S gate we can exit this basis.
+
+/[i]all gates in y
+Chapter 5: Bell
+
+
+Bell states: are four specific maximally entangled quantum states of two qubits. They are in a superposition of 0 and 1--that is, a linear combination of the two states. Their entanglement means the following:
+
+
+
+The qubit held by Alice (subscript "A") can be 0 as well as 1. If Alice measured her qubit in the standard basis, the outcome would be perfectly random, either possibility 0 or 1 having probability 1/2. But if Bob (subscript "B") then measured his qubit, the outcome would be the same as the one Alice got. So, if Bob measured, he would also get a random outcome on first sight, but if Alice and Bob communicated, they would find out that, although their outcomes seemed random, they are perfectly correlated.
+
+This perfect correlation at a distance is special: maybe the two particles "agreed" in advance, when the pair was created (before the qubits were separated), which outcome they would show in case of a measurement.
+
+Hence, following Einstein, Podolsky, and Rosen in 1935 in their famous "EPR paper", there is something missing in the description of the qubit pair given above—namely this "agreement", called more formally a hidden variable.
+
+((2020, October 15). Bell state. Retrieved from https://en.wikipedia.org/wiki/Bell_state)
+
+
+
+<color=green>Bell inequality</color>: Bell considers correlations between measurement outcomes for systems in separate wings where the measurement axes of the systems differ by angles set locally. In his original paper, essentially using the lemma from EPR governing strict correlations, Bell shows that correlations measured in different runs of an EPRB experiment satisfy a system of constraints, known as the Bell inequalities.
+
+
+
+<color=green>Bell experiments</color>: Bell’s results have been explored and deepened by various theoretical investigations and they have stimulated a number of increasingly sophisticated and delicate EPRB-type experiments designed to test whether the Bell inequalities hold where quantum theory predicts they should fail. With a few anomalous exceptions, the experiments appear to confirm the quantum violations of the inequalities. The confirmation is quantitatively impressive, although not fully conclusive. There are a number of significant requirements on the experiments whose failures (generally downplayed as “loopholes”) allow for models of the experimental data that embody locality (in Bell’s sense), so-called local realist models. One family of “loopholes” (sampling) arises from possible losses (inefficiency) between emission and detection and from the delicate coincidence timing required to compute correlations. All the early experiments to test the Bell inequalities were subject to this loophole, so all could be modeled locally and realistically.
+
+((2004, May 10). The Einstein-Podolsky-Rosen Argument in Quantum Theory. Retrieved from https://plato.stanford.edu/entries/qt-epr/ )
+
+
+
+<color=green>The big Bell test</color>: 100000 computer gamers helped a team of physicists to close the "freedom-of-choice" loophole that fails the Bell test experiments to entirely negate Albert Einstein's theory of local realism.
+
+The participation of the international team of video gamers resulted to a conclusion that how people choose to measure or put values in certain elements influence, shape, or at least alter the world. This conclusion challenges Einstein's theory of local realism which states that there is already a definite world separate from an entity where people put measurements and give meaning around it.  The Bell test is done with entangled particles, such as photons, being generated and sent to different locations where particles properties or time of arrival are measured.
+
+"If the measurement results tend to agree, regardless of which properties we choose to measure, it implies something very surprising: either the measurement of one particle instantly affects the other particle (despite being far away), or even stranger, the properties never really existed, but rather were created by the measurement itself," reads the physicists' explanation of the Bell test.
+
+The physicists, led by ICFO-The Institute of Photonic Sciences, in Barcelona, invited 100,000 gamers to contribute unpredictable sequences of zeros and bits by playing an online video game called The Big Bell Test. The participants played through their smartphones or other internet-connected devices from different locations around the world. The unpredictable bits from the participants determined how entangled atoms, photons, and superconducting devices were to be measured by the physicists working in 12 laboratories around the world. This means that the physicists had no free will or the "freedom-of-choice" to apply their own chosen measurement to obtain values of the entangled atoms and photons. Instead, the gamers, in effect, were supplying the measurement to them.
+
+The gamers contributed more than 90 million bits, creating the strongest test of Einstein's local realism so far, as well as testing other experiments on realism in quantum mechanics.
+
+Ultimately, the results,... strongly disagree to Einstein's worldview, close the freedom-of-choice loophole for the first time, and demonstrate several new methods in the study of entanglement and local realism.  With the inputs from these gamers, physicists were able to eliminate free will from the Bell test equation, acquire a deeper understanding of quantum physics applications, and determine fundamental principles of quantum cryptography or quantum computing.
+
+(Yenko, A. (2018, May 11). 100,000 Gamers Help Challenge Einstein’s Theory Of Local Realism By Playing The Big Bell Test Video Game. Retrieved from https://www.techtimes.com/articles/ ))
+
+In Quantum Odyssey, the four Bell states are:
+
+/[i]Bell1
+
+/[i]Bell2
+
+Chapter 6: Bit Array
+
+
+Bits together working as a composite system create bit arrays. These are a set of consecutive binary digits(bits) representing data in coded form, in which the significance of each bit is determined by its position in the sequence and its relation to the other bits.
+
+/[i]bitarrays
+
+The way we represent bit arrays is through using the Least Significant Bit method. The bit that carries the lowest value or weight in binary notation for a numeral; for example, 12 is represented by bit array 1100, while 13 is represented by binary 1101. The 1 at the right is the least significant bit. Using this method we can define the number 13 as a composite system of four bits, where the first two are in states 1 and 1 and the last two are 0 and 1 and 12 as having the first two bits in state 1 and the last two in state 0.
+
+Chapter 7: Bit
+
+
+A bit (short for "binary digit") is the smallest unit of measurement used to quantify computer data or store information. It contains a single binary value of 0 or 1.
+
+/[i]bit
+
+While a single bit can define a Boolean value of True (1) or False (0), or processes such as the state of a machine being either turned On (1) or Off (0) an individual bit has little other use.  If we were to represent the bit on a sphere, any two single points would do.
+
+
+
+Therefore, in computer storage, bits are often grouped together in 8-bit clusters called bytes. Since a byte contains eight bits that each have two possible values, a single byte may have 2 to the power of 8 or 256 different values.
+
+
+
+The terms "bits" and "bytes" are often confused and are even used interchangeably since they sound similar and are both abbreviated with the letter "B." However, when written correctly, bits are abbreviated with a lowercase "b," while bytes are abbreviated with a capital "B." It is important not to confuse these two terms, since any measurement in bytes contains eight times as many bits. For example, a small text file that is 4 KB in size contains 4,000 bytes, or 32,000 bits. Additionally, bits are also used to describe processor architecture, such as a 32-bit or 64-bit processor.
+
+(Christensson, P. (2013, April 20). Bit Definition. Retrieved 2020, Nov 3, from https://techterms.com)
+
+The reason modern computers use bits as opposed to say "trits", with three possible values, or using base 10 numbers like modern math does, all comes down to engineering, it turns out that it is easiest to design electronic logic circuits with only two logical values, as opposed to 3 or 10. Mathematically, a computer which uses "trits" or more generally d value "dits" is perfectly well defined. Similarly, many quantum systems have natural binary degrees of freedom, qubits, but nothing stops us from building quantum computers based on qudits, if that is what works best for a particular physical system.
+
+Chapter 8: Borromean rings
+
+
+In mathematics, the Borromean rings consist of three topological circles which are linked but where removing any one ring leaves the other two unconnected.
+
+
+
+Three-dimensional circular Borromean rings are an impossible object: it is not possible to form the Borromean rings from circles in three-dimensional space. However, the Borromean rings can be realized using ellipses.
+
+The name "Borromean rings" comes from their use in the coat of arms of the aristocratic Borromeo family in Northern Italy. The link itself is much older and has appeared in the form of the valknut, three linked equilateral triangles with parallel sides, on Norse image stones dating back to the 7th century. The Borromean rings have been used in different contexts to indicate strength in unity. The psychoanalyst Jacques Lacan found inspiration in the Borromean rings as a model for his topology of human subjectivity, with each ring representing a fundamental Lacanian component of reality (the "real", the "imaginary", and the "symbolic").
+
+(Retrieved on November 7 2020 from https://en.wikipedia.org/wiki/Borromean_rings )
+
+Chapter 9: Circuit Configuration
+
+
+The circuit configuration is where we can manipulate the computation events that are then instantly shown in the Computational Map. Click on the circuit button in the lower left corner of the screen to see it or press the shortcut (TAB key by default).
+
+/[i]selectgate2
+
+The top part of the Circuit Configuration allows us to  <color=green>select a computation gate</color>. Upon doing this, we immediately see that the slots beneath the qubit symbols will start blinking to notify that they can accept that particular gate. To add the gate, simply <color=green>drag and drop</color> it on the <color=green>blinking slot</color> in the Circuit Configuration.
+
+/[i]CircuitConfiguration
+
+The Circuit Configuration can on occasions already have some <color=red>fixed gates</color>. These gates are shown highlighted in red and cannot be removed from the circuit. Their effect is shown on the Computation Map.
+
+
+
+The <color=green>order of the symbols and the slots</color> in the Circuit Configuration is represented in the Computation Map as a series of events, using the Least Significant Bit convention. Each symbol represents a qubit. In some cases, we refer to these symbols as bits. This is possible because quantum computation can perfectly simulate classical computation. On the Computation Map, each symbol shows its two states: 0 and 1. The order of the slots is the computation order of the events.
+
+
+
+Execution order of the Circuit Configuration:
+
+Starting from the top (where the symbols are), the moving balls go through circuit configurations achieved by the combination of all slots on the same row. Every row of computation is executed in order from the top to bottom and shown in real time on the Computation Map.
+
+Chapter 10: Color Legend
+
+
+We encoded all the rules behind the gate model quantum computing framework to graphical elements. Every element generated in the Computation Map is created by reading vectors and matrices of calculus. For simplicity, we show here two graphs that fully describe all possible color interactions.
+
+
+
+This legend describes how colors change when <color=green>mixed together:</color>
+
+/[i]colorinteraction
+
+
+
+This legend describes the color propriety of  <color=green>the ball after Quantum Interference:</color>
+
+/[i]quantuminterference
+
+Chapter 11: Complex Numbers
+
+
+Using the number which people normally use, you can ask the question “what can I square (multiply by itself) to get −1?”, you quickly find there isn’t anything, (−1) × (−1) = 1, so that doesn’t work, and nothing else works either. Mathematicians realized this and did what mathematicians do best, they invented a new concept. They invented a number they called i, the key property of this number is that i × i = −1. They then asked if you could get math to work when you also included this new number, and found that it does, numbers which in general include both real parts (the kind of numbers we are used to), and imaginary parts parts (parts involving i), are called complex numbers. For example 1 + i is a complex number. Complex numbers can get used anywhere normal real numbers get used.
+
+
+
+<color=green>Complex numbers and quantum mechanics</color>
+
+You may wonder why we are talking about complex numbers here, mathematicians invent all kinds of crazy stuff, but this game is about physics, why do we care about this bit of abstract math? It turns out that complex numbers are maybe not so abstract after all, in the early part of the 20th century, when physicists were starting to pin down how quantum mechanics works, they noticed that the best equations they could find to describe quantum systems involved factors of i, in particular the Schrödinger equation works well for describing isolated quantum particles, but also has a factor of i right in the middle of it.
+
+Since complex numbers are a powerful tool for quantum physics, physicists started using them (technically complex numbers show up naturally in other places in physics as well, such as AC electronics), and because complex numbers are used to describe quantum mechanics, it is worth knowing a little bit about them to know quantum mechanics.
+
+
+
+<color=green>How “big” is a complex number?</color>
+
+If we are going to start using complex numbers, than we had better have a notion of how “big” they are compared to each other. For real numbers, the notion of size is a fairly straightforward concept, 2 is clearly bigger than 1 for instance, it becomes a little more complicated for negative numbers, but even then you can just ignore the minus sign and define a “magnitude” of a number, for instance −2 is negative, but has a larger magintude than 1, since it has a magnitude of 2.
+
+For complex numbers this is more well... complex. For instance, is i bigger than 1?, what about 1 + i? Fortunately there is a nice way to take the magnitude of a complex number as well. If we take a complex number we can make the i part negative (or positive if it is already negative), than we get what is called the “complex conjugate”. I won’t do it here, but with a little algebra (and recalling the definition that i × i = −1, it is possible to show that a complex number times it’s complex conjugate will always give a positive number. These positive numbers can be compared directly and show us that i×(−i) = 1, so therefore i and 1 are “the same size”. On the other hand (1+i)×(1−i) = 2, so 1 + i is bigger than both 1 and i.
+
+This measure of the size allows us to determine how big to make the different balls in the game, and the color corresponds to the phase, how much of the number is made up of the real part versus the imaginary part.
+
+Chapter 12: Composite System
+
+
+/[i]compositesystem
+
+In Quantum Odyssey, our symbols shown in the Circuit Configuration expand in the Computation Map as a composite system. A single symbol expands to two values: 0 and 1, while two symbols expand to four values: 00, 01, 10, 11 following the Least Significant Bit numbering convention. In the case of two or more symbols, we always see the circuits drawn in the Computation Map as a composite system: meaning the circuits shown are all the possible resulting combinations generated by visualising the states behind the symbols simultaneously, ordered by the Least Significant Bit method.
+
+Chapter 13: Computation Map
+
+
+In Quantum Odyssey, we represent the process of computation as a visual experience. The Computation Map is the apparatus you see in the middle of the screen. At the top we show all the possible inputs the process of computation can take in the form of bit arrays.
+
+Example, computation on a single bit array:
+
+/[i]1bit
+
+It consists of the two possible states of a bit: 0 and 1. Under one of these states, you will see a moving ball appear. The proprieties of the ball at the start describe the input of the computation. The proprieties change as the moving ball traverses the Computation Map according to the paths the user creates, by manipulating the Circuit Configuration. Every form of computation consists of an <color=green>input</color> (some initial state), a <color=green>computation</color>(the function which evolves the input, in our case what the user introduces in the Circuit Configuration) and an <color=green>output</color>(the end result after computation). We represent the output with one or many (for quantum computation or probabilistic machines) static balls with locked properties under bit arrays.
+
+/[i]1output
+
+Chapter 14: Computational Basis
+
+
+The computational basis in Quantum Odyssey is the Z-basis (also called Z-axis), and is the most common basis used for measurement used by all quantum hardware manufacturers. What this means is, no matter what basis the quantum state is in, all we can measure (by repeated measurements) is the probability to get either 0 or 1 in the Z-basis.
+
+In the figure below, we draw with <color=red>red</color> the Z-axis which defines the Z basis. We show all common gates and how they rotate our qubit sphere in this basis.
+
+/[i]all gates in Z
+
+In Quantum Odyssey, we push for the idea of thinking about superposition as a 0 or a 1 state on different computational bases, for the purpose of designing algorithms in quantum computing. The laws of quantum physics do not actually allow us to measure the qubit twice and get perfect information the second time, hence this is just a theoretical concept we push for. We believe it is good to think of a qubit as a sphere that has three measurement bases; perhaps you can come up with new quantum algorithms if we describe superposition in such a way.
+
+Chapter 15: Control
+
+
+The CTRL gate, short for Control, allows you to create any kind of entanglement scenarios. If placed individually on a row (without any other gates on the same row) it acts as an Identity gate (does nothing to the computation). The CTRL gate designates the qubit it is placed on as the master qubit for that particular row in the computation. If the state of the master qubit is 1, then all the other gates on the row with the CTRL will apply to the computation. If the master qubit is 0, the gates you placed on the same row with CTRL will not do anything to the balls.
+
+
+
+You can create any sort of logic with multiple CTRL gates and the Computation Map will show you in real time the effects. If placed on multiple qubits in the same row, all master qubits must be 1 for the other gates to apply to the slave qubits.
+
+/[i]ctrl
+
+In the example from above, on the left we have an X gate that does not flip the leftmost qubit, because the middle qubit is not 1. On the right, both the rightmost and the middle qubit are 1, hence the leftmost qubit flips to 1 as well (as shown by the static ball).
+
+Chapter 16: Controlled H Gate
+
+
+To create controlled H, you need to place a CTRL gate on a qubit that you want to define as master and a H gate on a qubit you want to define as slave. If the master qubit is 1, then the H gate is applied on the other qubit. If it is 0, then it nothing happens to the quantum state, as shown in this picture:
+
+/[i]controlledH
+
+An interesting case is when our master qubit is in a superposition state (has a H gate on before the CTRL gate). We will see then that the initial state splits in two, to then see the 11 state continue splitting in two more copies, of lower amplitude.
+
+/[i]unevencontrolledH
+
+Chapter 17: Controlled Z Gate
+
+
+To achieve the controlled Z operation, also called CZ, we need to place a CTRL gate on any of the qubit and a single Z gate on the qubit we wish to control. The logic is: if the qubit with CTRL is 1 at that particular computational step (row in the Circuit Configuration), the other qubit will receive a red phase if and only if it is also in the 1 state. The Computation Map shows the behavior for all possible outcomes.
+
+/[i]CZ
+
+In certain situations, doing controlled Z does not actually create entanglement. You can test if your quantum state is entangled by experimenting to find out if there is a way to reverse the "possibly entangled state" by using all other gates except CTRL, as shown here:
+
+/[i]CZnoten
+
+In this example, we managed to construct a reverse of the quantum state after 1HX2CZ (we returned the qubits back to 00) by using the gates you see after the Identity gates.
+
+Chapter 18: Controlled X Gate
+
+
+To achieve the controlled X operation, also called CNOT, we need to place a CTRL gate on any of the qubits we want to define as master and X gate on the qubit we wish to control. The logic is: if the qubit with CTRL is 1 at that particular computational step (row in the Circuit Configuration), the other qubit will flip states. The Computation Map shows the behavior for all possible outcomes.
+
+/[i]Controlled X
+
+We can make CNOT work for when the CTRL qubit 0 by flipping it and then reversing the flip:
+
+/[i]0controlledX
+
+Chater 19: Correlated
+
+
+ In Quantum Odyssey, although the balls look like they travel all over the place, unless you place the CTRL gate on a qubit you want to define as master and other gates on the slave qubits in the same row, the states of your qubits are completely independent from each other. Qubits (or bits) become correlated only if a certain action on a qubit (or bit) happens depending on the status of another.
+
+To achieve the controlled X operation, also called CNOT, we need to place a CTRL gate on any of the qubits we want to define as master and X gate on the qubit we wish to control. The logic is: if the qubit with CTRL is 1 at that particular computational step (row in the Circuit Configuration), the other qubit will flip states. The Computation Map shows the behavior for all possible outcomes.
+
+/[i]Controlled X
+
+Chapter 20: Cryptography
+
+
+Cryptography done using quantum phenomena is pretty much guaranteed to work because of the measurement problem in quantum physics.
+
+Quantum cryptography is the use of quantum mechanical properties in order to encode and send information safely. The theory behind this process is the fact that it is impossible to measure a quantum state of a system without disturbing the system. This can be used to detect eavesdropping within a system. Quantum cryptography can be considered a state of entanglement between two multi-dimensional systems, also known as two- qudit (quantum digit) entanglement.
+
+Chapter 21: Custom
+
+
+To create a custom gate out of all the gates on the screen is straight-forward using Quantum Odyssey's Editor.
+
+/[i]customcreate
+
+/[i]customcreated
+ Chapter 22: Deterministic
+
+
+Deterministic algorithms can be defined in terms of a state machine: a state describes what a machine is doing at a particular instant in time. State machines pass in a discrete manner from one state to another. Just after we enter the input, the machine is in its initial state or start state. If the machine is deterministic, this means that from this point onwards, its current state determines what its next state will be; its course through the set of states is predetermined. Note that a machine can be deterministic and still never stop or finish, and therefore fail to deliver a result.
+
+A deterministic system is a system in which a given initial state or condition will always produce the same results. There is no randomness or variation in the ways that inputs get delivered as outputs. In a non-deterministic system, by contrast, there is some randomness or choice involved in the model. One of the best ways to explain this is to contrast the deterministic system with a probabilistic system. Probabilistic computing involves taking inputs and subjecting them to probabilistic models in order to guess results.
+
+Chapter 23: Diagonalization
+
+
+Matrix diagonalization is a powerful tool, and is something which computers can do very well, in fact the original Google search algorithm (called the Page rank algorithm as a pun on Larry Page’s name) is based on using computers to diagonalize matrices.
+
+An interesting fact to notice here is that the H gate transforms the eigenstates of the Z gate into the eigenvalues of the X gate and vice versa. Because this operation turns states involving single balls into eigenstates comprised of multiple balls, it can be said that the H gate diagonalizes the X gate. This is because, if we wrote the X gate as a matrix (a table of numbers) and performed by the H gate both before and after[? ], the combined matrix representing all of these gates would only be non-zero along its ‘diagonal’, or in the visual language of the game, all line segments would be going straight up and down.
+
+[1] in general you have to do something slightly fancier than just performing the same thing before and after, but that is a detail which is not important here
+
+Chapter 24: Diffusion Operator
+
+
+This is the important part of the Grover's quantum search algorithm. This particular part is able to bring red phase information using quantum interfernce in a manner that is then recoverable in bit arrays after measurement.
+
+/[i]diffusion operator
+
+Chapter 25: Editor
+
+
+The Editor, shows in real time both the current status of the state vector (the quantum computation represented by the moving ball) and the output (with a static ball). This quantum simulator is intended as a practice ground for discovering new quantum algorithms and for building puzzles.
+
+We will keep improving the Editor and add new features with time. For now, it is limited to creating custom gates, saving fixed gates and setting up winning conditions for a new puzzle.
+
+/[i]customcreate
+
+After you created the custom gate, you can use it in order to configure a new puzzle
+
+/[i]customcreated
+
+Although we are planning to put everything online and have a ranking system and competitive play, you can already save your puzzles and share them with friends, the Editor has an extremely user friendliness to achieve that. Don't be afraid to mess around with it and see what every option does. Make sure to save the puzzle under "General" if you wish it to appear in the Solve menu inside Quantum Odyssey.
+
+If you are working on an algorithm and want to close shop for now, you can save it by clicking the P (save button) and selecting Editor (as for the save mode). You can resume work on it later, just make sure to also select all the gates you wish to continue using.
+
+Chapter 26: Eigenstates
+
+
+For unitary operators (such as the standard gates in Quantum Odyssey) the easiest way to imagine eigenstates are states where the action of the system which they are eigenstates of is only to cause a "global" colour change. This means the "difference" in colour stays the same for every pair even though the colour may change. For example, acting on an eigenstate can turn a pair of balls which are blue and green to red and gold, but could *not* change them to being blue and red since there is a larger "difference" between blue and red. For non-unitary operators the size of the balls could also change, but would have to all change together.
+
+
+
+There will always be "at least" 2^n eigenstates for any unitary matrix no matter how complicated (I say "at least" because if eigenstates have the same eigenvalue than any combination of them is an eigenstate, the most extreme example of this is the Identity gate, where all 2^n states have an eigenvalue of +1 and therefore any state is an eigenstate). In principle you could numerically find one for a complicated circuit and show that it works. Except for very simple cases where you can do it "by eye" the process of actually finding eigenstates is complicated.
+
+
+
+<color=green>EIGENVALUES AND EIGENVECTORS</color>
+
+A cool property that quantum gates have is that they are a kind of linear operator which is what is called diagonalizable. This means that for a quantum circuit made out of quantum gates, if there are N slots the balls could be in, than there are always at least N eigenvectors. Eigen comes from the German world for “self” and these vectors (arrangements of balls), will go through the quantum gates and give the same arrangements at the end, possibly with the colours changed. This is where the “eigen” comes in, these special vectors go in the same thing, possibly multiplied by a number (the eigenvalue) comes out.
+
+Eigenvectors with the same eigenvalue are called “degenerate” and any combination of degenerate eigenvectors is also an eigenvector.
+
+The simplest example here is not doing any gates, the “identity” operation, for this operation all N eigenvectors have an eigenvalue of 1, so therefore anything you put in you get the same out.
+
+A slightly more complicated example is the Z gate, which paints a ball red if it is in the 1 state, and leaves is as is if it is in the 0 state. Sometimes eigenvectors are more complicated, for example the equal combination of 1 and 0 (both with the same colour) is one eigenvector of the X gate, with a an eigenvalue 1, and the same but with one ball coloured red is also an eigenvector with a −1 eigenvalue.
+
+An interesting fact to notice here is that the H gate transforms the eigenstates of the Z gate into the eigenvalues of the X gate and vice versa.
+
+Chapter 27: Eigenvalue
+
+
+A cool property that quantum gates have is that they are a kind of linear operator which is what is called diagonalizable. This means that for a quantum circuit made out of quantum gates, if there are N slots the balls could be in, than there are always at least N eigenvectors. Eigen comes from the German world for “self” and these vectors (arrangements of balls), will go through the quantum gates and give the same arrangements at the end, possibly with the colours changed. This is where the “eigen” comes in, these special vectors go in the same thing, possibly multiplied by a number (the eigenvalue) comes out.
+
+Eigenvectors with the same eigenvalue are called “degenerate” and any combination of degenerate eigenvectors is also an eigenvector.
+
+The simplest example here is not doing any gates, the “identity” operation, for this operation all N eigenvectors have an eigenvalue of 1, so therefore anything you put in you get the same out.
+
+A slightly more complicated example is the Z gate, which paints a ball red if it is in the 1 state, and leaves is as is if it is in the 0 state. Sometimes eigenvectors are more complicated, for example the equal combination of 1 and 0 (both with the same colour) is one eigenvector of the X gate, with a an eigenvalue 1, and the same but with one ball coloured red is also an eigenvector with a −1 eigenvalue.
+
+Chapter 28: Eigenvalues
+
+
+A cool property that quantum gates have is that they are a kind of linear operator which is what is called diagonalizable. This means that for a quantum circuit made out of quantum gates, if there are N slots the balls could be in, than there are always at least N eigenvectors. Eigen comes from the German world for “self” and these vectors (arrangements of balls), will go through the quantum gates and give the same arrangements at the end, possibly with the colours changed. This is where the “eigen” comes in, these special vectors go in the same thing, possibly multiplied by a number (the eigenvalue) comes out.
+
+Eigenvectors with the same eigenvalue are called “degenerate” and any combination of degenerate eigenvectors is also an eigenvector.
+
+The simplest example here is not doing any gates, the “identity” operation, for this operation all N eigenvectors have an eigenvalue of 1, so therefore anything you put in you get the same out.
+
+A slightly more complicated example is the Z gate, which paints a ball red if it is in the 1 state, and leaves is as is if it is in the 0 state. Sometimes eigenvectors are more complicated, for example the equal combination of 1 and 0 (both with the same colour) is one eigenvector of the X gate, with a an eigenvalue 1, and the same but with one ball coloured red is also an eigenvector with a −1 eigenvalue.
+
+Chapter 29: Entanglement
+
+
+In Quantum Odyssey placing <color=green>in the same row</color> on multiple qubits either one or more CTRL gates and one or more of any other flip gates creates entanglement. The most commonly used forms on entanglement are Controlled X (where we place a CTRL gate on the master qubit and an X gate on the slave qubit) and Controlled Z (a CTRL gate on the master, and a Z gate on the slave qubit).
+
+
+
+The logic behind entanglement:
+
+The qubit on which the CTRL gate is placed is checked if its state is 1 first. If the state is 1, then and only then the gates placed on the same row will take effect on the other qubits with which the CTRL qubit is entangled. You can spot the state of the CTRL qubit by watching for the location of the ball. If it traverses one of the qubit arrays (arranged according to the LSB method) in which the qubit is 1, then the gates will take effect.
+
+/[i]Controlled X
+
+We can also entangle multiple qubits in various ways. Some of the most famous ones are Bell, W and GHZ states, discussed in module Elements of Reality. For example, we can create a scenario in which only if the qubit-1 and qubit-3 are 1, the X gate is applied on qubit-2 as shown here:
+
+/[i]CCX
+
+There are tricks to make entanglement work although our qubit that we want as master is not in state 1. For example, you can sandwich CTRL gate between X gates as in the picture bellow. This flips the CTRL qubit, to then reverse the flip. This action is possible because quantum computing is reversible.
+
+/[i]0controlledX
+
+Entanglement is not limited to the X gate. In fact, any quantum gate, no matter how complicated, can be used to create entanglement. Examples here are Controlled Z and Controlled H.
+
+/[i]CHCZ
+
+
+
+What is entanglement?
+
+Quantum particles seem to be able to affect each other instantaneously even when they are far away from each other. This  phenomenon is known as entanglement, or, in a phrase coined by Einstein (a great critic of quantum theory), “spooky action at a distance”.  Although instantaneously after measurement it is revealed the state of the other particle, entanglement does not allow communication faster than light because of the nature of quantum measurement. In order to find entanglement, both parties performing measurement need to be aware of the measurement basis in which the particles are supposed to be checked for their quantum state. Hence, classical information needs to be transmitted (that describes the correct measurement basis) together with half of the entangled pair if a communication channel based on entanglement is to be achieved. We discuss measurement bases in the module Basis transforms.
+
+Chapter 30: EPR Paradox
+
+
+The thought experiment called Einstein-Podolsky-Rosen paradox consists of a particle that is placed in superposition (both 0 and 1 at the same time on a chosen measurement basis), followed by entanglement (as shown in the picture below). Although we can describe the mathematics behind the phenomena, it is called a paradox because it defies our expectation of what would happen. The state of the second particle now completely depends on the state of the first particle (that was placed in superposition). If the first particle is 0, the second particle is also 0. If it is 1, the second particle is also 1.
+
+/[i]epr
+
+the Einstein-Podolsky-Rosen argument in quantum theory is a paper entitled “Can Quantum Mechanical Description of Physical Reality Be Considered Complete?” coauthored in 1935 by Albert Einstein and two postdoctoral researchers(Boris Podolsky and Nathan Rosen) which had quickly become a centerpiece in debates over the interpretation of quantum theory, debates that continue today.  The paper features a striking case where two quantum systems interact in such a way as to link both their spatial coordinates in a certain direction and also their linear momenta (in the same direction), even when the systems are widely separated in space. As a result of this “entanglement”, determining either position or momentum for one system would fix (respectively) the position or the momentum of the other. EPR proves a general lemma connecting such strict correlations between spatially separated systems to the possession of definite values. On that basis they argue that one cannot maintain both an intuitive condition of local action and the completeness of the quantum description by means of the wave function.
+
+((2004, May 10). The Einstein-Podolsky-Rosen Argument in Quantum Theory.
+
+
+
+Einstein on the effects of superposition:
+
+ Everyone has heard Einstein’s famous quote “God does not play dice with the Universe”. The quote is a summary of the following passage from Einstein’s 1926 letter to Max Born: ”Quantum mechanics is certainly imposing. But an inner voice tells me that it is not yet the real thing. The theory says a lot, but does not really bring us any closer to the secret of the Old One. I, at any rate, am convinced that He does not throw dice.” Even to the end of his life, Einstein held on to the view that quantum physics is an incomplete theory and that someday we would learn a more complete and satisfactory theory that describes nature. In what sense did Einstein consider quantum mechanics to be incomplete? To understand this better, let us imagine that we were formulating a theory that would explain the act of flipping a coin. A simple model of a coin flip is that its outcome is random — heads 50% of the time, and tails 50% of the time. This model seems to be in perfect accordance with our experience with flipping a coin, but it is incomplete. A more complete theory would say that if we were able to determine the initial conditions of the coin with perfect accuracy (position, momentum), then we could solve Newton’s equations to determine the eventual outcome of the coin flip with certainty. The coin flip amplifies our lack of knowledge about the initial conditions, and makes the outcome seem completely random.
+
+Chapter 2. Entanglement. Retrieved from https://inst.eecs.berkeley.edu/~cs191/fa10/notes/chap1&2.pdf )
+
+Chapter 31: Erasing the Data
+
+
+This is a profoundly important and highly discussed topic in quantum literature. Many scientists argue that quantum computers are <color=green>true probabilistic machines</color>, because of the effect of <color=green>superposition</color>.
+
+
+
+With the Quantum Odyssey’s visual method, we can now fully observe the effect of superposition and use this to argue that <color=green>this is not the case</color>.
+
+Let’s observe the effect of a <color=green>classical probabilistic process</color> of flipping a perfectly balanced coin flip that we encoded in the <color=green>Hc gate</color> on two separate circuits that define how the coin was before the toss.
+
+If the coin is tails up before the toss, we encode that as a single bit in a 0 state (on the left) and for the case when it was tail we encode this information in another bit in the 1 state (on the right). If we toss the coin 100 times, we expect it 50 times to land heads (bit state 1) and 50 times to land tails (bit state 0) for both cases, as shown by the sets of blue balls here for both events:
+
+/[i]TossClassical
+
+As you can see, the output (the blue static balls) is the same in both cases. The case when the bit is flipped by an X gate before the Hc gate describes a coin in the heads state before the toss. The Hc gate (that encodes a classical coin toss) is not a valid operator in quantum computing, because it <color=green>erases the data</color>. Because both when the coin was heads or tail before the toss our output becomes two balls, of equal color and size, if we analyse the output after computation and without seeing the Computation Map, we would  <color=green>have no idea which bit was in the 1 state and which in the 0 state</color>. We completely lost this information!
+
+
+
+In quantum computing, we argue that all events are fully deterministic (although it would require for us to have the whole information in the Universe to be sure). At very least, we can see in the Computation Map what actually happens if we use the “quantum coin flip”, the <color=green>H gate</color>.
+
+/[i]TossQuantum
+
+On the left we have a bit in the 0 state, on the right we have a bit in the 1 state and both are placed in superposition.  Observe the static balls and compare with the picture from above, where we used the Hc gate.
+
+As we can easily spot, for the case where the bit is 1, we can see that the output has a <color=green>blue and a red ball</color>, which differs from the case where the bit is 0. The problem here, why so many scientists argue that quantum computation is probabilistic, is because of measurement bases. If we measure the output in the Z-basis we still get random 0 and 1 values (because the balls are in the same places like in the probabilistic case), because it is impossible to measure the global phase (the red color) we have on qubit 1.
+
+There is however to turn a  <color=green>superposition in a completely deterministic process</color>: if we are aware that we need to switch measurement basis to <color=green>X-basis</color> after the H gate. If we know this and now we analyse the outputs for both algorithms in the X-basis, according to how we defined the X-basis to be,  two <color=blue>blue balls</color>  give us a 0 state, while a  <color=blue>blue</color> and a <color=red>red</color> ball gives us a 1 state. This means that <color=green>by knowing that measurement basis has changed, we know that the output is always deterministic in quantum computing!</color>
+
+To understand how measurement bases work and how important they are on your quest to master quantum computing, play the module called “Basis transforms”.
+
+Reading the output of an algorithm on quantum hardware is subject to environmental noise, read the entry <color=green>erases the data</color>.
+
+Chapter 32: Floating Error
+
+
+Floating point precision
+
+Numbers in a computer are represented in bits, so they can only be represented so precisely, for example a number like 1/3=0.3333.... where the "threes" go on forever cannot be represented exactly on these machines, neither could pi (3.14.....). The way these numbers are typically stored is similar to scientific notation, as "floating point numbers" where part of the number represents the rough magnitude and the other represents the power. Because scientific notation is simpler to understand (decimal rather than binary) and the same principle, let's think about how it works.
+
+The number 5 billion can be represented as 5,000,000,000, a five followed by nine zeros, or as 5*10^9, where the 9 is telling us about the 9 zeros without writing them all out. While floating point allows computers to represent very large and very small numbers efficiently, it is still not perfect. This means that computers can accumulate small errors (floating point errors) because they don't have the precision to represent numbers exactly, this is usually not a problem if used carefully, but is something programmers need to keep in mind.
+
+Chapter 32: Game Controls
+
+
+The default quick keys for the user interface are:
+
+"f" key: centers the screen
+
+Control + Right Mouse Click: place an annotation on the circuit. Useful if you want to give tips for others to solve.
+
+WASD keys: to move camera around, especially useful on large qubit sizes and long algorithms.
+
+Mouse wheel up/down (hovering on Circuit Configuration): allows to quickly through a long Circuit Configuration panel
+
+Mouse wheel up/down (hovering on Computation Map): zoom in and out
+
+To place gates: Click and hold the mousewheel, the drop the gate on a slot in the Circuit Configuration
+
+To delete gates: Simply through the gate somewhere outside an empty slot
+
+To exit to main menu: press the Esc key
+
+To (un)pause the ball at an important moment/ before an interesting event: press the Space key
+
+To open/ close the Circuit Configuration: press the TAB key
+
+Chapter 33: Gate compilation
+
+
+This is a very important concept to be aware of. Any number of quantum gates can be compiled in a single gate that has the proprieties of all the other gates combined. This is very easy to do in Quantum Odyssey's Editor:
+
+/[i]customcreate
+
+/[i]customcreated
+
+Chapter 34: GHZ state
+
+
+GHZ experiment is similar to a test of Bell's inequality, except using three or more entangled particles, rather than two. With specific settings of GHZ experiments, it is possible to demonstrate absolute contradictions between the predictions of local hidden variable theory and those of quantum mechanics, whereas tests of Bell's inequality only demonstrate contradictions of a statistical nature. The results of actual GHZ experiments agree with the predictions of quantum mechanics.
+
+
+
+The GHZ experiments are named for Daniel M. Greenberger, Michael A. Horne, and Anton Zeilinger (GHZ) who first analyzed certain measurements involving four observers.
+
+/[i]GHZ
+
+Chapter 35: Grover's search
+
+
+Grove'rs search is a quantum algorithm which can be used to search an "unstructured database" faster than possible classically. In this case an "unstructured database" means that there is an "oracle" which can tell you whether or not your answer is correct but gives you no other information. Classically the only thing which can be done in this situation is to guess. Quantum mechanically, interference can be used to effectively check the answers "faster".
+
+While the simplest version of Grover's is a toy algorithm, meaning it doesn't solve real problems, there are ways to build algorithms which can use Grover search to solve real problems, the idea is to build the oracle out of quantum gates which "check" whether the answer is correct, and this information can be used with interference to solve the problem. While this is nice in theory and can be used to estimate scaling, in practice these oracles are usually complicated to build, so Grover search like algorithms is not likely to be used on near term quantum computers, but on longer term machines once the technology gets better.
+
+
+
+This is an example of a possible Oracle that can be used for Grover's search:
+
+/[i]Oracle
+
+This is an example of a diffusion operator:
+
+/[i]diffusion operator
+
+Chapter 36: H gate
+
+
+H gate on a qubit:
+
+To understand what the H gate does, first you must fully understand the qubit. To achieve this, do the Basis Transforms module in Quantum Odyssey. The best way to think of a qubit is to <color=green>imagine 6 maximally distant from each other points on a sphere (a sphere is made out of infinite points)</color>. A pair of two perfectly opposite points on a sphere is what we call a measurement basis.
+
+
+
+We have 3 pairs of 2 maximally opposite points on a sphere, hence 3 measurement basis: Z-basis, X-basis and Y-basis. The <color=green>H gate applies a series of 3 consecutive counter clockwise rotations in the basis where it is applied on. It can also be thought of as an S gate followed by a P gate followed by an S gate.</color>. The best way to understand how H gate rotates the sphere is to actually see the rotations in all bases. Here is how the sphere is rotated 3 consecutive times by a H gate in each basis, starting with Z-basis, then X-basis and lastly, Y-basis:
+
+/[i]H all bases
+
+In quantum computing, we call that a qubit is in superposition when it is measured in the Z-basis, yet the quantum state is non zero in the X or Y-basis.
+Chapter 37: Identity Gates
+
+
+The Identity gates act like a filler, to lock a slot or more in the Circuit Configuration, in order to force certain limitations for solving the puzzle (to ensure the concept behind the puzzle is learned by the Player) or to show something interesting until that point.
+
+Chapter 38: Independent Set
+
+
+In the field of graph theory, the sets of graphs in which no two nodes of a single edge can be of the same active attribute are known as Independent Sets. Besides being well defined as a mathematical concept, such sets are often seen in the real world, for example in a factory where a bunch of machines must at all times operate in ways that some should not be working together or damage could incur in the production pipeline. In such a case, it is easy to create a graph out of all machines and draw connectors (edges) between those that are forbidden to operate simultaneously; hence, building an Independent Set and configure a controller on the machines that first checks for the conditions before turning machines on.
+
+
+
+Let’s look at case below. Think of two machines that need to operate together, but under no circumstance should both be turned on at the same time. It is quite straightforward to encode small Independent Set problems in the Quantum Odyssey’s Computation Map. We encode a machine’s state on a single qubit. The state of the qubit, represents the state of the machine. It can be either Off (0), or On (1), just like the qubit. To encode the fact that both machines cannot be On (11), all we need is to find a way that we can mark as invalid the 11 state from all the qubit arrays. To achieve this we can use controlled S, because of the phase kick-back effect both qubits will get a phase for the quantum state 11, while all the other valid states (00, 01, 10) remain unchanged). Hence it is enough to use a single controlled S operation to mark both machines being On (11) as invalid.
+
+/[i]case A
+
+Case A. Valid configurations (where we should see blue balls): 00, 10, 01. 11 is not valid! Remember qubit array 11 encodes the fact that both machines (nodes) in our Independent Set graph are On!
+
+
+
+/[i]case B
+
+Case B.  Valid configurations are 000, 101, 010, 100, 001
+
+
+
+/[i]case C
+
+Case C.  Valid configurations are 000, 100, 010, 001,
+
+
+
+/[i]case D
+
+Case D. Valid configurations are 0000, 0001, 0010, 0100, 1000, 1011, 1001, 0011, 1010
+
+
+
+/[i]case E
+
+Case E. Valid configurations are 0000, 0001, 0010, 0100, 1000, 1010
+
+
+
+/[i]case F
+
+Case F. Valid configurations are 0000, 1000, 0100, 0010, 0001
+
+Chapter 39: Information
+
+
+All information is ultimately understood and processed as sequences of bits by classical computers. For example, the word “hi” is processed by a computer as two bit arrays of 8 bits ordered as follows: 01001000 01101001.
+
+
+
+What is information?
+
+Any unit of knowledge and another word for data. Information is summarization of data. Technically, data are raw facts and figures that are processed into information, such as summaries and totals. But since information can also be the raw data for the next job or person, the two terms cannot be precisely defined, and both are used interchangeably.
+
+It may be helpful to view information the way it is structured and used, namely: data, text, spreadsheets, pictures, voice and video. Data are discretely defined fields. Text is a collection of words. Spreadsheets are data in matrix (row, column) form. Pictures are lists of vectors or frames of bits. Voice is a continuous stream of sound waves. Video is a sequence of image frames. Remember that all these higher layers of information, are ultimately converted and processed as sequences of bits on a computer.
+
+
+
+Why is information important?
+
+(soc.) The character and extent of the recorded information available to a society is a major differentiating feature between types of society. For example, in its possession of written records a literate culture possesses a decisive adaptive advantage compared with a nonliterate culture. This is seen, for example, in the rise to supremacy of the state, which was associated from the outset with the development of recordkeeping and writing. The capacity possessed by modern societies to marshal and store information has grown massively in recent times as the result of major technological innovations such as printing, audio and video recorders, and especially computers. The centrality of knowledge and information in today's modern technological and highly administered societies has led some commentators to coin the term ‘information society’ to describe these societies (post industrial society). A further aspect of the increased capacity of modern societies to collect and store information is greatly increased power of the state in the monitoring and surveillance of its citizens.
+
+(McGraw-Hill Dictionary of Scientific & Technical Terms, 6E. (2003). Retrieved from https://encyclopedia2.thefreedictionary.com/information)
+
+Chapter 40: Input
+
+
+/[i]1bit
+
+The top row of the computation map. Input data is information fed into a data processing system or computer.
+
+In Quantum Odyssey the blue ball starts its journey as an uncharged (neutral) single bit or bit array.
+
+Chapter 41: Least Significant Bit Method
+
+
+Least Significant Bit method. Abbreviated LSB.
+
+This is a convention used to store and manipulate numbers encoded in bit arrays where the rightmost bit changes first.
+
+
+
+Let’s understand why this matters:
+
+The best way to understand why is thinking about how addition works. For example, let’s see in bit arrays this sequence of additions: <color=green>0+1 = 1, 1+1 = 2, 2+1 = 3</color>.
+
+We need to define a composite system that we are happy with to store our values in binary. Since we know any bit can hold two values, it is easy to observe that we just need a composite system of two bits, because that has four two-bit bit arrays: 00, 01, 10 and 11, so it can store up to 4 numbers.
+
+We start by deciding how to store these numbers in bit arrays. There are many ways to do encoding stuff in other stuff and here we are showing just the LSB method, which is quite straight forward. We just increase the rightmost bit with 1 for any new number as long as we have bit values in the bit arrays available:
+
+<color=green>0 is 00, 1 is 01, 2 is 10, 3 is 11</color>.
+
+Forget everything you know about addition if you want to think about it in binary.
+
+The new addition rule here is to <color=green>keep increasing the rightmost bit and when it is exhausted (it is at its maximum value, 1), it becomes 0 again and the 1 gets transferred to the second rightmost bit and so on</color>.
+
+We can now do the same calculation, but this time representing the numbers as bit arrays following the LSB method:
+
+<color=green>00 + 01 = 01, 01 + 01 = 10 and 10 + 01 = 11</color>.
+
+If we were to continue counting to get digit 4 as well, we would find out that just two bits is no longer enough because we already used all the values possible to store information on two-bit bit arrays.
+
+We would have to use three bits, hence our conversion becomes:
+
+<color=green>0 is 000, 1 is 001, 2 is 010, 3 is 011 and 4 is 100</color>.
+
+Now our math will look like this in binary form:
+
+ <color=green>000 + 001 = 001, 001 + 001 = 010 and 010 + 001 = 011, 011 + 001 = 100</color>.
+
+Notice that in this case, our three bits create 8 total bit arrays, out of which we use only 5. We could potentially continue to calculate up to number 8 without storing the output.
+
+Imagine how it would be without defining a system, in our case the LSB method. We wouldn’t know how to interpret the information to do these calculations. Imagine the chaos it would be if we didn’t have established methods of parsing data. Any piece of hardware that does computation requires some established method to parse data in order to create meaningful ouput (which, for instance, could be understood by another machine).
+
+Chapter 42: Linear Algebra
+
+
+This entry explains linear algebra, how it works, and why it is important, including the concept of eigenvectors and eigenvalues.
+
+
+
+An important type of equations which come up a lot in physics and mathematics are what are called linear equations, these equations have all kinds of important properties which make them mathematically nice, and come up in nature a lot. A linear equation can be represented using two dimensional tables of numbers known as matrices (singular: matrix). A matrix is a table of numbers which describes what the equation does to a list of input variables, known as a vector. The game turns this into a visual process. Each of the line segments which are drawn represent numbers in these tables (no line segment corresponds to a zero entry). Nothing is lost in the process of turning these tables of numbers into a drawing, so the game tells us exactly the same thing the tables of numbers would, but in a more understandable way
+
+Quantum gates represent linear processes, and the game is able to represent exactly the same thing which a series of matrices applied to a vector. In this way, what the game is showing actually is an equation, but represented by balls and colourful lines rather than numbers. While visualizing what is going on by staring at a table of numbers certainly can be done, most people will have an easier time with a direct visual representation.
+
+
+
+<color=green>I. EIGENVALUES AND EIGENVECTORS</color>
+
+A cool property that quantum gates have is that they are a kind of linear operator which is what is called diagonalizable. This means that for a quantum circuit made out of quantum gates, if there are N slots the balls could be in, than there are always at least N eigenvectors. Eigen comes from the German world for “self” and these vectors (arrangements of balls), will go through the quantum gates and give the same arrangements at the end, possibly with the colours changed. This is where the “eigen” comes in, these special vectors go in the same thing, possibly multiplied by a number (the eigenvalue) comes out.
+
+Eigenvectors with the same eigenvalue are called “degenerate” and any combination of degenerate eigenvectors is also an eigenvector.
+
+The simplest example here is not doing any gates, the “identity” operation, for this operation all N eigenvectors have an eigenvalue of 1, so therefore anything you put in you get the same out.
+
+A slightly more complicated example is the Z gate, which paints a ball red if it is in the 1 state, and leaves is as is if it is in the 0 state. Sometimes eigenvectors are more complicated, for example the equal combination of 1 and 0 (both with the same colour) is one eigenvector of the X gate, with a an eigenvalue 1, and the same but with one ball coloured red is also an eigenvector with a −1 eigenvalue.
+
+
+
+<color=green>II. DIAGONALIZATION</color>
+
+An interesting fact to notice here is that the H gate transforms the eigenstates of the Z gate into the eigenvalues of the X gate and vice versa. Because this operation turns states involving single balls into eigenstates comprised of multiple balls, it can be said that the H gate diagonalizes the X gate. This is because, if we wrote the X gate as a matrix (a table of numbers) and performed by the H gate both before and after[? ], the combined matrix repesenting all of these gates would only be non-zero along it’s ‘diagonal’, or in the visual language of the game, all line segments would be going straight up and down.
+
+Matrix diagonalization is a powerful tool, and is something which computers can do very well, in fact the original Google search algorithm (called the Page rank algorithm as a pun on Larry Page’s name) is based on using computers to diagonalize matrices.
+
+[1] in general you have to do something slightly fancier than just performing the same thing before and after, but that is a detail which is not important here
+
+Chapte 43: LSB convention
+
+
+Least Significant Bit method. Abbreviated LSB.
+
+This is a convention used to store and manipulate numbers encoded in bit arrays where the rightmost bit changes first.
+
+
+
+Let’s understand why this matters:
+
+The best way to understand why is thinking about how addition works. For example, let’s see in bit arrays this sequence of additions: <color=green>0+1 = 1, 1+1 = 2, 2+1 = 3</color>.
+
+We need to define a composite system that we are happy with to store our values in binary. Since we know any bit can hold two values, it is easy to observe that we just need a composite system of two bits, because that has four two-bit bit arrays: 00, 01, 10 and 11, so it can store up to 4 numbers.
+
+We start by deciding how to store these numbers in bit arrays. There are many ways to do encoding stuff in other stuff and here we are showing just the LSB method, which is quite straight forward. We just increase the rightmost bit with 1 for any new number as long as we have bit values in the bit arrays available:
+
+<color=green>0 is 00, 1 is 01, 2 is 10, 3 is 11</color>.
+
+Forget everything you know about addition if you want to think about it in binary.
+
+The new addition rule here is to <color=green>keep increasing the rightmost bit and when it is exhausted (it is at its maximum value, 1), it becomes 0 again and the 1 gets transferred to the second rightmost bit and so on</color>.
+
+We can now do the same calculation, but this time representing the numbers as bit arrays following the LSB method:
+
+<color=green>00 + 01 = 01, 01 + 01 = 10 and 10 + 01 = 11</color>.
+
+If we were to continue counting to get digit 4 as well, we would find out that just two bits is no longer enough because we already used all the values possible to store information on two-bit bit arrays.
+
+We would have to use three bits, hence our conversion becomes:
+
+<color=green>0 is 000, 1 is 001, 2 is 010, 3 is 011 and 4 is 100</color>.
+
+Now our math will look like this in binary form:
+
+ <color=green>000 + 001 = 001, 001 + 001 = 010 and 010 + 001 = 011, 011 + 001 = 100</color>.
+
+Notice that in this case, our three bits create 8 total bit arrays, out of which we use only 5. We could potentially continue to calculate up to number 8 without storing the output.
+
+Imagine how it would be without defining a system, in our case the LSB method. We wouldn’t know how to interpret the information to do these calculations. Imagine the chaos it would be if we didn’t have established methods of parsing data. Any piece of hardware that does computation requires some established method to parse data in order to create meaningful ouput (which, for instance, could be understood by another machine).
+
+Chapter 44: Measurment
+
+
+Measurement on quantum systems is fundamentally different than for classical systems. A classical system can be observed without having any noticeable effect on the system, this is something you usually don’t even think about, you don’t expect a cup on a table to do anything different whether you look at it or look away. A nice consequence here, is that if you watch a classical system for long enough, you can know it’s exact state and your precision is only limited by the precision of our instruments. Quantum mechanically, measuring a system does always have an effect on it, and therefore, if you have only one copy of a quantum system it is not possible to know exactly the state it is by measuring repeatedly, since you destroy the state with your first measurement. There are several weird and exciting consequences of the way quantum measurement works.
+
+
+
+<color=green>Uncertainty principle</color>
+
+The simplest consequence of measurement always disturbing your system is that you cannot know all properties of a quantum system simultaneously. The reason is very simple, if you measure one property (say position of an object), than measure another (say how fast it is going). The second measurement means that the first result can no longer be trusted, you know the one you measured most recently, but the previous measurements may not be right because the system has been ‘disturbed’ since then. Note that this is fundamentally different than measurement errors in classical measurement, which can be corrected by improving the machine you use to measure. Quantum uncertainty exists even if the measurements are perfect, in fact more precise measurements are more disturbing to the system.
+
+
+
+<color=green>No cloning</color>
+
+A result of the uncertainty principle is that an unknown quantum state cannot be exactly copied, doing so would allow the copies to be measured differently and would allow the state to be precisely known.
+
+
+
+<color=green>Quantum Zeno effect</color>
+
+While classically it is a popular saying that “a watched pot never boils” this bit of folklore is actually easily disproven using a stove and a stopwatch. Quantum mechanically however this saying is actually true, a quantum system can be “stopped” by watching it. The reason is a bit complicated, but it comes down to the fact that measuring forces a system into a particular state, so if you measure a system very fast, you keep forcing it back into the state it started in. The quantum Zeno effect is named after a paradox in classical philosophy, the idea being that if someone fires an arrow at you[1], it never gets to you, because it first has to get halfway to you, and before that, halfway to the halfway point, etc... (don’t try this at home, or if you insist on trying this at home, don’t tell anyone Quantum Odyssey gave you the idea). Classically this is an interesting thought experiment, but we know the arrow actually does get to you, with probably less-than-desirable results. Quantum mechanically, if you keep nagging the arrow with “are you there yet?” in the way small children are often known to do on road trips, you can actually stop it entirely by continuously forcing it back to its starting state.
+
+[1] If you want to be pedantic about it, I am technically applying the dichotomy paradox to the situation in the arrow paradox, but the gist is the same, and I like the mental image of stopping an arrow from killing you by nagging it, so I am going to take some historical liberalities.
+
+
+
+<color=green>Qubit measurement bases</color>
+
+The laws of quantum mechanics unfortunately break down if we measure the particle more than once, hence we need to carefully pick our measurement basis. In Quantum Odyssey, and similar to quantum hardware vendors, we use the Z-basis to mark the state of the qubit (either 0 or 1), while all other bases are used to show quantum phases.
+
+In the figure below we show Quantum Odyssey’s balls on a Bloch sphere:
+
+-The Z-basis is defined by a single blue ball behind the 0 and 1 state in the Z-basis section. This is what the Quantum Odyssey gates do when applied on the 0 state in this basis:
+
+/[i]all gates in Z
+
+ -The X-basis is defined by two blue balls for 0 state and a blue and a red ball for the 1 state in X-basis section.This is what the Quantum Odyssey gates do when applied on the 0 state in this basis:
+
+/[i]all gates in x
+
+-The Y-basis is defined by a blue and a green ball for the 0 state and a blue and a red ball for the 1 state in the Y-basis section. This is what the Quantum Odyssey gates do when applied on the 0 state in this basis:
+
+/[i]all gates in y
+
+
+
+<color=green>Why do we use two balls for X and Y bases?</color>
+
+This is because as we said, Quantum Odyssey encoded bit measurement only for the Z-basis, like most hardware manufacturers do today, for compatibility reasons. Anything you program in Quantum Odyssey can easily be transferred and run on an actual quantum computer.
+
+What we care for when we measure a quantum algorithm in the Z-basis, is if a ball (<color=green>of any color!</color>) arrived at one or more than one bit arrays. That will be the output we can retrieve (and remember we can only retrieve a single bit array per execution) from a quantum hardware. The size of the ball determines the likelihood (amplitude) of obtaining that specific bit array, whilst the color does not matter at all on measurement.
+
+Chapter 45: Noise
+
+
+This entry explains how noise works in quantum systems.
+
+When we build real quantum computers they often don’t work the way the theory (or at least the simplest version of the theory) says they should. The reason is because real quantum systems have noise, and while real quantum computers are very impressive, a lot of the technology used to build them is still being perfected, so they still have a lot of noise.
+
+
+
+What is noise?
+
+Noise consists of unwanted operations caused by all kinds of effects, ranging from the computer interacting with it’s environment, losing energy, or even from just not having precise enough controls. The feature of noise which makes it a problem is that it is unpredictable, if we know for sure a bit has flipped for certain, we can just flip it back, but if we know that a bit may have flipped, than trying to flip it back would do more harm then good if it had not actually flipped. Likewise if there is a lack of precision in controls, we know than every operation we try to do becomes a bit “fuzzy” and the fuzzyness adds up.
+
+
+
+Let's see noise on a qubit (shown as a sphere):
+
+Probably the simplest kind of noise to explain is a bit flip, in this kind of noise the bit has some chance of being flipped turning 1 on Z-axis to 0 on Z-axis and vice versa. Let’s try to think about what this does to the Bloch sphere, it would be tempting to say that it just flips it, but that isn’t quite right. If we knew that a bit flip had happened for sure, than the Bloch sphere would flip, and we could just undo the flip by flipping it back. If it only has a chance of flipping, than the Bloch sphere does not flip, it gets squished, as the figure shows:
+
+/[i]distort but x
+
+This squishing means that we are no longer sure if the 1 or 0 we measure in Z-basis really should be a 1 or 0 or if it got flipped. However, states like 0 and 1 in X-basis remain the same if 1 or 0 are reversed up to an irrelevant global phase (i.e. in the game if the balls change color, they change color together).
+
+
+
+This is an amazing property of quantum noise, some states are “immune” to some kinds of noise. For a better example, let’s consider <color=green>dephasing noise</color>, which consists of the computer forgetting the phase between the qubits, in terms of the game, the balls forget what colour they are. In this case the Bloch sphere gets squeezed to a cigar (or sausage if you don’t smoke) shape along the Z axis, see picture:
+
+/[i]distort but z
+
+Dephasing noise leaves the classical bit information completely intact, but as the name implies the phase is lost. In fact, <color=green> a classical bit can just be thought of as a quantum bit which dephases way too fast to take advantage of any interference.</color>
+
+
+
+The kinds of noise we have here have all been uniform types of noise, they treat 1 and 0 the same. But another type of noise can happen, <color=green>decay noise</color> (or amplitude damping if you want to use the fancy term for it). Imagine the case where the state 1 can decay to state 0, but nothing happens to 0. This is a common situation encountered in superconducting flux qubits, where the 1 state has a higher energy, and can lose its energy by emitting a bit of electromagnetic radiation. In this case the Bloch sphere gets squeezed and pushed up.
+
+/[i]twds the north pole o
+
+There are many other types of complicated quantum noise and some scientists make their entire careers out of understanding how quantum noise works, and how to get rid of it.
+
+
+
+<color=green>Dealing with noise:</color>
+
+A natural question you may be asking is whether classical computers have noise, and how they function with noise. Classical computers do have noise, but it is easier to deal with for them, because classical information can be copied. A classical bit of information is carried in an electric current consisting of many electrons. If noise causes a few electrons go out of place in an electrical current comprised of millions of electrons no one will even notice. Classical bits are stored as voltages, with a higher voltage corresponding to a 1, a lower voltage to a 0, and voltages in between not corresponding to any state at all, but the device will never get to those voltages if it is working correctly, even with noise.
+
+
+
+Dealing with noise is important in some classical settings, for instance sending a message from a cell phone. In this case extra information is sent to reconstruct the message if parts of it get messed up, this is a process known as error correction. The simplest way to correct errors classically is to just copy the information multiple times and take a “vote”. In practice more complicated tricks do better, but they work on the same principle.
+
+Quantum bits cannot be copied, but there are other tricks using quantum gates to find and detect errors, this is a field known as quantum error correction. Quantum error correction is harder to do than classical error correction, and in general was not known to be possible until the 1990s when it was proven that it could work, in principle. However, knowing that something can work in principle and doing it in practice are very different, and realistically, for quantum error correction to work we will also have to make our quantum computers better, but lots of smart people are working on this every day, and there is good reason to be excited. Another reason to be excited is the fact that there is a lot of work on algorithms which can work on noisy and imperfect machines. Hopefully one day soon these can all “meet in the middle”, with better hardware and possibly some error correction able to get the noise rates low enough that a clever algorithm can use these machines to solve useful problems.
+
+
+Chapter 46: Oracle
+Because we use only the Z-basis to measure information on (store bits in), the information hidden in the phase of a qubit is not known by the quantum computer (nor it is retrievable, unless it is brought back to the Z-basis by the diffusion operator). Here is an example of a marked "hidden" state:
+
+/[i]Oracle
+
+Chapter 47: Output
+
+
+/[i]1output
+
+In Quantum Odyssey, we always see two outputs on the Computation Map:
+
+The  <color=green>computation output</color>: this is defined as the location, color and sizes of the moving balls after the last circuit; when they leave the screen at the bottom of the Computation Map.
+
+The <color=green>desired output</color>: this is defined as the location, color and sizes of the static balls. The static balls define the desired output; what are the solutions we are seeking by doing the computation.
+
+Getting the <color=green>computation output</color> to match the <color=green>desired output</color> is the winning condition for most of the visual computation puzzles. This is analogous to saying we are finding the right computation process to achieve our desired result.
+
+Chapter 48: Particles
+
+
+Quantum physics underlies how atoms work, and so why chemistry and biology work as they do. You, me and the gatepost – at some level at least, we’re all dancing to the quantum tune. Particles make up matter and the forces with which they interact.  Quantum particles can behave like particles, located in a single place; or they can act like waves, distributed all over space or in several places at once. How they appear seems to depend on how we choose to measure them, and before we measure they seem to have no definite properties at all – leading us to a fundamental conundrum about the nature of basic reality.  Quantum particles also seem to be able to affect each other instantaneously no matter how far apart they are, but in a very special way where these effects cannot be used to carry information.
+
+Chapter 49: Phase
+
+
+/[i]quantuminterference
+
+If the size of the balls encode the amplitude of the qubits, the colors are representing their relative phases. This is extremely important to take into account when creating quantum interference. Qubit phases during quantum interference can annihilate or amplify (depending on color) and exactly this process is what gives quantum computation its advantage over classical.
+
+
+
+The color of both the falling ball and the static ball (that shows the solution of the computational puzzle) gives information about the phase of the qubits. The interaction between balls of certain phases during quantum interference is shown above. We can easily change qubit phases by placing gates.
+
+
+
+The phase which will end up applied on the ball at each computational step is the encoded to color, mathematical result of the linear algebra and complex numbers rules used in processing the maths behind the gates you place in the Circuit Configuration, row by row.
+
+
+
+Quantum Interference is where the relative phase information of each qubit really comes into play. There is another type of phase, called global phase - that we discuss in module Colorful flips that is not used in quantum interference. We call global phase a complex number that applies to the entire quantum state without any observable effect in the physical world.
+
+
+
+<color=green>How to imagine the global phase?</color>
+
+Consider the idea that some pieces of the math have no effect on actual physics, the global phase in quantum mechanics is one example. A more simple example is what elevation you choose to call "0" when solving a classical physics problem such as finding the path a thrown ball takes. The path you will find is the same whether you choose this to be the height it was thrown from, the height of the ground, the center of the earth, 100 miles above where you start, etc.... The reason for this is any formula you use will only have differences in height and never the height just by itself (the same actually applies for any quantity which is a measure of energy). The same idea applies to more computer science definitions, for example, as long as you are consistent, you could call having a machine turned on to be "1" and off to be "0", but you could equally well do the other way around with "0" meaning on and "1" off, as long as you use consistent definitions, what the final answer actually is physically won't be changed.
+
+Chapter 50: Probabilistic
+
+
+The typical example of classical probability would be rolling of a fair dice because it is equally probable that the top face of the die will be any of the 6 numbers on the die: 1, 2, 3, 4, 5, or 6. Another example of classical probability would be tossing an unbiased coin. There is an equal probability that your toss will yield either head or tails. There are many other examples of classical probability problems besides rolling dice. These examples include drawing cards from a deck, guessing on a multiple choice test, selecting jellybeans from a bag, and choosing people for a committee, etc.
+
+The most important notion to understand probabilistic processes is the notion of a probability, in other words, how likely is an event to happen. In the game probabilities can be understood in a simple visual way, the bigger the ball, the higher the probability, the color has no effect on probabilities. Circuits which end with a single ball as an output are deterministic, there is 100% probability of a single event happening. If there are more than one balls, than more than one measurement outcome could potentially happen, and the outcome is probabilistic.
+
+There is a well-defined notion of "how" probabilistic an outcome is which is what is called information entropy, or Shannon entropy. The formula is slightly complicated and involves logarithms, so we won't give it here, but this allows someone to quantify how probabilistic (or in some sense how "random") an outcome is. A single event with a probability of 1 gives a Shannon entropy of 0, the process is deterministic. On the other hand, a fair coin flip has a Shannon entropy (using the base 2 definition), of 1, since it is effectively 1 randomized bit. A probability which is not even say 70%/30% will have a Shannon entropy less than 1, but more than 0, it isn't completely deterministic, but is also less random than a fair coin flip, one outcome is more likely than the other. The Shannon entropy is defined for any number of outcomes, so it allows us to answer complicated questions like "which is more random, three events with probabilities 70%/20%/10%, or only two possible outcomes with 50%/50% probability?" it turns out if you plug the numbers in the 70%/20%/10% is more "random" than 50%/50%, but it would be less random if it was instead 80%/10%/10%. Entropy sounds like a scary concept, but it is really just "fancy counting".
+
+Probabilistic machiines do not preserve information. See the entry <color=green>erases the data</color>
+
+
+
+<color=green>Probability as a concept</color>
+
+The concept of probability is actually not an easy one to define, in principle if we knew the starting conditions exactly, nothing stops us from predicting the result of a coin flip exactly, this is just classical physics. The reason a coin flip is treated as probabilistic is that this information is not practical to know, ignoring quantum physics for the moment, one could say that the universe is entirely deterministic, but probability is used as a tool to represent gaps in our knowledge, where we don't know an outcome, so we look at different possibilities.
+
+Can the same thing be done quantum mechanically?
+
+The current understanding of quantum mechanics which people use says "no", probabilities are fundamentally baked into quantum mechanical theory in a way in which they aren't in classical mechanics. But is this really correct, could there be something going on behind quantum mechanics which looks probabilistic, but is really fully deterministic? The short answer is that there could be, but these kinds of theories always end up being weird and are usually un-testable, putting them more in the realm of philosophy rather than science (not necessarily a bad thing! philosophy can be really interesting, and the philosophical questions around the foundations of quantum mechanics are fascinating).
+
+Chapter 51: Quantum Communication
+
+
+Just like classical computers can share classical information, one goal is to build ways for quantum computers to share quantum information. Quantum communication is harder, since quantum information cannot be directly "copied" but has numerous advantages, including secure methods of sending signals which are (at least from a highly theoretical perspective) "unhackable".
+
+Chapter 52: Quantum Computer
+
+
+There are several different ways to build quantum computers, the ones we are interested here are a specific class of quantum computers called “gate model” quantum computers, other types of machines such as photonic chips and quantum annealers are also promising and exciting, but not the subject of the game (at least at this Early Access stage!).
+
+
+
+<color=green>Types of quantum computers:</color>
+
+There are many ways in which quantum computers can be built and it is not clear now which is the best, or even if there will even be one “best” type as opposed to many types which are good at different things. One of the types which is most often in the news are superconducting circuit quantum computers, like the ones made by IBM, Google, Rigetti, Honeywell, and others. These devices have the advantage that they are built using the same technology which traditional classical computers are built with, but cooled down to much lower temperatures. This makes systems with many qubits relatively easy to make, although there are challenges with controlling a chip with many supercondicting qubits. Measurement and initialisation are relatively straightforward, and so is creating gates. While gates can be done quickly on superconducting circuits, they also lose coherence quickly, so noise is a challenge.
+
+Another type of quantum computers are those being constructed out of trapped atoms or ions, like those being built by IonQ or the NQIT (now QCS) hub in the UK. These are made of atoms or ions which are levitated using light and magnetic fields. Some of these trapped atoms shine brightly enough that it is actually possible to see a single atom with the naked eye! Since it is a new technology, a lot of the scaling aspects are challenging, but these devices can be initialized, measured, and have gates performed on them reliably. The gates on these devices are slower than superconducting qubits, but they also can remain coherent longer.
+
+Photons (particles of light) are also a way to try to build a quantum computer, this is being pursued for example by PsiQuantum. There are many ways to naturally encode qubits into photons, measuring single photons is fairly standard in many labs but making single photon sources is still a challenge. They have the advantage of almost 2 infinite decoherence time unless they are absorbed. A disadvantage is that it is very hard to make the qubits interact, so universal gates are hard to make.
+
+More exotic quantum computers can be built using circuit technologies which use individual silicon atoms as qubits (or nanostructures), rather than superconducting circuitry. Similarly defects in diamonds can be used, or exotic “topological”phases of matter. These ideas all show potential to one day surpass the current leaders, but fundamental challenges need to be addressed before they can be built into mature computing devices.
+
+Many early quantum computing experiments were performed using nuclear magnetic resonance on atoms within molecules. These were exciting systems to play with, but have largely been abandoned since it was not possible to scale them (i.e. no way to add qubits), so they failed on the first criterion.
+
+Chapter 53: Quantum Computing
+
+
+We define quantum computing as using the laws of quantum mechanics to create meaningful computation. By meaningful computation we mean finding the efficient series of events we need to turn an input into a desired output.
+
+Quantum computing differs to classical computing we apply quantum phenomena such as superposition, entanglement and interference to do computation. To exploit these phenomena, besides understanding how they work, we need quantum computers.
+
+
+
+<color=green>What is needed to make a quantum computer?</color>
+
+There are several different ways to build quantum computers, the ones we are interested here are a specific class of quantum computers called “gate model” quantum computers, other types of machines such as photonic chips and quantum annealers are also promising and exciting, but not the subject of the game (at least at this stage)
+
+
+
+It is generally agreed that a quantum computer should meet the five DiVincenzo criteria:
+
+1. Well-characterised qubits (quantum bits) which scale → this gives you a place to store the information, the scaling means that you are able to build enough of them to do something interesting
+
+2. Known and well defined initial state → you have to know what state the computer starts in
+
+3. Long relative decoherence time → the system has to have low enough noise to perform accurate calculations and not lose quantum behaviours, the word relative means that this time must be long compared with the time it takes to do computations
+
+4. “Universal” set of quantum gates → there have to be enough types of single qubit controls and multi-qubit interactions to support computation
+
+5. The ability to measure individual qubits → a computer only works if you can actually read out the results
+
+
+
+The criteria which modern devices have the most difficulty with are 1 and 3, specifically how to scale up these systems and protect them from noise. However, remember that gains against these criteria cannot be made by sacrificing the others. It is actually relatively easy to build a device which follows only some of these criteria, for example a classical computer can be thought of as meeting all criteria except for 3 and 4, the bits are certainly well defined and devices with billions or trillions of bits can be produced and they can be initialized and measured, but the bits on (for example) classical RAM do not maintain quantum coherence, nor can they be put into quantum superpositions in a controlled way.
+
+
+
+<color=green>Types of quantum computers:</color>
+
+There are many ways in which quantum computers can be built and it is not clear now which is the best, or even if there will even be one “best” type as opposed to many types which are good at different things. One of the types which is most often in the news are superconducting circuit quantum computers, like the ones made by IBM, Google, Rigetti, Honeywell, and others. These devices have the advantage that they are built using the same technology which traditional classical computers are built with, but cooled down to much lower temperatures. This makes systems with many qubits relatively easy to make, although there are challenges with controlling a chip with many supercondicting qubits. Measurement and initialisation are relatively straightforward, and so is creating gates. While gates can be done quickly on superconducting circuits, they also lose coherence quickly, so noise is a challenge.
+
+Another type of quantum computers are those being constructed out of trapped atoms or ions, like those being built by IonQ or the NQIT (now QCS) hub in the UK. These are made of atoms or ions which are levitated using light and magnetic fields. Some of these trapped atoms shine brightly enough that it is actually possible to see a single atom with the naked eye! Since it is a new technology, a lot of the scaling aspects are challenging, but these devices can be initialized, measured, and have gates performed on them reliably. The gates on these devices are slower than superconducting qubits, but they also can remain coherent longer.
+
+Photons (particles of light) are also a way to try to build a quantum computer, this is being pursued for example by PsiQuantum. There are many ways to naturally encode qubits into photons, measuring single photons is fairly standard in many labs but making single photon sources is still a challenge. They have the advantage of almost 2 infinite decoherence time unless they are absorbed. A disadvantage is that it is very hard to make the qubits interact, so universal gates are hard to make.
+
+More exotic quantum computers can be built using circuit technologies which use individual silicon atoms as qubits (or nanostructures), rather than superconducting circuitry. Similarly defects in diamonds can be used, or exotic “topological”phases of matter. These ideas all show potential to one day surpass the current leaders, but fundamental challenges need to be addressed before they can be built into mature computing devices.
+
+Many early quantum computing experiments were performed using nuclear magnetic resonance on atoms within molecules. These were exciting systems to play with, but have largely been abandoned since it was not possible to scale them (i.e. no way to add qubits), so they failed on the first criterion.
+
+Chapter 54: Quantum Interference
+
+
+/[i]quantuminterference
+
+A quantum phenomenon describing the act undergone by quantum states when they cancel or amplify their amplitudes. We show this through explosions and ball size changes, as shown above. The balls can be any size (which shows the qubit array's amplitude) and any of the possible colors (which shows qubit relative phase on the three measurement bases) during the collisions.
+
+/[i]Interference
+
+Image shows a series of quantum interference scenarios playing out, where the static ball shows the output. The last image shows a situation in which there are uneven amplitudes on a single qubit undergoing quantum interference.
+
+
+
+How do we know quantum interference is a real, observable phenomena?
+
+The first time quantum interference was observed is through a simple experiment performed by Thomas Young in 1801. This experiment, called the Double-slit has since then been performed countless times in all sorts of settings and with all kinds of particles. It can be done in any household with a beam of light, where a  lightwave is split into two separate waves that later combine into a single wave. Changes in the path lengths of both waves result in a phase shift, creating an interference pattern. If you are curious about building this experiment on your own, research the materials needed to create the Double-slit experiment at home.
+
+Chapter 55: Quantum Intuition
+
+
+We at Quarks Interactive, dream of a world where quantum reasoning becomes part of common reasoning. A world where people no longer call quantum phenomena counter intuitive and beyond real life experience. In fact, they are part of our daily lives, yet, perhaps we fail to notice them.
+
+The easiest way to observe quantum phenomena is if you have three polarised lenses, such as three pairs of polarised sunglasses. Place two of them on top of each other and 90 degrees rotated in any direction. You will observe that no light will be able to pass through the polarised lenses. Now simply add a 3rd lens, just like in our Quarks Interactive’s logo.
+
+
+
+What you will see is that by adding a 3rd “barrier” (a 3rd lens), somehow now light is able to pass through! We call this phenomenon the quantum Venn paradox and since the invention of polarised glass it has fascinated mankind. This is a simple exercise that can be done in a kindergarten with just three polarised sunglasses.
+
+
+
+Here are some key thoughts we want you keep in mind as you discover Quantum Odyssey:
+
+1. A qubit can be thought of as a physical particle that can be controlled and measured by a device in ways that we can encode and read out information from it. The most common way of measuring a qubit is on the three bases: Z-basis, X-basis, Y-basis. Imagine these as slices you could do on an apple to find a surprise (the surprise is the state of the qubit). The best way to think of a single qubit is by putting our visual representation (the colorful balls) on a sphere. Here is how it looks if we flip the sphere using an X gate rotation
+
+/[i]X gate
+
+2. Quantum Superposition is not a mysterious thing particles do; just quantum measurement is. In fact, today we can easily create a magnetic current, or use a special polarised lense to place any particle in superposition, including photons. To understand we have a superposition on a particle, first we must make sure we are able to control and encode information on the particle to become a qubit. Physicists defined the concept of superposition as what occurs when measuring on a specific basis a particle: if a particle is prepared in 0 state in X-basis and we measure in Z-basis, we will always get a perfect superposition between 0 and 1 in Z-basis. If we are aware we should measure in X-basis, we would always get 0 in X-basis. Measuring a quantum particle, forces it to select a state (through an unknown process that happens when we measure) in that particular basis. The H gate, that we use to create superposition and interference, can be thought of as simply an act of applying three times a 90 degrees rotation to our qubit:
+
+/[i]H all bases
+
+3. Entanglement is not a mysterious, faster than light form of information travel. In fact, quantum entanglement can be considered a physical resource. It allows for information transfer at the speed of light, if we are able to also send information about what measurement basis to pick when decoding the entangled qubit pairs.
+
+4. A measurement basis is not a fixed frame of reference. Imagine you are on Mars and your friend is on Earth. You both hold identical spheres in your hands and you need to draw a 0 and a 1 on the opposite sides of the sphere, in the same place as your friend on Earth. How can you communicate together to make sure that you both draw the 0s and 1s exactly on the same places, on your identical spheres?
+
+5. In the real world, we deal with probability everyday. If we toss a coin 100 times, we expect to get 50 tails and 50 heads and we can’t know after tossing, if the coin was heads or tails before the toss. But what exactly is happening here quantum mechanically? Having perfect information, such as the initial state of the coin (heads or tails), the velocity, air friction and so on would it still be a probabilistic event? Read the entry <color=green>“erases the data”</color> in the Encyclopedia for more information on probabilistic events and quantum determinism. In quantum computing, every event is deterministic and reversible and information is not lost, pre-measurement.
+
+These figures bellow show how a normal toss (first) differs from a "quantum toss" (second). Observe that information of the initial state of the coin is stored in the quantum mechanical phase (there is a red ball which can be used to distinguish both events).
+
+/[i]TossClassical
+
+/[i]TossQuantum
+
+Chapter 56: Quantum Literate
+
+
+Founded by the team behind the research paper which introduced the concept of "quantum literacy", the company Quarks Interactive is on a mission to popularize and break accessibility barriers for understanding quantum computation in the general population, in hopes to speed up collaboration and advancements in quantum computing.
+
+“Quantum literacy, as defined here, addresses the challenges of learning and skills acquisition within a highly bounded discipline and of access to the kind of powerful knowledge that should be more accessible to a wide group of learners throughout the life course, both students and professionals. It is increasingly important that the knowledge of quantum technologies is accessible to those who work with real world applications in a more inclusive way. We therefore argue for the importance of addressing pedagogic issues when powerful knowledge consists of dense concepts, as well as complex and hierarchical relations between concepts, in addition to presenting a strong barrier to entry in the form of mathematics. We introduce a specific puzzle visualization learning tool through which to achieve these pedagogic ends with respect to quantum computation. Visualization through puzzles can enable non-specialists to develop an intuitive, but still rigorous, understanding of universal quantum computation and provide a facility for non-specialists to discover increasingly complex and new quantum algorithms. Using the Hong-Ou-Mandel optical effect from quantum mechanics, we demonstrate how visual methods such as those made possible through the puzzle visualization tool, can be very useful for understanding underlying complex processes in quantum physics and beyond and therefore support the aims of quantum literacy.”
+
+The paper is available here: https://arxiv.org/abs/2004.07957
+
+Retrieved from “The challenge and opportunities of quantum literacy for future education and transdisciplinary problem-solving”  , Authors: Laurentiu Nita, Laura Mazzoli Smith, Nicholas Chancellor, Helen Cramman
+
+Chapter 57: Quantum Reasoning
+
+
+Quantum logic has some properties that clearly distinguish it from classical logic, most notably, the failure of the distributive law of propositional logic:
+
+p and (q or r) = (p and q) or (p and r),
+
+where the symbols p, q and r are propositional variables. To illustrate why the distributive law fails, consider a particle moving on a line and (using some system of units where the reduced Planck's constant is 1) let
+
+p = "the particle has momentum in the interval [0, +1/6]"
+
+q = "the particle is in the interval [−1, 1]"
+
+r = "the particle is in the interval [1, 3]"
+
+Note: The choice of p, q, and r in this example is intuitive but not formally valid (that is, p and (q or r) is also false here); see section "Quantum logic as the logic of observables" below for details and a valid example.
+
+We might observe that:
+
+<color=green>p and (q or r) = true</color>
+
+in other words, that the particle's momentum is between 0 and +1/6, and its position is between −1 and +3. On the other hand, the propositions "p and q" and "p and r" are both false, since they assert tighter restrictions on simultaneous values of position and momentum than is allowed by the uncertainty principle (they each have uncertainty 1/3, which is less than the allowed minimum of 1/2). So,
+
+<color=green>(p and q) or (p and r) = false</color>
+
+Thus the distributive law fails.
+
+Excerpt from "Quantum logic" entry by Peter Forrest in the Routledge Encyclopedia of Philosophy, Vol. 7 (1998), p. 882ff: "[Quantum logic] differs from the standard sentential calculus ... The most notable difference is that the distributive laws fail, being replaced by a weaker law known as orthomodularity."
+
+Chapter 58: Quantum State
+
+
+In Quantum Odyssey, we show the evolution of the quantum state of our quantum system by the moving balls. The desired quantum state is given by the static balls.
+
+/[i]quantumstate
+
+In this example, the input quantum state was a single blue ball at 000, which after the first row in Circuit Configuration was split in 4 blue balls, describing an evolved quantum state of four qubit arrays of equal amplitudes 000, 001, 100, 101. After the 2nd row (where the CTRL Y CTRL gates are), the new quantum state will be 000, 001, 100 and 111 (with a green phase).
+
+In quantum physics, a quantum state is a mathematical entity that provides a probability distribution for the outcomes of each possible measurement on a system and all their phases. Knowledge of the quantum state together with the rules for the system's evolution in time exhausts all that can be predicted about the system's behavior. A mixture of quantum states is again a quantum state. Quantum states that cannot be written as a mixture of other states are called pure quantum states, while all other states are called mixed quantum states.
+
+Chapter 59: Quarks Interactive
+
+
+
+Quarks Interactive is a team of scientists and game devs passionate about quantum computing. Our dream is to see the quantum computing revolution happening during our lives. We are always excited to see what you do with Quantum Odyssey, if you share algorithms, pictures or make movies please tag us right away! We might appear in your comment section with "Insider's Feedback" ;)
+
+You can find us on all social media, just look for @ Quarks Interactive
+
+Chapter 60: Qubit arrays
+
+
+Qubits together working as a composite system create bit arrays. These are a set of consecutive binary digits(bits) representing data in coded form, in which the significance of each qubit is determined by its position in the sequence and its relation to the other qubits. The difference to normal bit arrays is that qubit arrays also contain phase information and are subject to quantum interference.
+
+Chapter 61: Qubit
+
+
+In quantum computing the information is encoded in qubits(or quantum bits, qbits) that are two-level quantum mechanical systems. Physicists make qubits out of all sorts of particles these days, from bosons (such as photons) to complex atoms or even gases. As long as there is a quantum mechanical system which can be controlled and can store binary data, we can make a qubit out of it. An oddity of quantum mechanics is the  fundamental property that allows for a qubit to be in  a coherent superposition of both states at the same time. For example, you can make a qubit out of the polarization of a photon. If it is polarized vertically we encode bit 0 to it, if it is horizontally then we encode bit 1. A photon can be in both polarizations at the same time, hence if that’s the case we argue our qubit (made out of a single photon) is in a superposition state.
+
+The best way to think of a single qubit is by placing the representation used in Quantum Odyssey (the balls and their properties) on a sphere (also called a Bloch sphere). The Bloch sphere gives a way of describing a single-qubit quantum state (which is a two-dimensional complex vector) as a three-dimensional real-valued vector. This is important because it allows us to visualize single-qubit states and thereby develop reasoning that can be invaluable in understanding multi-qubit states (where sadly the Bloch sphere representation breaks down).
+
+A sphere is made out of infinite points and so can a particle hold information, given precise control instruments we could encode potentially infinite information on it. The problem is in retrieving the information from the particle. To be able to retrieve information, we need to properly define a set of measurement bases on the particle (that we represent as a sphere). The most common way of measuring the particle today in in three bases: Z-basis (vertically), X-basis( horizontally) and a Y-basis.
+
+The laws of quantum mechanics unfortunately break down if we measure the particle more than once, hence we need to carefully pick our measurement basis. In Quantum Odyssey, and similar to quantum hardware vendors, we use the Z-basis to mark the state of the qubit (either 0 or 1), while all other bases are used to show quantum phases.
+
+
+
+In the figure below we show Quantum Odyssey’s balls on a Bloch sphere. This is how we represent it:
+
+-The Z-basis is defined by a single blue ball behind the 0 and 1 state in the Z-basis section.
+
+ -The X-basis is defined by two blue balls for 0 state and a blue and a red ball for the 1 state in X-basis section.
+
+-The Y-basis is defined by a blue and a green ball for the 0 state and a blue and a red ball for the 1 state in the Y-basis section.
+
+
+
+<color=green>Why do we use two balls for X and Y bases?</color>
+
+This is because as we said, Quantum Odyssey encoded bit measurement only for the Z-basis, like most hardware manufacturers do today, for compatibility reasons. Anything you program in Quantum Odyssey can easily be transferred and run on an actual quantum computer.
+
+What we care for when we measure a quantum algorithm in the Z-basis, is if a ball (<color=green>of any color!</color>) arrived at one or more than one bit arrays. That will be the output we can retrieve (and remember we can only retrieve a single bit array per execution) from a quantum hardware. The size of the ball determines the likelihood (amplitude) of obtaining that specific bit array, whilst the color does not matter at all on measurement.
+
+
+
+Figure shows how we flip a Bloch sphere with Quantum Odyssey balls with an X gate from each basis, from left to right; in the 0 state of Z, X and Y bases:
+
+/[i]X gate
+
+Figure shows how we flip a Bloch sphere with Quantum Odyssey balls with an S gate from each basis, from left to right; in the 0 state of Z, X and Y bases:
+
+/[i]S all bases
+
+Figure shows how we flip a Bloch sphere with Quantum Odyssey balls with a Z gate from each basis, from left to right; in the 0 state of Z, X and Y bases:
+
+/[i]Z all bases
+
+Figure shows how we flip a Bloch sphere with Quantum Odyssey balls with a Y gate from each basis, from left to right; in the 0 state of Z, X and Y bases:
+
+/[i]Y all bases
+
+Figure shows how we flip a Bloch sphere with Quantum Odyssey balls with a H gate from each basis, from left to right; in the 0 state of Z, X and Y bases:
+
+/[i]H all bases
+
+Chapter 62: Reversible
+
+
+Universal quantum computation is fully reversible. By knowing the output (result) of the computation, it is possible to reverse back, step by step and recover the input (initial conditions) before any quantum algorithm.
+
+/[i]reversible
+
+As an example, let’s look at the first Bell state shown above before the set of Identity gates in the picture. If we were to stop computation there, our output would have been the famous 00 and 11 states. However, by applying the same algorithm in reverse, we are able to retrieve the input before the Bell state was even set, which was 00 (as shown by the static ball).
+
+
+
+All standard quantum gates are reversible, meaning that placing one followed by another returns the Identity gate (act as if no gate was present). The qubits undergo a reversible unitary transformation under a quantum gate. One exception is the S gate, that can have its effect reversed by using it four times if the qubit is in state 1 in Z-basis.
+
+The gate model of quantum computation is completely reversible (at least as long as you don't include measurement). This is interesting because it means every computation can in principle be "undone". In many cases in quantum computing undoing these calculations (or "uncomputing") needs to be done to get rid of unwanted entanglement. Classical computing is usually irreversible, the easiest way to see this is to notice that most traditional classical logic gates, such as NAND (see universal computing) have two inputs but only one output, therefore there is not enough information to undo the computation.
+
+However, nothing fundamentally stops us from also building reversible classical computation, in particular the Toffoli, which flips one bit only if two other ones are 1, is reversible (three bits of information in and three out) and universal, all classical computing operations can be done with a Toffoli. Since a Toffoli is self inverse (meaning doing a Toffoli twice is the same as doing nothing), a reversible classical computation done with Toffolis can be undone by simply applying the same Toffolis in reverse order.
+
+One interesting point related to reversibility is that information theory can be used to calculate the minimum energy cost of performing any operation and comes up with an interesting result known as Landauer's principle, that there is a fundamental energy cost relating to the temperature you are operating at for any operation which effectively "erases" a bit of information, but not for those which don't. In other words there is a minimum amount of energy it costs to do a NAND at room temperature, but in principle there is not for a Toffoli.
+
+In practice, none of the computers we can build are able to get closed to the level of efficiency where Landauer's principle becomes important (in other words the energy consumption is much more than the minimum), but one day, as classical computers improve, we may get to the point where this matters, and may think more seriously about reversible classical computing.
+
+Chapter 63: Richard Feynman
+
+
+/[i]Richard
+
+Richard Phillips Feynman (May 11, 1918 – February 15, 1988) was an American theoretical physicist, known for his work in the path integral formulation of quantum mechanics, the theory of quantum electrodynamics, the physics of the superfluidity of supercooled liquid helium, as well as his work in particle physics for which he proposed the parton model. For contributions to the development of quantum electrodynamics, Feynman received the Nobel Prize in Physics in 1965 jointly with Julian Schwinger and Shin'ichirō Tomonaga.  Feynman developed a widely used pictorial representation scheme for the mathematical expressions describing the behavior of subatomic particles, which later became known as Feynman diagrams. During his lifetime, Feynman became one of the best-known scientists in the world. The interaction of subatomic particles can be complex and difficult to understand; Feynman diagrams (figure bellow) give a simple visualization of what would otherwise be an arcane and abstract formula.
+
+/[i]feynman diagram
+
+Feynman's "Sticky Bead" thought experiment to visualise that the effects of gravity carry information:
+
+Imagine you have two sticks, fixed in place, oriented parallel to one another, and separated by a great distance. On one stick, there is a small bead which can slide freely without friction. On the other stick, there is a large bead made of extremely dense matter—let's say neutron star, to give it a nice heft.
+
+You take the neutron star bead and slide it to one end of the stick. In the absence of other forces, your small bead on its parallel stick will feel the attraction from the large bead, and slide to the same end of its own stick, trying to get as close as possible to the neutron star bead. If you slide the neutron star bead back to the opposite end of the stick, the small bead will eventually make its way to the other side as well. The fact that one object can influence another in this way is solid evidence that the force of gravity carries information with it—in this case, it's information about the location of the neutron star bead.
+
+/[i]sticky bead
+
+This information, like everything in our universe, travels at a finite speed—specifically, the speed of light. The fact that transmission of this information is not instantaneous offers another clue that there's some kind of carrier-wave phenomenon occurring here.
+
+Chapter 64: S Gate
+
+
+S gate on a qubit:
+
+To understand what the S gate does, first you must fully understand the qubit. To achieve this, do the Basis Transforms module in Quantum Odyssey. The best way to think of a qubit is to <color=green>imagine 6 maximally distant from each other points on a sphere (a sphere is made out of infinite points)</color>. A pair of two perfectly opposite points on a sphere is what we call a measurement basis.
+
+
+
+We have 3 pairs of 2 maximally opposite points on a sphere, hence 3 measurement basis: Z-basis, X-basis and Y-basis. The <color=green>S gate does a quarter of a full rotation of the sphere from left to right in the Z-basis</color>; in other words, half of what a Z gate does. The best way to understand how S gate rotates the sphere is to actually see the rotations in all bases. Here is how the sphere is rotated by an S gate in each basis, starting with Z-basis, then X-basis and lastly, Y-basis:
+
+/[i]S all bases
+
+Chapter 65: Scaling
+
+
+Scaling is the rate at which a resource, like the amount of time or size of the computer (number of qubits for a quantum computer) changes as the problem gets bigger. Quantum computing experts often look at scaling rather than just how fast the system performs at a given size, an algorithm (a procedure to solve a problem on either a quantum or classical computer) which scales better will always work better than one which scales worse when the size is large enough.
+
+Theoretically, scaling is nice because it allows for a lot of details to be ignored and calculations of scaling are often simpler than calculating the entire runtime of an algorithm, so theoretical computer scientists study scaling for both quantum and classical algorithms. Scaling is also a useful concept for experiments, since experiments on small quantum systems (or even simulations of them) can be used to guess how they would perform at bigger sizes which can't be tested yet.
+
+While scaling is a useful concept and a nice tool, it does have its limitations. An algorithm which scales better will always "eventually" do better at some size, but this size may be huge, so scaling may not tell the whole story. Also, there can be different kinds of scaling, including size and runtime, and how to compare an algorithm which is better in one but worse in another is not always clear. Experimentally it is also hard to know if scaling can be trusted because there can be effects which go away at larger sizes, but have a big effect at large sizes, this can make an estimate of scaling wrong.
+
+Chapter 66: Schrodinger's cat
+
+
+Schrödinger wrote:
+
+One can even set up quite ridiculous cases. A cat is penned up in a steel chamber, along with the following device (which must be secured against direct interference by the cat): in a Geiger counter, there is a tiny bit of radioactive substance, so small, that perhaps in the course of the hour one of the atoms decays, but also, with equal probability, perhaps none; if it happens, the counter tube discharges and through a relay releases a hammer that shatters a small flask of hydrocyanic acid. If one has left this entire system to itself for an hour, one would say that the cat still lives if meanwhile no atom has decayed. The first atomic decay would have poisoned it. The psi-function of the entire system would express this by having in it the living and dead cat (pardon the expression) mixed or smeared out in equal parts.
+
+It is typical of these cases that an indeterminacy originally restricted to the atomic domain becomes transformed into macroscopic indeterminacy, which can then be resolved by direct observation. That prevents us from so naïvely accepting as valid a "blurred model" for representing reality. In itself, it would not embody anything unclear or contradictory. There is a difference between a shaky or out-of-focus photograph and a snapshot of clouds and fog banks.
+
+Schrödinger's famous thought experiment poses the question, "when does a quantum system stop existing as a superposition of states and become one or the other?"
+
+Retrieved from Schrödinger, Erwin (November 1935). "Die gegenwärtige Situation in der Quantenmechanik (The present situation in quantum mechanics)". Naturwissenschaften. 23 (48): 807–812.
+
+Chapter 67: Slot
+
+
+Under each of the symbols in the Circuit Configuration, there are open slots which can hold a gate piece. If there is no gate added to a specific slot, it acts on the overall Computation Map as if an Identity gate would be present. Identity gates do not alter the circuit in any way and can be observed in the Computation Map as blue lines, drawn vertically.
+
+/[i]slot
+
+The meaning behind the location of the slots:
+
+You can hover your mouse over any slot in order to figure out what part of the Computation Map it has power over. The location of the slots matter and impact general computation. Slots can be thought of as events happening on a certain bit or qubit (the bit/ qubit described by the symbol), at a particular sequence. Because we present the symbols as composite systems, each sequence of computation is produced by tensoring the content of all the slots on the same row for all symbols.
+
+Chapter 68: State compilation
+
+
+Preparing a certain assortment of balls with specific properties is what we call a quantum state compilation problem. The output of the state compilation problem, besides the quantum state that results at the end is also the specific quantum algorithm that was created as the result of compiling for the desired quantum state.
+
+
+
+In quantum computing, especially now on early quantum hardware, it is critical to use as few gates as possible in compiling a quantum state.
+
+
+
+With Quantum Odyssey’s Editor tool, you can also compile common logic gates in a custom gate.
+
+/[i]compilation
+
+What this does is calculate automatically a custom logic gate which would apply the operations of all the other gates you placed working with the Editor. We call this a custom gate and its effects are also visible on the Computation Map.
+
+Chapter 69: Static Ball
+
+
+/[i]1output
+
+In Quantum Odyssey we call the ball at the bottom of the Computation Map the static ball. We refer to it as static because of its neutral, unaffected state by the computation.
+
+The static ball remains unchanged no matter what circuits are added to the Computation Map. This is because the static ball is there to describe precisely the outcome we want to achieve from doing the computation. It has the same properties as the moving ball:
+
+<color=green>Size of the balll</color>: for classical computation, the size will remain fixed. For probabilistic machines and quantum computation, the size differs to show either the probability or the amplitude of obtaining certain bit arrays.
+
+ <color=green>Location of the ball</color>: for classical computation, it defines the bit array it is under at that particular moment in the computation. For quantum and probabilistic machines, there can be many balls at the same time under different bit arrays, which again describe the exact state the computational input is under at that particular moment in the computation.
+
+ <color=green>Color of the ball</color>: the color of the ball only changes in quantum computation, to define phase. We show both global phase and all effects of quantum interference in Quantum Odyssey with up to floating point precision, pre-measurement.
+
+ Chapter 70: Superposition
+
+
+In Quantum Odyssey, we commonly use the H gate to create a superposition state. We visualise superposition as the moment of splitting a ball in two copies of smaller and various sizes and color. Remember that the size of the ball determines the amplitude of the qubit array.
+
+/[i]superposition
+
+Superposition is the main characteristic of the qubits and fundamental principle of quantum mechanics. Quantum objects appear to be at two places at the same time, electrical currents in a metallic wire can flow clockwise and counter-clockwise at the same time, or an object can sometimes behave as a wave and sometimes as a particle.
+
+
+
+In quantum computing, we call that a qubit is in superposition when it is measured in the Z-basis, yet the quantum state is non zero in the X or Y-basis.
+
+/[i]H all bases
+
+If a qubit is in superposition already on the X-basis (such as in the 0 or 1 state in this basis, described by two blue balls or a blue and a red ball), the superposition on the qubit will collapse by adding another H gate, as shown in the two rightmost pictures above, through a process called <color=green>quantum interference</color>.
+
+
+
+Superpositon and its relation to qubit phase:
+
+To fully describe qubits and if they are in a superposition state, we need to describe their <color=green>relative phase</color> as well. This aspect is deeply discussed in the first chapter of Quantum Odyssey. If the phase is lost, a quantum system will end up behaving like a classical bit.
+
+/[i]distort but z
+
+Dephasing noise leaves the classical bit information completely intact, but as the name implies the phase is lost. In fact, <color=green> a classical bit can just be thought of as a quantum bit which dephases way too fast to take advantage of any interference.</color>
+
+
+
+What is the difference between a probabilstic event and superposition?
+
+In the picture bellow, we encoded a coin that can be heads(1) or tails(0). In the first half, we show a coin in tails(0) being tossed. The outcome of tossing the coin will be 50% heads(1) and 50% tails(0). If we were to flip the coin (by adding an Xgate, 2nd part of the picture) we would get the same result: heads 50% of the time(1) and tails 50% of the time(0). As you can see, the output is completely the same. Probabilistic events erase the data (lookup this entry in the encyclopedia).
+
+/[i]TossClassical
+
+Such probabilistic acts are in fact, not possible in quantum computation, pre-measurement! Quantum computing is reversible, meaning that no matter the state of a qubit and what changes it undergoes, we can always retrieve the initial state. Tossing a quantum coin, will have to preseve information. This is achieved through the quantum <color=green>phase</color>, as you can see bellow. The outputs will never be the same. As far as we know today, only measuring a quantum system is probabilistic, but all quantum processes are deterministic.
+
+/[i]TossQuantum
+
+Chapter 71: SWAP Operator
+
+
+Suppose you have two qubits. For evocative purposes, suppose you're literally holding them as balls in your hands: one in the left hand, and one in the right hand. Your goal is to swap the qubits, so that your right hand ends up holding a qubit storing the state of the qubit currently in your left hand (and vice versa). How do you do it?
+
+
+
+
+
+Okay okay, that's not very hard. Obviously you can just physically move the qubits between your hands. Put one qubit down, pass the other qubit to the opposite hand, then pick up the qubit you put down.
+
+But what if they were glued to your hands?
+
+That sounds funny, but it's not intended as a joke. In practice, it's not always possible to physically move qubits. For example, your qubits might be etched onto a circuit board hidden away inside a dilution refrigerator. You're going to have a bit of trouble moving those around.
+
+Credits go to https://algassert.com/post/1717, this is an excerpt from the mentioned article. Retrieved 20.11.2020.
+
+
+
+Below we show an example of a SWAP operator working on a composite system of two qubits. The left qubit is prepared to be 0 state in the Y-basis (a blue on 00 and a green ball on 10) and the right qubit is 0 state in the X-basis (a blue on 00 and a red ball on 01). After the SWAP operator, their quantum states interchange. Left is  0 state in the X-basis (a blue on 00 and a red ball on 01) and right is 0 state in the Y-basis (a blue on 00 and a green ball on 10).
+
+/[i]2qswapped
+
+You can see in the picture that states 00 and 11 do not swap. We call these eigenstates.
+
+Chapter 72: Theory Of Everything
+
+
+Quantum theory works well to describe most systems but falls apart when you try to add general relativity (which describes gravity). A "theory of everything" which can combine these two types of theory is a longstanding goal in physics.
+
+Chapter 73: Theory of Relativity
+
+
+Galileo invented it, Einstein understood it, and Eddington saw it.
+
+/[i]gal
+
+Galileo Galilei(Italian astronomer, physicist and engineer, 1564-1642) hit on the idea in 1639, when he showed that a falling object behaves the same way on a moving ship as it does in a motionless building. He is considered the father of modern science.
+
+But Albert Einstein(German theoretical physicist, 1878-1955) did reformulate Galileo’s relativity to deal with the bizarre things that happen at near-light speed, where time slows down and space gets compressed.
+
+Explanation reportedly from The Man Himself: “Put your hand on a hot stove for a minute and it seems like an hour. Sit with a pretty girl for an hour and it seems like a minute. That’s relativity.”
+
+Einstein’s full-time job at the Swiss patent office meant he had to hash out relativity during hours when nobody was watching. He would cram his notes into his desk when a supervisor came by. When he finally completed his theory of relativity, he and his wife, Mileva, drank themselves under the table — the old-fashioned way to mess with the space-time continuum.
+
+Affection is relative. “I need my wife, she solves all the mathematical problems for me,” Einstein wrote while completing his theory in 1904. By 1914, he’d ordered her to “renounce all personal relations with me, as far as maintaining them is not absolutely required for social reasons.”
+
+There are two relativities.Special relativity, which applies to objects moving at constant speed and General relativity, which covers accelerating things and explains how gravity works, that came a decade later and is regarded as Einstein’s truly unique insight.
+
+/[i]eclipse
+
+(Credit: ESO/Landessternwarte Heidelberg-Königstuhl/F. W. Dyson, A. S. Eddington, & C. Davidson)
+
+
+
+The Eddington Experiment:
+
+sir Arthur Stanley Eddington(English astronomer, physicist and mathematician, 1882-1944) also a populariser of science announced and explained Einsteins theory. Two expeditions had been conducted to observe the total solar eclipse of 29 May 1919. One carried out to the West African island Príncipe and the other to the Brazilian town Sobral. The aim of the expeditions was to measure the gravitational deflection of starlight passing near the Sun. The value of this deflection had been predicted by Albert Einstein in a 1911 paper, and was one of the tests proposed for his 1915 theory of General Relativity. Following the return of the expeditions, the results were presented by Eddington to the Royal Society of London, and, after some deliberation, were accepted.
+
+Today general relativity is so well understood that it is used to weigh galaxies and locate distant planets by the way they bend light.
+
+Eddington increasingly concentrated on what he called "fundamental theory" which was intended to be a unification of quantum theory, relativity, cosmology, and gravitation. At first he progressed along "traditional" lines, but turned increasingly to an almost numerological analysis of the dimensionless ratios of fundamental constants.
+
+“Today we say that the law of relativity is supposed to be true at all energies, but someday somebody may come along and say how stupid we were.” – Richard P. Feynman
+
+(Kruglinsky,S.(2008, February 25). 20 things you didn´t know about...Relativity. Retrieved from https://www.discovermagazine.com)
+
+Chapter 74: Uneven Superposition
+
+
+A superposition in which the amplitude (size of the balls on the screen) is not even, showing a higher likelyhood of the qubit to be in a certain state on measurement.
+
+/[i]unevencontrolledH
+
+Chapter 75: Universal Quantum Computation
+
+
+One important concept for quantum computers is the notion of whether or not they are universal, in other words, whether they can be used to perform any quantum operation. Not al kind of quantum computing are universal, and quantum computers don’t have to be universal to be interesting, but it is important for gate model quantum computing because once you know your computer is universal, you know it can (in principle at least) implement any quantum algorithm.
+
+It is easier to start by thinking about universal classical computation and then continue the same idea to quantum computation. Universal classical computation can be achieved using a single operation, known as a <color=green>nand</color> gate, what this gate does is performs an <color=green>and</color> operation on two classical bits and returns the logical inverse of the result. So, a nand between two bits gives a 1 as the result unless both incoming bits are in the 1 state, in which case it builds a 0. To get a hint on why nand is universal, you can see how you can invert a bit, if we put two copies of the same bit (this would not be allowed in quantum computing, but copying is just fine classically), to a nand, than we get a 1 if the bit was 0 and a 0 if it was 1. Any other logical operation can also be built by an appropriate combination of nand gates (look them up and try it, this can be a fun exercise). This is not true for every classical logical operation, for example xor, the exclusive or operation which returns 1 if and only if exactly one of the two bits is 1 is not universal. One way to see this is that no matter how many copies of a bit you have, you cannot logically invert it using only xor operations.
+
+Quantum mechanically, you cannot be universal with only a single gate, one way to understand this is that the copying trick does not work to turn two qubit gates into operations on one qubit. Universal quantum computing can still be achieved with relatively few types of gates, and the set of gates in the game are universal. In fact, they are more than are strictly needed to be universal, just the X gate, H and controlled X operations with at least two controls. The Hadamard is needed to rotate the qubit in different ways, and the X is needed to perform classical logic. Controlled gates are needed to interact the qubits, but you may wonder why we need to be able to use at least two controls, the reason is that just a singly controlled not operation is not enough for the computer to be able to perform universal classical logic, and to be able to do quantum computing it has to be able to do classical computing as well. The doubly controlled X operation (known as the Toffoli) is universal for classical computation, just like the nand gate is. This can be thought of classically as flipping one bit only if two others are both 1, with some auxilliary bits (ones which you start in known 1 or 0 states, a nand operation can be built using two Toffolis.
+
+There are other ways to make a universal set of quantum gates, in particular, if we only allowed a singly controlled X gate, but replace the X gate with a gate called T which does a smaller rotation, than a Toffoli can be built out of T, H and singly controlled not gates, making this another universal set of gates. This is harder to understand and the details are not really important, but the point is there are more than one set of operations which can be used to make a universal quantum computer.
+
+
+
+<color=green>What is needed to make a quantum computer?</color>
+
+It is generally agreed that a quantum computer should meet the five DiVincenzo criteria:
+
+1. Well-characterised qubits (quantum bits) which scale → this gives you a place to store the information, the scaling means that you are able to build enough of them to do something interesting
+
+2. Known and well defined initial state => you have to know what state the computer starts in
+
+3. Long relative decoherence time => the system has to have low enough noise to perform accurate calculations and not lose quantum behaviours, the word relative means that this time must be long compared with the time it takes to do computations
+
+4. “universal” set of quantum gates => there have to be enough types of single qubit controls and multi-qubit interactions to support computation
+
+5. The ability to measure individual qubits => a computer only works if you can actually read out the results
+
+The criteria which modern devices have the most difficulty with are 1 and 3, specifically how to scale up these systems and protect them from noise. However, remember that gains against these criteria cannot be made by sacrificing the others. It is actually relatively easy to build a device which follows only some of these criteria, for example a classical computer can be thought of as meeting all criteria except for 3 and 4, the bits are certainly well defined and devices with billions or trillions of bits can be produced and they can be initialized and measured, but the bits on (for example) classical RAM do not maintain quantum coherence, nor can they be put into quantum superpositions in a controlled way.
+
+Chapter 76: W state
+
+
+There are only two classes of  3-qubit states which are truly  3-partite entangled corresponding to the GHZ and W states respectively. Thus W and GHZ represent two very different kinds of tripartite entanglement. Interesting property of the W state: if one of the three qubits is lost, the state of the remaining 2-qubit system is still entangled.
+
+The W state is one kind of entangled state where exactly one qubit is in the |1> configuration, and all others are in the zero configuration. This state is interesting because it is symmetric with respect to exchange of the qubits, meaning that if you swap two of the qubits, the W state stays the same.
+
+The W state is part of a larger family of states known as Dicke states where not just one, but k  qubits are in the |1> configuration, and the state is symmetric. Dicke states are important because they come up often in experimental fields like quantum optics and atomic physics. For example the nuclear spin of an atom is caused by its protons and neutrons occupying Dicke states.
+
+/[i]Wstate
+
+Chapter 77: X Gate
+
+
+This is a reversible operation permissible both in classical and quantum computing. It is called a NOT gate in classical computing. In quantum computing it is known as the Pauli-X operator. If the 0s and 1s of a bit are on the sphere shown below, applying this gate flips a bit from input 0 to output 1, or from input 1 to output 0.
+
+
+
+<color=green>When applied on a bit</color> (which has two values: 0 and 1), it flips the values around: if the bit is 1 it becomes 0, or 0 becomes 1. Multiple X gates on the same column apply the flip multiple times, as a sequence to the same bit. The result is shown on the Computation Map.
+
+
+
+X gate on a qubit:
+
+First, you must fully understand the qubit. To achieve this, do the Basis Transforms module in Quantum Odyssey. The best way to think of a qubit is to <color=green>imagine 6 maximally distant from each other points on a sphere (a sphere is made out of infinite points)</color>. A pair of two perfectly opposite points on a sphere is what we call a measurement basis.
+
+
+
+We have 3 pairs of 2 maximally opposite points on a sphere, hence 3 measurement basis: Z-basis, X-basis and Y-basis. The <color=green>X gate does half of a full rotation of the sphere from right to left, counter clockwise in the X-basis</color>. The best way to understand how X gate rotates the sphere is to actually see the rotations in all bases. Here is how the sphere is rotated by an X gate in each basis, starting with Z-basis, then X-basis and lastly, Y-basis:
+
+/[i]X gate
+
+Chapter 78: X axis
+
+
+The X axis defines a possible way to measure a qubit. This way is not supported in Quantum Odyssey and we show it as a theoretical concept.
+
+/[i]all gates in x
+
+Chapter 79: X basis
+
+
+The X-basis is defined by two blue balls for 0 state and a blue and a red ball for the 1 state in X-basis section.This is what the Quantum Odyssey gates do when applied on the 0 state in this basis:
+
+/[i]all gates in x
+
+Chapter 80: Y gate
+
+
+Y gate on a qubit:
+
+To understand what the Y gate does, first you must fully understand the qubit. To achieve this, do the Basis Transforms module in Quantum Odyssey. The best way to think of a qubit is to <color=green>imagine 6 maximally distant from each other points on a sphere (a sphere is made out of infinite points)</color>. A pair of two perfectly opposite points on a sphere is what we call a measurement basis.
+
+
+
+We have 3 pairs of 2 maximally opposite points on a sphere, hence 3 measurement basis: Z-basis, X-basis and Y-basis. The <color=green>Y gate does half of a full rotation of the sphere from up to down, counter clockwise in the Y-basis</color>. The best way to understand how Y gate rotates the sphere is to actually see the rotations in all bases. Here is how the sphere is rotated by an Y gate in each basis, starting with Z-basis, then X-basis and lastly, Y-basis:
+
+/[i]Y all bases
+
+Chapter 80: Y basis
+
+
+The Y-basis is defined by a blue and a green ball for the 0 state and a blue and a red ball for the 1 state in the Y-basis section. This is what the Quantum Odyssey gates do when applied on the 0 state in this basis:
+
+/[i]all gates in y
+
+Chapter 81: Z gate
+
+
+Z gate on a qubit:
+
+To understand what the Z gate does, first you must fully understand the qubit. To achieve this, do the Basis Transforms module in Quantum Odyssey. The best way to think of a qubit is to <color=green>imagine 6 maximally distant from each other points on a sphere (a sphere is made out of infinite points)</color>. A pair of two perfectly opposite points on a sphere is what we call a measurement basis.
+
+
+
+We have 3 pairs of 2 maximally opposite points on a sphere, hence 3 measurement basis: Z-basis, X-basis and Y-basis. The <color=green>Z gate does half of a full rotation of the sphere counter clockwise in the Z-basis</color>. The best way to understand how Z gate rotates the sphere is to actually see the rotations in all bases. Here is how the sphere is rotated by a Z gate in each basis, starting with Z-basis, then X-basis and lastly, Y-basis:
+
+/[i]Z all bases
+
+Chapter 82: Z axis
+
+
+The basis defined by a single blue ball for the 0 state and a single blue ball for the 1 state, on the sphere:
+
+/[i]all gates in Z
+
+The computational basis in Quantum Odyssey is the Z-basis (also called Z-axis), and is the most common basis used for measurement used by all quantum hardware manufacturers. What this means is, no matter what basis the quantum state is in, all we can measure (by repeated measurements) is the probability to get either 0 or 1 in the Z-basis.
+
+Chapter 83: Z basis
+
+
+The basis defined by a single blue ball for the 0 state and a single blue ball for the 1 state, on the sphere:
+
+/[i]all gates in Z
+
+The computational basis in Quantum Odyssey is the Z-basis (also called Z-axis), and is the most common basis used for measurement used by all quantum hardware manufacturers. What this means is, no matter what basis the quantum state is in, all we can measure (by repeated measurements) is the probability to get either 0 or 1 in the Z-basis.

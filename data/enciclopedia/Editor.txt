@@ -1,0 +1,15 @@
+
+
+The Editor, shows in real time both the current status of the state vector (the quantum computation represented by the moving ball) and the output (with a static ball). This quantum simulator is intended as a practice ground for discovering new quantum algorithms and for building puzzles.
+
+We will keep improving the Editor and add new features with time. For now, it is limited to creating custom gates, saving fixed gates and setting up winning conditions for a new puzzle.
+
+/[i]customcreate
+
+After you created the custom gate, you can use it in order to configure a new puzzle
+
+/[i]customcreated
+
+Although we are planning to put everything online and have a ranking system and competitive play, you can already save your puzzles and share them with friends, the Editor has an extremely user friendliness to achieve that. Don't be afraid to mess around with it and see what every option does. Make sure to save the puzzle under "General" if you wish it to appear in the Solve menu inside Quantum Odyssey.
+
+If you are working on an algorithm and want to close shop for now, you can save it by clicking the P (save button) and selecting Editor (as for the save mode). You can resume work on it later, just make sure to also select all the gates you wish to continue using.

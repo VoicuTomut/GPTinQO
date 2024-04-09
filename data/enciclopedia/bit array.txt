@@ -1,0 +1,7 @@
+
+
+Bits together working as a composite system create bit arrays. These are a set of consecutive binary digits(bits) representing data in coded form, in which the significance of each bit is determined by its position in the sequence and its relation to the other bits. 
+
+/[i]bitarrays
+
+The way we represent bit arrays is through using the Least Significant Bit method. The bit that carries the lowest value or weight in binary notation for a numeral; for example, 12 is represented by bit array 1100, while 13 is represented by binary 1101. The 1 at the right is the least significant bit. Using this method we can define the number 13 as a composite system of four bits, where the first two are in states 1 and 1 and the last two are 0 and 1 and 12 as having the first two bits in state 1 and the last two in state 0.

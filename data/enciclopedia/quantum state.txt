@@ -1,0 +1,9 @@
+
+
+In Quantum Odyssey, we show the evolution of the quantum state of our quantum system by the moving balls. The desired quantum state is given by the static balls. 
+
+/[i]quantumstate
+
+In this example, the input quantum state was a single blue ball at 000, which after the first row in Circuit Configuration was split in 4 blue balls, describing an evolved quantum state of four qubit arrays of equal amplitudes 000, 001, 100, 101. After the 2nd row (where the CTRL Y CTRL gates are), the new quantum state will be 000, 001, 100 and 111 (with a green phase).
+
+In quantum physics, a quantum state is a mathematical entity that provides a probability distribution for the outcomes of each possible measurement on a system and all their phases. Knowledge of the quantum state together with the rules for the system's evolution in time exhausts all that can be predicted about the system's behavior. A mixture of quantum states is again a quantum state. Quantum states that cannot be written as a mixture of other states are called pure quantum states, while all other states are called mixed quantum states.

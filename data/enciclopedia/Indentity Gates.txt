@@ -1,0 +1,3 @@
+
+
+The Identity gates act like a filler, to lock a slot or more in the Circuit Configuration, in order to force certain limitations for solving the puzzle (to ensure the concept behind the puzzle is learned by the Player) or to show something interesting until that point.

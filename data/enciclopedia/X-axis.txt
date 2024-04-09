@@ -1,0 +1,5 @@
+
+
+The X axis defines a possible way to measure a qubit. This way is not supported in Quantum Odyssey and we show it as a theoretical concept.
+
+/[i]all gates in x

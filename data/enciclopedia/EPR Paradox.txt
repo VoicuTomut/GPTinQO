@@ -1,0 +1,17 @@
+
+
+The thought experiment called Einstein-Podolsky-Rosen paradox consists of a particle that is placed in superposition (both 0 and 1 at the same time on a chosen measurement basis), followed by entanglement (as shown in the picture below). Although we can describe the mathematics behind the phenomena, it is called a paradox because it defies our expectation of what would happen. The state of the second particle now completely depends on the state of the first particle (that was placed in superposition). If the first particle is 0, the second particle is also 0. If it is 1, the second particle is also 1.
+
+/[i]epr
+
+the Einstein-Podolsky-Rosen argument in quantum theory is a paper entitled “Can Quantum Mechanical Description of Physical Reality Be Considered Complete?” coauthored in 1935 by Albert Einstein and two postdoctoral researchers(Boris Podolsky and Nathan Rosen) which had quickly become a centerpiece in debates over the interpretation of quantum theory, debates that continue today.  The paper features a striking case where two quantum systems interact in such a way as to link both their spatial coordinates in a certain direction and also their linear momenta (in the same direction), even when the systems are widely separated in space. As a result of this “entanglement”, determining either position or momentum for one system would fix (respectively) the position or the momentum of the other. EPR proves a general lemma connecting such strict correlations between spatially separated systems to the possession of definite values. On that basis they argue that one cannot maintain both an intuitive condition of local action and the completeness of the quantum description by means of the wave function. 
+
+((2004, May 10). The Einstein-Podolsky-Rosen Argument in Quantum Theory.
+
+         
+
+Einstein on the effects of superposition:
+
+ Everyone has heard Einstein’s famous quote “God does not play dice with the Universe”. The quote is a summary of the following passage from Einstein’s 1926 letter to Max Born: ”Quantum mechanics is certainly imposing. But an inner voice tells me that it is not yet the real thing. The theory says a lot, but does not really bring us any closer to the secret of the Old One. I, at any rate, am convinced that He does not throw dice.” Even to the end of his life, Einstein held on to the view that quantum physics is an incomplete theory and that someday we would learn a more complete and satisfactory theory that describes nature. In what sense did Einstein consider quantum mechanics to be incomplete? To understand this better, let us imagine that we were formulating a theory that would explain the act of flipping a coin. A simple model of a coin flip is that its outcome is random — heads 50% of the time, and tails 50% of the time. This model seems to be in perfect accordance with our experience with flipping a coin, but it is incomplete. A more complete theory would say that if we were able to determine the initial conditions of the coin with perfect accuracy (position, momentum), then we could solve Newton’s equations to determine the eventual outcome of the coin flip with certainty. The coin flip amplifies our lack of knowledge about the initial conditions, and makes the outcome seem completely random.
+
+Chapter 2. Entanglement. Retrieved from https://inst.eecs.berkeley.edu/~cs191/fa10/notes/chap1&2.pdf )

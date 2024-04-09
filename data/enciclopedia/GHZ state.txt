@@ -1,0 +1,9 @@
+
+
+GHZ experiment is similar to a test of Bell's inequality, except using three or more entangled particles, rather than two. With specific settings of GHZ experiments, it is possible to demonstrate absolute contradictions between the predictions of local hidden variable theory and those of quantum mechanics, whereas tests of Bell's inequality only demonstrate contradictions of a statistical nature. The results of actual GHZ experiments agree with the predictions of quantum mechanics.
+
+     
+
+The GHZ experiments are named for Daniel M. Greenberger, Michael A. Horne, and Anton Zeilinger (GHZ) who first analyzed certain measurements involving four observers.
+
+/[i]GHZ

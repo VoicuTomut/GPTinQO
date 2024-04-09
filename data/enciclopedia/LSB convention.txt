@@ -1,0 +1,39 @@
+
+
+Least Significant Bit method. Abbreviated LSB.
+
+This is a convention used to store and manipulate numbers encoded in bit arrays where the rightmost bit changes first.
+
+          
+
+Let’s understand why this matters: 
+
+The best way to understand why is thinking about how addition works. For example, let’s see in bit arrays this sequence of additions: <color=green>0+1 = 1, 1+1 = 2, 2+1 = 3</color>.
+
+We need to define a composite system that we are happy with to store our values in binary. Since we know any bit can hold two values, it is easy to observe that we just need a composite system of two bits, because that has four two-bit bit arrays: 00, 01, 10 and 11, so it can store up to 4 numbers. 
+
+We start by deciding how to store these numbers in bit arrays. There are many ways to do encoding stuff in other stuff and here we are showing just the LSB method, which is quite straight forward. We just increase the rightmost bit with 1 for any new number as long as we have bit values in the bit arrays available:
+
+<color=green>0 is 00, 1 is 01, 2 is 10, 3 is 11</color>.
+
+Forget everything you know about addition if you want to think about it in binary. 
+
+The new addition rule here is to <color=green>keep increasing the rightmost bit and when it is exhausted (it is at its maximum value, 1), it becomes 0 again and the 1 gets transferred to the second rightmost bit and so on</color>.
+
+We can now do the same calculation, but this time representing the numbers as bit arrays following the LSB method:
+
+<color=green>00 + 01 = 01, 01 + 01 = 10 and 10 + 01 = 11</color>. 
+
+If we were to continue counting to get digit 4 as well, we would find out that just two bits is no longer enough because we already used all the values possible to store information on two-bit bit arrays. 
+
+We would have to use three bits, hence our conversion becomes:  
+
+<color=green>0 is 000, 1 is 001, 2 is 010, 3 is 011 and 4 is 100</color>. 
+
+Now our math will look like this in binary form:
+
+ <color=green>000 + 001 = 001, 001 + 001 = 010 and 010 + 001 = 011, 011 + 001 = 100</color>.
+
+Notice that in this case, our three bits create 8 total bit arrays, out of which we use only 5. We could potentially continue to calculate up to number 8 without storing the output.
+
+Imagine how it would be without defining a system, in our case the LSB method. We wouldn’t know how to interpret the information to do these calculations. Imagine the chaos it would be if we didn’t have established methods of parsing data. Any piece of hardware that does computation requires some established method to parse data in order to create meaningful ouput (which, for instance, could be understood by another machine).

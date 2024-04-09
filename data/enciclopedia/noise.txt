@@ -1,0 +1,49 @@
+
+
+This entry explains how noise works in quantum systems.
+
+When we build real quantum computers they often don’t work the way the theory (or at least the simplest version of the theory) says they should. The reason is because real quantum systems have noise, and while real quantum computers are very impressive, a lot of the technology used to build them is still being perfected, so they still have a lot of noise. 
+
+         
+
+What is noise?
+
+Noise consists of unwanted operations caused by all kinds of effects, ranging from the computer interacting with it’s environment, losing energy, or even from just not having precise enough controls. The feature of noise which makes it a problem is that it is unpredictable, if we know for sure a bit has flipped for certain, we can just flip it back, but if we know that a bit may have flipped, than trying to flip it back would do more harm then good if it had not actually flipped. Likewise if there is a lack of precision in controls, we know than every operation we try to do becomes a bit “fuzzy” and the fuzzyness adds up.
+
+      
+
+Let's see noise on a qubit (shown as a sphere):
+
+Probably the simplest kind of noise to explain is a bit flip, in this kind of noise the bit has some chance of being flipped turning 1 on Z-axis to 0 on Z-axis and vice versa. Let’s try to think about what this does to the Bloch sphere, it would be tempting to say that it just flips it, but that isn’t quite right. If we knew that a bit flip had happened for sure, than the Bloch sphere would flip, and we could just undo the flip by flipping it back. If it only has a chance of flipping, than the Bloch sphere does not flip, it gets squished, as the figure shows: 
+
+/[i]distort but x
+
+This squishing means that we are no longer sure if the 1 or 0 we measure in Z-basis really should be a 1 or 0 or if it got flipped. However, states like 0 and 1 in X-basis remain the same if 1 or 0 are reversed up to an irrelevant global phase (i.e. in the game if the balls change color, they change color together).
+
+       
+
+This is an amazing property of quantum noise, some states are “immune” to some kinds of noise. For a better example, let’s consider <color=green>dephasing noise</color>, which consists of the computer forgetting the phase between the qubits, in terms of the game, the balls forget what colour they are. In this case the Bloch sphere gets squeezed to a cigar (or sausage if you don’t smoke) shape along the Z axis, see picture:
+
+/[i]distort but z
+
+Dephasing noise leaves the classical bit information completely intact, but as the name implies the phase is lost. In fact, <color=green> a classical bit can just be thought of as a quantum bit which dephases way too fast to take advantage of any interference.</color>
+
+        
+
+The kinds of noise we have here have all been uniform types of noise, they treat 1 and 0 the same. But another type of noise can happen, <color=green>decay noise</color> (or amplitude damping if you want to use the fancy term for it). Imagine the case where the state 1 can decay to state 0, but nothing happens to 0. This is a common situation encountered in superconducting flux qubits, where the 1 state has a higher energy, and can lose its energy by emitting a bit of electromagnetic radiation. In this case the Bloch sphere gets squeezed and pushed up.
+
+/[i]twds the north pole o
+
+There are many other types of complicated quantum noise and some scientists make their entire careers out of understanding how quantum noise works, and how to get rid of it.
+
+      
+
+<color=green>Dealing with noise:</color>
+
+A natural question you may be asking is whether classical computers have noise, and how they function with noise. Classical computers do have noise, but it is easier to deal with for them, because classical information can be copied. A classical bit of information is carried in an electric current consisting of many electrons. If noise causes a few electrons go out of place in an electrical current comprised of millions of electrons no one will even notice. Classical bits are stored as voltages, with a higher voltage corresponding to a 1, a lower voltage to a 0, and voltages in between not corresponding to any state at all, but the device will never get to those voltages if it is working correctly, even with noise.
+
+        
+
+Dealing with noise is important in some classical settings, for instance sending a message from a cell phone. In this case extra information is sent to reconstruct the message if parts of it get messed up, this is a process known as error correction. The simplest way to correct errors classically is to just copy the information multiple times and take a “vote”. In practice more complicated tricks do better, but they work on the same principle.
+
+Quantum bits cannot be copied, but there are other tricks using quantum gates to find and detect errors, this is a field known as quantum error correction. Quantum error correction is harder to do than classical error correction, and in general was not known to be possible until the 1990s when it was proven that it could work, in principle. However, knowing that something can work in principle and doing it in practice are very different, and realistically, for quantum error correction to work we will also have to make our quantum computers better, but lots of smart people are working on this every day, and there is good reason to be excited. Another reason to be excited is the fact that there is a lot of work on algorithms which can work on noisy and imperfect machines. Hopefully one day soon these can all “meet in the middle”, with better hardware and possibly some error correction able to get the noise rates low enough that a clever algorithm can use these machines to solve useful problems.

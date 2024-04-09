@@ -1,0 +1,21 @@
+
+
+The circuit configuration is where we can manipulate the computation events that are then instantly shown in the Computational Map. Click on the circuit button in the lower left corner of the screen to see it or press the shortcut (TAB key by default). 
+
+/[i]selectgate2
+
+The top part of the Circuit Configuration allows us to  <color=green>select a computation gate</color>. Upon doing this, we immediately see that the slots beneath the qubit symbols will start blinking to notify that they can accept that particular gate. To add the gate, simply <color=green>drag and drop</color> it on the <color=green>blinking slot</color> in the Circuit Configuration.
+
+/[i]CircuitConfiguration
+
+The Circuit Configuration can on occasions already have some <color=red>fixed gates</color>. These gates are shown highlighted in red and cannot be removed from the circuit. Their effect is shown on the Computation Map.
+
+         
+
+The <color=green>order of the symbols and the slots</color> in the Circuit Configuration is represented in the Computation Map as a series of events, using the Least Significant Bit convention. Each symbol represents a qubit. In some cases, we refer to these symbols as bits. This is possible because quantum computation can perfectly simulate classical computation. On the Computation Map, each symbol shows its two states: 0 and 1. The order of the slots is the computation order of the events. 
+
+            
+
+Execution order of the Circuit Configuration:
+
+Starting from the top (where the symbols are), the moving balls go through circuit configurations achieved by the combination of all slots on the same row. Every row of computation is executed in order from the top to bottom and shown in real time on the Computation Map.

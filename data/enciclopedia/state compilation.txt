@@ -1,0 +1,15 @@
+
+
+Preparing a certain assortment of balls with specific properties is what we call a quantum state compilation problem. The output of the state compilation problem, besides the quantum state that results at the end is also the specific quantum algorithm that was created as the result of compiling for the desired quantum state. 
+
+     
+
+In quantum computing, especially now on early quantum hardware, it is critical to use as few gates as possible in compiling a quantum state. 
+
+     
+
+With Quantum Odyssey’s Editor tool, you can also compile common logic gates in a custom gate.  
+
+/[i]compilation
+
+What this does is calculate automatically a custom logic gate which would apply the operations of all the other gates you placed working with the Editor. We call this a custom gate and its effects are also visible on the Computation Map.

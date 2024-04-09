@@ -1,0 +1,5 @@
+
+
+Because we use only the Z-basis to measure information on (store bits in), the information hidden in the phase of a qubit is not known by the quantum computer (nor it is retrievable, unless it is brought back to the Z-basis by the diffusion operator). Here is an example of a marked "hidden" state:
+
+/[i]Oracle

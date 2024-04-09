@@ -1,0 +1,19 @@
+
+
+We want you to think of an even superposition in the Z-basis as a definite state on the X or Y basis for the purpose of thinking about better quantum algorithms.
+
+The laws of quantum mechanics unfortunately break down if we measure the particle more than once, hence we need to carefully pick our measurement basis. In Quantum Odyssey, and similar to quantum hardware vendors, we use the Z-basis to mark the state of the qubit (either 0 or 1), while all other bases are used to show quantum phases. 
+
+In the figures below we show Quantum Odyssey’s balls on a Bloch sphere. This is how we represent it: 
+
+-The Z-basis is defined by a single blue ball behind the 0 and 1 state in the Z-basis section. This is what the Quantum Odyssey gates do when applied on the 0 state in this basis. Notice that using the H gate we can exit this basis.
+
+/[i]all gates in Z
+
+ -The X-basis is defined by two blue balls for 0 state and a blue and a red ball for the 1 state in X-basis section.This is what the Quantum Odyssey gates do when applied on the 0 state in this basis. Notice that using either H or S gates we can exit this basis.
+
+/[i]all gates in x
+
+-The Y-basis is defined by a blue and a green ball for the 0 state and a blue and a red ball for the 1 state in the Y-basis section. This is what the Quantum Odyssey gates do when applied on the 0 state in this basis. Notice that using H or S gate we can exit this basis.
+
+/[i]all gates in y

@@ -1,0 +1,31 @@
+
+
+This entry explains linear algebra, how it works, and why it is important, including the concept of eigenvectors and eigenvalues.
+
+             
+
+An important type of equations which come up a lot in physics and mathematics are what are called linear equations, these equations have all kinds of important properties which make them mathematically nice, and come up in nature a lot. A linear equation can be represented using two dimensional tables of numbers known as matrices (singular: matrix). A matrix is a table of numbers which describes what the equation does to a list of input variables, known as a vector. The game turns this into a visual process. Each of the line segments which are drawn represent numbers in these tables (no line segment corresponds to a zero entry). Nothing is lost in the process of turning these tables of numbers into a drawing, so the game tells us exactly the same thing the tables of numbers would, but in a more understandable way
+
+Quantum gates represent linear processes, and the game is able to represent exactly the same thing which a series of matrices applied to a vector. In this way, what the game is showing actually is an equation, but represented by balls and colourful lines rather than numbers. While visualizing what is going on by staring at a table of numbers certainly can be done, most people will have an easier time with a direct visual representation. 
+
+           
+
+<color=green>I. EIGENVALUES AND EIGENVECTORS</color>
+
+A cool property that quantum gates have is that they are a kind of linear operator which is what is called diagonalizable. This means that for a quantum circuit made out of quantum gates, if there are N slots the balls could be in, than there are always at least N eigenvectors. Eigen comes from the German world for “self” and these vectors (arrangements of balls), will go through the quantum gates and give the same arrangements at the end, possibly with the colours changed. This is where the “eigen” comes in, these special vectors go in the same thing, possibly multiplied by a number (the eigenvalue) comes out.
+
+Eigenvectors with the same eigenvalue are called “degenerate” and any combination of degenerate eigenvectors is also an eigenvector. 
+
+The simplest example here is not doing any gates, the “identity” operation, for this operation all N eigenvectors have an eigenvalue of 1, so therefore anything you put in you get the same out.
+
+A slightly more complicated example is the Z gate, which paints a ball red if it is in the 1 state, and leaves is as is if it is in the 0 state. Sometimes eigenvectors are more complicated, for example the equal combination of 1 and 0 (both with the same colour) is one eigenvector of the X gate, with a an eigenvalue 1, and the same but with one ball coloured red is also an eigenvector with a −1 eigenvalue. 
+
+             
+
+<color=green>II. DIAGONALIZATION</color>
+
+An interesting fact to notice here is that the H gate transforms the eigenstates of the Z gate into the eigenvalues of the X gate and vice versa. Because this operation turns states involving single balls into eigenstates comprised of multiple balls, it can be said that the H gate diagonalizes the X gate. This is because, if we wrote the X gate as a matrix (a table of numbers) and performed by the H gate both before and after[? ], the combined matrix repesenting all of these gates would only be non-zero along it’s ‘diagonal’, or in the visual language of the game, all line segments would be going straight up and down.
+
+Matrix diagonalization is a powerful tool, and is something which computers can do very well, in fact the original Google search algorithm (called the Page rank algorithm as a pun on Larry Page’s name) is based on using computers to diagonalize matrices. 
+
+[1] in general you have to do something slightly fancier than just performing the same thing before and after, but that is a detail which is not important here

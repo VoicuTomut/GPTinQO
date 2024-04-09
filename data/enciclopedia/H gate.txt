@@ -1,0 +1,13 @@
+
+
+H gate on a qubit:
+
+To understand what the H gate does, first you must fully understand the qubit. To achieve this, do the Basis Transforms module in Quantum Odyssey. The best way to think of a qubit is to <color=green>imagine 6 maximally distant from each other points on a sphere (a sphere is made out of infinite points)</color>. A pair of two perfectly opposite points on a sphere is what we call a measurement basis.
+
+          
+
+We have 3 pairs of 2 maximally opposite points on a sphere, hence 3 measurement basis: Z-basis, X-basis and Y-basis. The <color=green>H gate applies a series of 3 consecutive counter clockwise rotations in the basis where it is applied on. It can also be thought of as an S gate followed by a P gate followed by an S gate.</color>. The best way to understand how H gate rotates the sphere is to actually see the rotations in all bases. Here is how the sphere is rotated 3 consecutive times by a H gate in each basis, starting with Z-basis, then X-basis and lastly, Y-basis:
+
+/[i]H all bases
+
+In quantum computing, we call that a qubit is in superposition when it is measured in the Z-basis, yet the quantum state is non zero in the X or Y-basis.

@@ -1,0 +1,11 @@
+
+
+To achieve the controlled Z operation, also called CZ, we need to place a CTRL gate on any of the qubit and a single Z gate on the qubit we wish to control. The logic is: if the qubit with CTRL is 1 at that particular computational step (row in the Circuit Configuration), the other qubit will receive a red phase if and only if it is also in the 1 state. The Computation Map shows the behavior for all possible outcomes.
+
+/[i]CZ
+
+In certain situations, doing controlled Z does not actually create entanglement. You can test if your quantum state is entangled by experimenting to find out if there is a way to reverse the "possibly entangled state" by using all other gates except CTRL, as shown here:
+
+/[i]CZnoten
+
+In this example, we managed to construct a reverse of the quantum state after 1HX2CZ (we returned the qubits back to 00) by using the gates you see after the Identity gates.

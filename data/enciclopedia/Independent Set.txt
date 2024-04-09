@@ -1,0 +1,41 @@
+
+
+In the field of graph theory, the sets of graphs in which no two nodes of a single edge can be of the same active attribute are known as Independent Sets. Besides being well defined as a mathematical concept, such sets are often seen in the real world, for example in a factory where a bunch of machines must at all times operate in ways that some should not be working together or damage could incur in the production pipeline. In such a case, it is easy to create a graph out of all machines and draw connectors (edges) between those that are forbidden to operate simultaneously; hence, building an Independent Set and configure a controller on the machines that first checks for the conditions before turning machines on.
+
+      
+
+Let’s look at case below. Think of two machines that need to operate together, but under no circumstance should both be turned on at the same time. It is quite straightforward to encode small Independent Set problems in the Quantum Odyssey’s Computation Map. We encode a machine’s state on a single qubit. The state of the qubit, represents the state of the machine. It can be either Off (0), or On (1), just like the qubit. To encode the fact that both machines cannot be On (11), all we need is to find a way that we can mark as invalid the 11 state from all the qubit arrays. To achieve this we can use controlled S, because of the phase kick-back effect both qubits will get a phase for the quantum state 11, while all the other valid states (00, 01, 10) remain unchanged). Hence it is enough to use a single controlled S operation to mark both machines being On (11) as invalid.
+
+/[i]case A
+
+Case A. Valid configurations (where we should see blue balls): 00, 10, 01. 11 is not valid! Remember qubit array 11 encodes the fact that both machines (nodes) in our Independent Set graph are On!
+
+     
+
+/[i]case B
+
+Case B.  Valid configurations are 000, 101, 010, 100, 001
+
+     
+
+/[i]case C
+
+Case C.  Valid configurations are 000, 100, 010, 001,
+
+       
+
+/[i]case D
+
+Case D. Valid configurations are 0000, 0001, 0010, 0100, 1000, 1011, 1001, 0011, 1010 
+
+      
+
+/[i]case E
+
+Case E. Valid configurations are 0000, 0001, 0010, 0100, 1000, 1010
+
+      
+
+/[i]case F
+
+Case F. Valid configurations are 0000, 1000, 0100, 0010, 0001

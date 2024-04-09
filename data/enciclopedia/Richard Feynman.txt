@@ -1,0 +1,17 @@
+
+
+/[i]Richard
+
+Richard Phillips Feynman (May 11, 1918 – February 15, 1988) was an American theoretical physicist, known for his work in the path integral formulation of quantum mechanics, the theory of quantum electrodynamics, the physics of the superfluidity of supercooled liquid helium, as well as his work in particle physics for which he proposed the parton model. For contributions to the development of quantum electrodynamics, Feynman received the Nobel Prize in Physics in 1965 jointly with Julian Schwinger and Shin'ichirō Tomonaga.  Feynman developed a widely used pictorial representation scheme for the mathematical expressions describing the behavior of subatomic particles, which later became known as Feynman diagrams. During his lifetime, Feynman became one of the best-known scientists in the world. The interaction of subatomic particles can be complex and difficult to understand; Feynman diagrams (figure bellow) give a simple visualization of what would otherwise be an arcane and abstract formula.
+
+/[i]feynman diagram
+
+Feynman's "Sticky Bead" thought experiment to visualise that the effects of gravity carry information:
+
+Imagine you have two sticks, fixed in place, oriented parallel to one another, and separated by a great distance. On one stick, there is a small bead which can slide freely without friction. On the other stick, there is a large bead made of extremely dense matter—let's say neutron star, to give it a nice heft. 
+
+You take the neutron star bead and slide it to one end of the stick. In the absence of other forces, your small bead on its parallel stick will feel the attraction from the large bead, and slide to the same end of its own stick, trying to get as close as possible to the neutron star bead. If you slide the neutron star bead back to the opposite end of the stick, the small bead will eventually make its way to the other side as well. The fact that one object can influence another in this way is solid evidence that the force of gravity carries information with it—in this case, it's information about the location of the neutron star bead. 
+
+/[i]sticky bead
+
+This information, like everything in our universe, travels at a finite speed—specifically, the speed of light. The fact that transmission of this information is not instantaneous offers another clue that there's some kind of carrier-wave phenomenon occurring here. 

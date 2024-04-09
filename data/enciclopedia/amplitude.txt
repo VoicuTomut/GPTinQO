@@ -1,0 +1,11 @@
+
+
+In Quantum Odyssey, we do not care about the physical elements that define the qubit (the qubit can be made out of a photon’s polarization, an atom on a lattice, this aspect is not important to us because it is quantum hardware related. We visualise the actual transformations of qubits and quantum algorithms. What we mean when we say amplitude, is <color=green>the size of the ball</color> (which shows the amplitude, that when squared shows the probability) behind obtaining a certain qubit array after measuring the quantum algorithm. 
+
+Image shows a series of quantum interference scenarios playing out, where the static ball shows the output. The last image shows a situation in which there are uneven amplitudes on a single qubit undergoing quantum interference.
+
+/[i]Interference
+
+Amplitude as a concept in the physical world: 
+
+ In classical physics, waves are usually described by variations in some parameter through space and time—for example, height in a water wave, pressure in a sound wave, or the electromagnetic field in a light wave. The value of this parameter is called the amplitude of the wave, and the wave itself is a function specifying the amplitude at each point. In quantum physics, each quantum particle also has a wave. We use the word amplitude to define the probability of finding the particle in a certain configuration or at a certain location. 

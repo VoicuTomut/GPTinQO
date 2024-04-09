@@ -1,0 +1,9 @@
+
+
+A cool property that quantum gates have is that they are a kind of linear operator which is what is called diagonalizable. This means that for a quantum circuit made out of quantum gates, if there are N slots the balls could be in, than there are always at least N eigenvectors. Eigen comes from the German world for “self” and these vectors (arrangements of balls), will go through the quantum gates and give the same arrangements at the end, possibly with the colours changed. This is where the “eigen” comes in, these special vectors go in the same thing, possibly multiplied by a number (the eigenvalue) comes out.
+
+Eigenvectors with the same eigenvalue are called “degenerate” and any combination of degenerate eigenvectors is also an eigenvector.
+
+The simplest example here is not doing any gates, the “identity” operation, for this operation all N eigenvectors have an eigenvalue of 1, so therefore anything you put in you get the same out.
+
+A slightly more complicated example is the Z gate, which paints a ball red if it is in the 1 state, and leaves is as is if it is in the 0 state. Sometimes eigenvectors are more complicated, for example the equal combination of 1 and 0 (both with the same colour) is one eigenvector of the X gate, with a an eigenvalue 1, and the same but with one ball coloured red is also an eigenvector with a −1 eigenvalue.

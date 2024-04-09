@@ -1,0 +1,23 @@
+
+
+/[i]quantuminterference
+
+If the size of the balls encode the amplitude of the qubits, the colors are representing their relative phases. This is extremely important to take into account when creating quantum interference. Qubit phases during quantum interference can annihilate or amplify (depending on color) and exactly this process is what gives quantum computation its advantage over classical.
+
+     
+
+The color of both the falling ball and the static ball (that shows the solution of the computational puzzle) gives information about the phase of the qubits. The interaction between balls of certain phases during quantum interference is shown above. We can easily change qubit phases by placing gates. 
+
+       
+
+The phase which will end up applied on the ball at each computational step is the encoded to color, mathematical result of the linear algebra and complex numbers rules used in processing the maths behind the gates you place in the Circuit Configuration, row by row. 
+
+        
+
+Quantum Interference is where the relative phase information of each qubit really comes into play. There is another type of phase, called global phase - that we discuss in module Colorful flips that is not used in quantum interference. We call global phase a complex number that applies to the entire quantum state without any observable effect in the physical world.
+
+     
+
+<color=green>How to imagine the global phase?</color>
+
+Consider the idea that some pieces of the math have no effect on actual physics, the global phase in quantum mechanics is one example. A more simple example is what elevation you choose to call "0" when solving a classical physics problem such as finding the path a thrown ball takes. The path you will find is the same whether you choose this to be the height it was thrown from, the height of the ground, the center of the earth, 100 miles above where you start, etc.... The reason for this is any formula you use will only have differences in height and never the height just by itself (the same actually applies for any quantity which is a measure of energy). The same idea applies to more computer science definitions, for example, as long as you are consistent, you could call having a machine turned on to be "1" and off to be "0", but you could equally well do the other way around with "0" meaning on and "1" off, as long as you use consistent definitions, what the final answer actually is physically won't be changed. 

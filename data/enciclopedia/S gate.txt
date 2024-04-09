@@ -1,0 +1,11 @@
+
+
+S gate on a qubit:
+
+To understand what the S gate does, first you must fully understand the qubit. To achieve this, do the Basis Transforms module in Quantum Odyssey. The best way to think of a qubit is to <color=green>imagine 6 maximally distant from each other points on a sphere (a sphere is made out of infinite points)</color>. A pair of two perfectly opposite points on a sphere is what we call a measurement basis.
+
+        
+
+We have 3 pairs of 2 maximally opposite points on a sphere, hence 3 measurement basis: Z-basis, X-basis and Y-basis. The <color=green>S gate does a quarter of a full rotation of the sphere from left to right in the Z-basis</color>; in other words, half of what a Z gate does. The best way to understand how S gate rotates the sphere is to actually see the rotations in all bases. Here is how the sphere is rotated by an S gate in each basis, starting with Z-basis, then X-basis and lastly, Y-basis: 
+
+/[i]S all bases

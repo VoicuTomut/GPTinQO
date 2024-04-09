@@ -1,0 +1,13 @@
+
+
+/[i]1output
+
+In Quantum Odyssey we call the ball at the bottom of the Computation Map the static ball. We refer to it as static because of its neutral, unaffected state by the computation.
+
+The static ball remains unchanged no matter what circuits are added to the Computation Map. This is because the static ball is there to describe precisely the outcome we want to achieve from doing the computation. It has the same properties as the moving ball:
+
+<color=green>Size of the balll</color>: for classical computation, the size will remain fixed. For probabilistic machines and quantum computation, the size differs to show either the probability or the amplitude of obtaining certain bit arrays.
+
+ <color=green>Location of the ball</color>: for classical computation, it defines the bit array it is under at that particular moment in the computation. For quantum and probabilistic machines, there can be many balls at the same time under different bit arrays, which again describe the exact state the computational input is under at that particular moment in the computation.
+
+ <color=green>Color of the ball</color>: the color of the ball only changes in quantum computation, to define phase. We show both global phase and all effects of quantum interference in Quantum Odyssey with up to floating point precision, pre-measurement.

@@ -1,0 +1,23 @@
+
+
+Suppose you have two qubits. For evocative purposes, suppose you're literally holding them as balls in your hands: one in the left hand, and one in the right hand. Your goal is to swap the qubits, so that your right hand ends up holding a qubit storing the state of the qubit currently in your left hand (and vice versa). How do you do it?
+
+     
+
+      
+
+Okay okay, that's not very hard. Obviously you can just physically move the qubits between your hands. Put one qubit down, pass the other qubit to the opposite hand, then pick up the qubit you put down. 
+
+But what if they were glued to your hands? 
+
+That sounds funny, but it's not intended as a joke. In practice, it's not always possible to physically move qubits. For example, your qubits might be etched onto a circuit board hidden away inside a dilution refrigerator. You're going to have a bit of trouble moving those around.
+
+Credits go to https://algassert.com/post/1717, this is an excerpt from the mentioned article. Retrieved 20.11.2020. 
+
+      
+
+Below we show an example of a SWAP operator working on a composite system of two qubits. The left qubit is prepared to be 0 state in the Y-basis (a blue on 00 and a green ball on 10) and the right qubit is 0 state in the X-basis (a blue on 00 and a red ball on 01). After the SWAP operator, their quantum states interchange. Left is  0 state in the X-basis (a blue on 00 and a red ball on 01) and right is 0 state in the Y-basis (a blue on 00 and a green ball on 10).
+
+/[i]2qswapped
+
+You can see in the picture that states 00 and 11 do not swap. We call these eigenstates.

@@ -1,0 +1,7 @@
+
+
+Matrix diagonalization is a powerful tool, and is something which computers can do very well, in fact the original Google search algorithm (called the Page rank algorithm as a pun on Larry Page’s name) is based on using computers to diagonalize matrices.
+
+An interesting fact to notice here is that the H gate transforms the eigenstates of the Z gate into the eigenvalues of the X gate and vice versa. Because this operation turns states involving single balls into eigenstates comprised of multiple balls, it can be said that the H gate diagonalizes the X gate. This is because, if we wrote the X gate as a matrix (a table of numbers) and performed by the H gate both before and after[? ], the combined matrix representing all of these gates would only be non-zero along its ‘diagonal’, or in the visual language of the game, all line segments would be going straight up and down.
+
+[1] in general you have to do something slightly fancier than just performing the same thing before and after, but that is a detail which is not important here

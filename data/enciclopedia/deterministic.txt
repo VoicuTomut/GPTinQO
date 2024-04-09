@@ -1,0 +1,5 @@
+
+
+Deterministic algorithms can be defined in terms of a state machine: a state describes what a machine is doing at a particular instant in time. State machines pass in a discrete manner from one state to another. Just after we enter the input, the machine is in its initial state or start state. If the machine is deterministic, this means that from this point onwards, its current state determines what its next state will be; its course through the set of states is predetermined. Note that a machine can be deterministic and still never stop or finish, and therefore fail to deliver a result.
+
+A deterministic system is a system in which a given initial state or condition will always produce the same results. There is no randomness or variation in the ways that inputs get delivered as outputs. In a non-deterministic system, by contrast, there is some randomness or choice involved in the model. One of the best ways to explain this is to contrast the deterministic system with a probabilistic system. Probabilistic computing involves taking inputs and subjecting them to probabilistic models in order to guess results.

@@ -1,0 +1,5 @@
+
+
+The Y-basis is defined by a blue and a green ball for the 0 state and a blue and a red ball for the 1 state in the Y-basis section. This is what the Quantum Odyssey gates do when applied on the 0 state in this basis: 
+
+/[i]all gates in y

@@ -1,0 +1,37 @@
+
+
+In Quantum Odyssey, we commonly use the H gate to create a superposition state. We visualise superposition as the moment of splitting a ball in two copies of smaller and various sizes and color. Remember that the size of the ball determines the amplitude of the qubit array.
+
+/[i]superposition
+
+Superposition is the main characteristic of the qubits and fundamental principle of quantum mechanics. Quantum objects appear to be at two places at the same time, electrical currents in a metallic wire can flow clockwise and counter-clockwise at the same time, or an object can sometimes behave as a wave and sometimes as a particle.
+
+     
+
+In quantum computing, we call that a qubit is in superposition when it is measured in the Z-basis, yet the quantum state is non zero in the X or Y-basis.
+
+/[i]H all bases
+
+If a qubit is in superposition already on the X-basis (such as in the 0 or 1 state in this basis, described by two blue balls or a blue and a red ball), the superposition on the qubit will collapse by adding another H gate, as shown in the two rightmost pictures above, through a process called <color=green>quantum interference</color>.
+
+     
+
+Superpositon and its relation to qubit phase:
+
+To fully describe qubits and if they are in a superposition state, we need to describe their <color=green>relative phase</color> as well. This aspect is deeply discussed in the first chapter of Quantum Odyssey. If the phase is lost, a quantum system will end up behaving like a classical bit.
+
+/[i]distort but z
+
+Dephasing noise leaves the classical bit information completely intact, but as the name implies the phase is lost. In fact, <color=green> a classical bit can just be thought of as a quantum bit which dephases way too fast to take advantage of any interference.</color>
+
+          
+
+What is the difference between a probabilstic event and superposition?
+
+In the picture bellow, we encoded a coin that can be heads(1) or tails(0). In the first half, we show a coin in tails(0) being tossed. The outcome of tossing the coin will be 50% heads(1) and 50% tails(0). If we were to flip the coin (by adding an Xgate, 2nd part of the picture) we would get the same result: heads 50% of the time(1) and tails 50% of the time(0). As you can see, the output is completely the same. Probabilistic events erase the data (lookup this entry in the encyclopedia).
+
+/[i]TossClassical
+
+Such probabilistic acts are in fact, not possible in quantum computation, pre-measurement! Quantum computing is reversible, meaning that no matter the state of a qubit and what changes it undergoes, we can always retrieve the initial state. Tossing a quantum coin, will have to preseve information. This is achieved through the quantum <color=green>phase</color>, as you can see bellow. The outputs will never be the same. As far as we know today, only measuring a quantum system is probabilistic, but all quantum processes are deterministic.
+
+/[i]TossQuantum

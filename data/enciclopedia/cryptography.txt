@@ -1,0 +1,5 @@
+
+
+Cryptography done using quantum phenomena is pretty much guaranteed to work because of the measurement problem in quantum physics. 
+
+Quantum cryptography is the use of quantum mechanical properties in order to encode and send information safely. The theory behind this process is the fact that it is impossible to measure a quantum state of a system without disturbing the system. This can be used to detect eavesdropping within a system. Quantum cryptography can be considered a state of entanglement between two multi-dimensional systems, also known as two- qudit (quantum digit) entanglement. 

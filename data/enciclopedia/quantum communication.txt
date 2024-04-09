@@ -1,0 +1,3 @@
+
+
+Just like classical computers can share classical information, one goal is to build ways for quantum computers to share quantum information. Quantum communication is harder, since quantum information cannot be directly "copied" but has numerous advantages, including secure methods of sending signals which are (at least from a highly theoretical perspective) "unhackable".

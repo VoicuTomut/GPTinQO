@@ -1,0 +1,49 @@
+
+
+In quantum computing the information is encoded in qubits(or quantum bits, qbits) that are two-level quantum mechanical systems. Physicists make qubits out of all sorts of particles these days, from bosons (such as photons) to complex atoms or even gases. As long as there is a quantum mechanical system which can be controlled and can store binary data, we can make a qubit out of it. An oddity of quantum mechanics is the  fundamental property that allows for a qubit to be in  a coherent superposition of both states at the same time. For example, you can make a qubit out of the polarization of a photon. If it is polarized vertically we encode bit 0 to it, if it is horizontally then we encode bit 1. A photon can be in both polarizations at the same time, hence if that’s the case we argue our qubit (made out of a single photon) is in a superposition state.
+
+The best way to think of a single qubit is by placing the representation used in Quantum Odyssey (the balls and their properties) on a sphere (also called a Bloch sphere). The Bloch sphere gives a way of describing a single-qubit quantum state (which is a two-dimensional complex vector) as a three-dimensional real-valued vector. This is important because it allows us to visualize single-qubit states and thereby develop reasoning that can be invaluable in understanding multi-qubit states (where sadly the Bloch sphere representation breaks down). 
+
+A sphere is made out of infinite points and so can a particle hold information, given precise control instruments we could encode potentially infinite information on it. The problem is in retrieving the information from the particle. To be able to retrieve information, we need to properly define a set of measurement bases on the particle (that we represent as a sphere). The most common way of measuring the particle today in in three bases: Z-basis (vertically), X-basis( horizontally) and a Y-basis. 
+
+The laws of quantum mechanics unfortunately break down if we measure the particle more than once, hence we need to carefully pick our measurement basis. In Quantum Odyssey, and similar to quantum hardware vendors, we use the Z-basis to mark the state of the qubit (either 0 or 1), while all other bases are used to show quantum phases.  
+
+        
+
+In the figure below we show Quantum Odyssey’s balls on a Bloch sphere. This is how we represent it:
+
+-The Z-basis is defined by a single blue ball behind the 0 and 1 state in the Z-basis section.
+
+ -The X-basis is defined by two blue balls for 0 state and a blue and a red ball for the 1 state in X-basis section.
+
+-The Y-basis is defined by a blue and a green ball for the 0 state and a blue and a red ball for the 1 state in the Y-basis section.
+
+
+
+<color=green>Why do we use two balls for X and Y bases?</color> 
+
+This is because as we said, Quantum Odyssey encoded bit measurement only for the Z-basis, like most hardware manufacturers do today, for compatibility reasons. Anything you program in Quantum Odyssey can easily be transferred and run on an actual quantum computer.
+
+What we care for when we measure a quantum algorithm in the Z-basis, is if a ball (<color=green>of any color!</color>) arrived at one or more than one bit arrays. That will be the output we can retrieve (and remember we can only retrieve a single bit array per execution) from a quantum hardware. The size of the ball determines the likelihood (amplitude) of obtaining that specific bit array, whilst the color does not matter at all on measurement. 
+
+       
+
+Figure shows how we flip a Bloch sphere with Quantum Odyssey balls with an X gate from each basis, from left to right; in the 0 state of Z, X and Y bases:
+
+/[i]X gate
+
+Figure shows how we flip a Bloch sphere with Quantum Odyssey balls with an S gate from each basis, from left to right; in the 0 state of Z, X and Y bases:
+
+/[i]S all bases
+
+Figure shows how we flip a Bloch sphere with Quantum Odyssey balls with a Z gate from each basis, from left to right; in the 0 state of Z, X and Y bases:
+
+/[i]Z all bases
+
+Figure shows how we flip a Bloch sphere with Quantum Odyssey balls with a Y gate from each basis, from left to right; in the 0 state of Z, X and Y bases:
+
+/[i]Y all bases
+
+Figure shows how we flip a Bloch sphere with Quantum Odyssey balls with a H gate from each basis, from left to right; in the 0 state of Z, X and Y bases:
+
+/[i]H all bases

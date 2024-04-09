@@ -1,0 +1,9 @@
+
+
+Under each of the symbols in the Circuit Configuration, there are open slots which can hold a gate piece. If there is no gate added to a specific slot, it acts on the overall Computation Map as if an Identity gate would be present. Identity gates do not alter the circuit in any way and can be observed in the Computation Map as blue lines, drawn vertically.
+
+/[i]slot
+
+The meaning behind the location of the slots:
+
+You can hover your mouse over any slot in order to figure out what part of the Computation Map it has power over. The location of the slots matter and impact general computation. Slots can be thought of as events happening on a certain bit or qubit (the bit/ qubit described by the symbol), at a particular sequence. Because we present the symbols as composite systems, each sequence of computation is produced by tensoring the content of all the slots on the same row for all symbols.

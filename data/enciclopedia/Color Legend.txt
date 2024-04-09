@@ -1,0 +1,15 @@
+
+
+We encoded all the rules behind the gate model quantum computing framework to graphical elements. Every element generated in the Computation Map is created by reading vectors and matrices of calculus. For simplicity, we show here two graphs that fully describe all possible color interactions.
+
+          
+
+This legend describes how colors change when <color=green>mixed together:</color>
+
+/[i]colorinteraction
+
+            
+
+This legend describes the color propriety of  <color=green>the ball after Quantum Interference:</color>
+
+/[i]quantuminterference

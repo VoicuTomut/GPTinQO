@@ -1,0 +1,9 @@
+
+
+The computational basis in Quantum Odyssey is the Z-basis (also called Z-axis), and is the most common basis used for measurement used by all quantum hardware manufacturers. What this means is, no matter what basis the quantum state is in, all we can measure (by repeated measurements) is the probability to get either 0 or 1 in the Z-basis.  
+
+In the figure below, we draw with <color=red>red</color> the Z-axis which defines the Z basis. We show all common gates and how they rotate our qubit sphere in this basis.
+
+/[i]all gates in Z
+
+In Quantum Odyssey, we push for the idea of thinking about superposition as a 0 or a 1 state on different computational bases, for the purpose of designing algorithms in quantum computing. The laws of quantum physics do not actually allow us to measure the qubit twice and get perfect information the second time, hence this is just a theoretical concept we push for. We believe it is good to think of a qubit as a sphere that has three measurement bases; perhaps you can come up with new quantum algorithms if we describe superposition in such a way.

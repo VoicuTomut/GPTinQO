@@ -1,0 +1,21 @@
+
+
+For unitary operators (such as the standard gates in Quantum Odyssey) the easiest way to imagine eigenstates are states where the action of the system which they are eigenstates of is only to cause a "global" colour change. This means the "difference" in colour stays the same for every pair even though the colour may change. For example, acting on an eigenstate can turn a pair of balls which are blue and green to red and gold, but could *not* change them to being blue and red since there is a larger "difference" between blue and red. For non-unitary operators the size of the balls could also change, but would have to all change together.
+
+        
+
+There will always be "at least" 2^n eigenstates for any unitary matrix no matter how complicated (I say "at least" because if eigenstates have the same eigenvalue than any combination of them is an eigenstate, the most extreme example of this is the Identity gate, where all 2^n states have an eigenvalue of +1 and therefore any state is an eigenstate). In principle you could numerically find one for a complicated circuit and show that it works. Except for very simple cases where you can do it "by eye" the process of actually finding eigenstates is complicated.
+
+           
+
+<color=green>EIGENVALUES AND EIGENVECTORS</color>
+
+A cool property that quantum gates have is that they are a kind of linear operator which is what is called diagonalizable. This means that for a quantum circuit made out of quantum gates, if there are N slots the balls could be in, than there are always at least N eigenvectors. Eigen comes from the German world for “self” and these vectors (arrangements of balls), will go through the quantum gates and give the same arrangements at the end, possibly with the colours changed. This is where the “eigen” comes in, these special vectors go in the same thing, possibly multiplied by a number (the eigenvalue) comes out.
+
+Eigenvectors with the same eigenvalue are called “degenerate” and any combination of degenerate eigenvectors is also an eigenvector.
+
+The simplest example here is not doing any gates, the “identity” operation, for this operation all N eigenvectors have an eigenvalue of 1, so therefore anything you put in you get the same out. 
+
+A slightly more complicated example is the Z gate, which paints a ball red if it is in the 1 state, and leaves is as is if it is in the 0 state. Sometimes eigenvectors are more complicated, for example the equal combination of 1 and 0 (both with the same colour) is one eigenvector of the X gate, with a an eigenvalue 1, and the same but with one ball coloured red is also an eigenvector with a −1 eigenvalue.
+
+An interesting fact to notice here is that the H gate transforms the eigenstates of the Z gate into the eigenvalues of the X gate and vice versa. 

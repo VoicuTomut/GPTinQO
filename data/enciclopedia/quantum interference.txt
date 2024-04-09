@@ -1,0 +1,15 @@
+
+
+/[i]quantuminterference
+
+A quantum phenomenon describing the act undergone by quantum states when they cancel or amplify their amplitudes. We show this through explosions and ball size changes, as shown above. The balls can be any size (which shows the qubit array's amplitude) and any of the possible colors (which shows qubit relative phase on the three measurement bases) during the collisions.
+
+/[i]Interference
+
+Image shows a series of quantum interference scenarios playing out, where the static ball shows the output. The last image shows a situation in which there are uneven amplitudes on a single qubit undergoing quantum interference.
+
+      
+
+How do we know quantum interference is a real, observable phenomena?
+
+The first time quantum interference was observed is through a simple experiment performed by Thomas Young in 1801. This experiment, called the Double-slit has since then been performed countless times in all sorts of settings and with all kinds of particles. It can be done in any household with a beam of light, where a  lightwave is split into two separate waves that later combine into a single wave. Changes in the path lengths of both waves result in a phase shift, creating an interference pattern. If you are curious about building this experiment on your own, research the materials needed to create the Double-slit experiment at home.

@@ -1,0 +1,7 @@
+
+
+Scaling is the rate at which a resource, like the amount of time or size of the computer (number of qubits for a quantum computer) changes as the problem gets bigger. Quantum computing experts often look at scaling rather than just how fast the system performs at a given size, an algorithm (a procedure to solve a problem on either a quantum or classical computer) which scales better will always work better than one which scales worse when the size is large enough.  
+
+Theoretically, scaling is nice because it allows for a lot of details to be ignored and calculations of scaling are often simpler than calculating the entire runtime of an algorithm, so theoretical computer scientists study scaling for both quantum and classical algorithms. Scaling is also a useful concept for experiments, since experiments on small quantum systems (or even simulations of them) can be used to guess how they would perform at bigger sizes which can't be tested yet.
+
+While scaling is a useful concept and a nice tool, it does have its limitations. An algorithm which scales better will always "eventually" do better at some size, but this size may be huge, so scaling may not tell the whole story. Also, there can be different kinds of scaling, including size and runtime, and how to compare an algorithm which is better in one but worse in another is not always clear. Experimentally it is also hard to know if scaling can be trusted because there can be effects which go away at larger sizes, but have a big effect at large sizes, this can make an estimate of scaling wrong.

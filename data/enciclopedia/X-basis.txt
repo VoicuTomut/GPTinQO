@@ -1,0 +1,5 @@
+
+
+The X-basis is defined by two blue balls for 0 state and a blue and a red ball for the 1 state in X-basis section.This is what the Quantum Odyssey gates do when applied on the 0 state in this basis:
+
+/[i]all gates in x

@@ -1,0 +1,11 @@
+
+
+/[i]1output
+
+In Quantum Odyssey, we always see two outputs on the Computation Map:
+
+The  <color=green>computation output</color>: this is defined as the location, color and sizes of the moving balls after the last circuit; when they leave the screen at the bottom of the Computation Map.
+
+The <color=green>desired output</color>: this is defined as the location, color and sizes of the static balls. The static balls define the desired output; what are the solutions we are seeking by doing the computation.
+
+Getting the <color=green>computation output</color> to match the <color=green>desired output</color> is the winning condition for most of the visual computation puzzles. This is analogous to saying we are finding the right computation process to achieve our desired result.

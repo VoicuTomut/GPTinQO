@@ -1,0 +1,19 @@
+
+
+Universal quantum computation is fully reversible. By knowing the output (result) of the computation, it is possible to reverse back, step by step and recover the input (initial conditions) before any quantum algorithm.
+
+/[i]reversible
+
+As an example, let’s look at the first Bell state shown above before the set of Identity gates in the picture. If we were to stop computation there, our output would have been the famous 00 and 11 states. However, by applying the same algorithm in reverse, we are able to retrieve the input before the Bell state was even set, which was 00 (as shown by the static ball).
+
+     
+
+All standard quantum gates are reversible, meaning that placing one followed by another returns the Identity gate (act as if no gate was present). The qubits undergo a reversible unitary transformation under a quantum gate. One exception is the S gate, that can have its effect reversed by using it four times if the qubit is in state 1 in Z-basis.
+
+The gate model of quantum computation is completely reversible (at least as long as you don't include measurement). This is interesting because it means every computation can in principle be "undone". In many cases in quantum computing undoing these calculations (or "uncomputing") needs to be done to get rid of unwanted entanglement. Classical computing is usually irreversible, the easiest way to see this is to notice that most traditional classical logic gates, such as NAND (see universal computing) have two inputs but only one output, therefore there is not enough information to undo the computation.
+
+However, nothing fundamentally stops us from also building reversible classical computation, in particular the Toffoli, which flips one bit only if two other ones are 1, is reversible (three bits of information in and three out) and universal, all classical computing operations can be done with a Toffoli. Since a Toffoli is self inverse (meaning doing a Toffoli twice is the same as doing nothing), a reversible classical computation done with Toffolis can be undone by simply applying the same Toffolis in reverse order.
+
+One interesting point related to reversibility is that information theory can be used to calculate the minimum energy cost of performing any operation and comes up with an interesting result known as Landauer's principle, that there is a fundamental energy cost relating to the temperature you are operating at for any operation which effectively "erases" a bit of information, but not for those which don't. In other words there is a minimum amount of energy it costs to do a NAND at room temperature, but in principle there is not for a Toffoli.
+
+In practice, none of the computers we can build are able to get closed to the level of efficiency where Landauer's principle becomes important (in other words the energy consumption is much more than the minimum), but one day, as classical computers improve, we may get to the point where this matters, and may think more seriously about reversible classical computing.

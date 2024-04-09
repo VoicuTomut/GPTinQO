@@ -1,0 +1,43 @@
+
+
+We define quantum computing as using the laws of quantum mechanics to create meaningful computation. By meaningful computation we mean finding the efficient series of events we need to turn an input into a desired output. 
+
+Quantum computing differs to classical computing we apply quantum phenomena such as superposition, entanglement and interference to do computation. To exploit these phenomena, besides understanding how they work, we need quantum computers.
+
+        
+
+<color=green>What is needed to make a quantum computer?</color>
+
+There are several different ways to build quantum computers, the ones we are interested here are a specific class of quantum computers called “gate model” quantum computers, other types of machines such as photonic chips and quantum annealers are also promising and exciting, but not the subject of the game (at least at this stage)
+
+        
+
+It is generally agreed that a quantum computer should meet the five DiVincenzo criteria:
+
+1. Well-characterised qubits (quantum bits) which scale → this gives you a place to store the information, the scaling means that you are able to build enough of them to do something interesting
+
+2. Known and well defined initial state → you have to know what state the computer starts in
+
+3. Long relative decoherence time → the system has to have low enough noise to perform accurate calculations and not lose quantum behaviours, the word relative means that this time must be long compared with the time it takes to do computations
+
+4. “Universal” set of quantum gates → there have to be enough types of single qubit controls and multi-qubit interactions to support computation
+
+5. The ability to measure individual qubits → a computer only works if you can actually read out the results
+
+         
+
+The criteria which modern devices have the most difficulty with are 1 and 3, specifically how to scale up these systems and protect them from noise. However, remember that gains against these criteria cannot be made by sacrificing the others. It is actually relatively easy to build a device which follows only some of these criteria, for example a classical computer can be thought of as meeting all criteria except for 3 and 4, the bits are certainly well defined and devices with billions or trillions of bits can be produced and they can be initialized and measured, but the bits on (for example) classical RAM do not maintain quantum coherence, nor can they be put into quantum superpositions in a controlled way.
+
+        
+
+<color=green>Types of quantum computers:</color>
+
+There are many ways in which quantum computers can be built and it is not clear now which is the best, or even if there will even be one “best” type as opposed to many types which are good at different things. One of the types which is most often in the news are superconducting circuit quantum computers, like the ones made by IBM, Google, Rigetti, Honeywell, and others. These devices have the advantage that they are built using the same technology which traditional classical computers are built with, but cooled down to much lower temperatures. This makes systems with many qubits relatively easy to make, although there are challenges with controlling a chip with many supercondicting qubits. Measurement and initialisation are relatively straightforward, and so is creating gates. While gates can be done quickly on superconducting circuits, they also lose coherence quickly, so noise is a challenge.
+
+Another type of quantum computers are those being constructed out of trapped atoms or ions, like those being built by IonQ or the NQIT (now QCS) hub in the UK. These are made of atoms or ions which are levitated using light and magnetic fields. Some of these trapped atoms shine brightly enough that it is actually possible to see a single atom with the naked eye! Since it is a new technology, a lot of the scaling aspects are challenging, but these devices can be initialized, measured, and have gates performed on them reliably. The gates on these devices are slower than superconducting qubits, but they also can remain coherent longer. 
+
+Photons (particles of light) are also a way to try to build a quantum computer, this is being pursued for example by PsiQuantum. There are many ways to naturally encode qubits into photons, measuring single photons is fairly standard in many labs but making single photon sources is still a challenge. They have the advantage of almost 2 infinite decoherence time unless they are absorbed. A disadvantage is that it is very hard to make the qubits interact, so universal gates are hard to make.
+
+More exotic quantum computers can be built using circuit technologies which use individual silicon atoms as qubits (or nanostructures), rather than superconducting circuitry. Similarly defects in diamonds can be used, or exotic “topological”phases of matter. These ideas all show potential to one day surpass the current leaders, but fundamental challenges need to be addressed before they can be built into mature computing devices.
+
+Many early quantum computing experiments were performed using nuclear magnetic resonance on atoms within molecules. These were exciting systems to play with, but have largely been abandoned since it was not possible to scale them (i.e. no way to add qubits), so they failed on the first criterion.

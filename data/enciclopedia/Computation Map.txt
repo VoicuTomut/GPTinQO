@@ -1,0 +1,11 @@
+
+
+In Quantum Odyssey, we represent the process of computation as a visual experience. The Computation Map is the apparatus you see in the middle of the screen. At the top we show all the possible inputs the process of computation can take in the form of bit arrays.
+
+Example, computation on a single bit array: 
+
+/[i]1bit
+
+It consists of the two possible states of a bit: 0 and 1. Under one of these states, you will see a moving ball appear. The proprieties of the ball at the start describe the input of the computation. The proprieties change as the moving ball traverses the Computation Map according to the paths the user creates, by manipulating the Circuit Configuration. Every form of computation consists of an <color=green>input</color> (some initial state), a <color=green>computation</color>(the function which evolves the input, in our case what the user introduces in the Circuit Configuration) and an <color=green>output</color>(the end result after computation). We represent the output with one or many (for quantum computation or probabilistic machines) static balls with locked properties under bit arrays.
+
+/[i]1output

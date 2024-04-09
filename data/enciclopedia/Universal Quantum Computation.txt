@@ -1,0 +1,27 @@
+
+
+One important concept for quantum computers is the notion of whether or not they are universal, in other words, whether they can be used to perform any quantum operation. Not al kind of quantum computing are universal, and quantum computers don’t have to be universal to be interesting, but it is important for gate model quantum computing because once you know your computer is universal, you know it can (in principle at least) implement any quantum algorithm. 
+
+It is easier to start by thinking about universal classical computation and then continue the same idea to quantum computation. Universal classical computation can be achieved using a single operation, known as a <color=green>nand</color> gate, what this gate does is performs an <color=green>and</color> operation on two classical bits and returns the logical inverse of the result. So, a nand between two bits gives a 1 as the result unless both incoming bits are in the 1 state, in which case it builds a 0. To get a hint on why nand is universal, you can see how you can invert a bit, if we put two copies of the same bit (this would not be allowed in quantum computing, but copying is just fine classically), to a nand, than we get a 1 if the bit was 0 and a 0 if it was 1. Any other logical operation can also be built by an appropriate combination of nand gates (look them up and try it, this can be a fun exercise). This is not true for every classical logical operation, for example xor, the exclusive or operation which returns 1 if and only if exactly one of the two bits is 1 is not universal. One way to see this is that no matter how many copies of a bit you have, you cannot logically invert it using only xor operations.
+
+Quantum mechanically, you cannot be universal with only a single gate, one way to understand this is that the copying trick does not work to turn two qubit gates into operations on one qubit. Universal quantum computing can still be achieved with relatively few types of gates, and the set of gates in the game are universal. In fact, they are more than are strictly needed to be universal, just the X gate, H and controlled X operations with at least two controls. The Hadamard is needed to rotate the qubit in different ways, and the X is needed to perform classical logic. Controlled gates are needed to interact the qubits, but you may wonder why we need to be able to use at least two controls, the reason is that just a singly controlled not operation is not enough for the computer to be able to perform universal classical logic, and to be able to do quantum computing it has to be able to do classical computing as well. The doubly controlled X operation (known as the Toffoli) is universal for classical computation, just like the nand gate is. This can be thought of classically as flipping one bit only if two others are both 1, with some auxilliary bits (ones which you start in known 1 or 0 states, a nand operation can be built using two Toffolis.
+
+There are other ways to make a universal set of quantum gates, in particular, if we only allowed a singly controlled X gate, but replace the X gate with a gate called T which does a smaller rotation, than a Toffoli can be built out of T, H and singly controlled not gates, making this another universal set of gates. This is harder to understand and the details are not really important, but the point is there are more than one set of operations which can be used to make a universal quantum computer.
+
+         
+
+<color=green>What is needed to make a quantum computer?</color>
+
+It is generally agreed that a quantum computer should meet the five DiVincenzo criteria: 
+
+1. Well-characterised qubits (quantum bits) which scale → this gives you a place to store the information, the scaling means that you are able to build enough of them to do something interesting 
+
+2. Known and well defined initial state => you have to know what state the computer starts in 
+
+3. Long relative decoherence time => the system has to have low enough noise to perform accurate calculations and not lose quantum behaviours, the word relative means that this time must be long compared with the time it takes to do computations 
+
+4. “universal” set of quantum gates => there have to be enough types of single qubit controls and multi-qubit interactions to support computation 
+
+5. The ability to measure individual qubits => a computer only works if you can actually read out the results
+
+The criteria which modern devices have the most difficulty with are 1 and 3, specifically how to scale up these systems and protect them from noise. However, remember that gains against these criteria cannot be made by sacrificing the others. It is actually relatively easy to build a device which follows only some of these criteria, for example a classical computer can be thought of as meeting all criteria except for 3 and 4, the bits are certainly well defined and devices with billions or trillions of bits can be produced and they can be initialized and measured, but the bits on (for example) classical RAM do not maintain quantum coherence, nor can they be put into quantum superpositions in a controlled way. 

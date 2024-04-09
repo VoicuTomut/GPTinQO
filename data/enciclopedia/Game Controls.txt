@@ -1,0 +1,23 @@
+
+
+The default quick keys for the user interface are:
+
+"f" key: centers the screen
+
+Control + Right Mouse Click: place an annotation on the circuit. Useful if you want to give tips for others to solve.
+
+WASD keys: to move camera around, especially useful on large qubit sizes and long algorithms.
+
+Mouse wheel up/down (hovering on Circuit Configuration): allows to quickly through a long Circuit Configuration panel
+
+Mouse wheel up/down (hovering on Computation Map): zoom in and out
+
+To place gates: Click and hold the mousewheel, the drop the gate on a slot in the Circuit Configuration
+
+To delete gates: Simply through the gate somewhere outside an empty slot
+
+To exit to main menu: press the Esc key
+
+To (un)pause the ball at an important moment/ before an interesting event: press the Space key
+
+To open/ close the Circuit Configuration: press the TAB key

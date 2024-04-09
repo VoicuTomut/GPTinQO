@@ -1,0 +1,9 @@
+
+
+There are only two classes of  3-qubit states which are truly  3-partite entangled corresponding to the GHZ and W states respectively. Thus W and GHZ represent two very different kinds of tripartite entanglement. Interesting property of the W state: if one of the three qubits is lost, the state of the remaining 2-qubit system is still entangled.
+
+The W state is one kind of entangled state where exactly one qubit is in the |1> configuration, and all others are in the zero configuration. This state is interesting because it is symmetric with respect to exchange of the qubits, meaning that if you swap two of the qubits, the W state stays the same. 
+
+The W state is part of a larger family of states known as Dicke states where not just one, but k  qubits are in the |1> configuration, and the state is symmetric. Dicke states are important because they come up often in experimental fields like quantum optics and atomic physics. For example the nuclear spin of an atom is caused by its protons and neutrons occupying Dicke states.
+
+/[i]Wstate

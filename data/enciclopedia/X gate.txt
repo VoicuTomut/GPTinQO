@@ -1,0 +1,19 @@
+
+
+This is a reversible operation permissible both in classical and quantum computing. It is called a NOT gate in classical computing. In quantum computing it is known as the Pauli-X operator. If the 0s and 1s of a bit are on the sphere shown below, applying this gate flips a bit from input 0 to output 1, or from input 1 to output 0.
+
+       
+
+<color=green>When applied on a bit</color> (which has two values: 0 and 1), it flips the values around: if the bit is 1 it becomes 0, or 0 becomes 1. Multiple X gates on the same column apply the flip multiple times, as a sequence to the same bit. The result is shown on the Computation Map.
+
+                
+
+X gate on a qubit:
+
+First, you must fully understand the qubit. To achieve this, do the Basis Transforms module in Quantum Odyssey. The best way to think of a qubit is to <color=green>imagine 6 maximally distant from each other points on a sphere (a sphere is made out of infinite points)</color>. A pair of two perfectly opposite points on a sphere is what we call a measurement basis. 
+
+     
+
+We have 3 pairs of 2 maximally opposite points on a sphere, hence 3 measurement basis: Z-basis, X-basis and Y-basis. The <color=green>X gate does half of a full rotation of the sphere from right to left, counter clockwise in the X-basis</color>. The best way to understand how X gate rotates the sphere is to actually see the rotations in all bases. Here is how the sphere is rotated by an X gate in each basis, starting with Z-basis, then X-basis and lastly, Y-basis:
+
+/[i]X gate

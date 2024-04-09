@@ -1,0 +1,29 @@
+
+
+In Quantum Odyssey placing <color=green>in the same row</color> on multiple qubits either one or more CTRL gates and one or more of any other flip gates creates entanglement. The most commonly used forms on entanglement are Controlled X (where we place a CTRL gate on the master qubit and an X gate on the slave qubit) and Controlled Z (a CTRL gate on the master, and a Z gate on the slave qubit). 
+
+     
+
+The logic behind entanglement:
+
+The qubit on which the CTRL gate is placed is checked if its state is 1 first. If the state is 1, then and only then the gates placed on the same row will take effect on the other qubits with which the CTRL qubit is entangled. You can spot the state of the CTRL qubit by watching for the location of the ball. If it traverses one of the qubit arrays (arranged according to the LSB method) in which the qubit is 1, then the gates will take effect.  
+
+/[i]Controlled X
+
+We can also entangle multiple qubits in various ways. Some of the most famous ones are Bell, W and GHZ states, discussed in module Elements of Reality. For example, we can create a scenario in which only if the qubit-1 and qubit-3 are 1, the X gate is applied on qubit-2 as shown here:
+
+/[i]CCX
+
+There are tricks to make entanglement work although our qubit that we want as master is not in state 1. For example, you can sandwich CTRL gate between X gates as in the picture bellow. This flips the CTRL qubit, to then reverse the flip. This action is possible because quantum computing is reversible.
+
+/[i]0controlledX
+
+Entanglement is not limited to the X gate. In fact, any quantum gate, no matter how complicated, can be used to create entanglement. Examples here are Controlled Z and Controlled H.
+
+/[i]CHCZ
+
+    
+
+What is entanglement?
+
+Quantum particles seem to be able to affect each other instantaneously even when they are far away from each other. This  phenomenon is known as entanglement, or, in a phrase coined by Einstein (a great critic of quantum theory), “spooky action at a distance”.  Although instantaneously after measurement it is revealed the state of the other particle, entanglement does not allow communication faster than light because of the nature of quantum measurement. In order to find entanglement, both parties performing measurement need to be aware of the measurement basis in which the particles are supposed to be checked for their quantum state. Hence, classical information needs to be transmitted (that describes the correct measurement basis) together with half of the entangled pair if a communication channel based on entanglement is to be achieved. We discuss measurement bases in the module Basis transforms. 

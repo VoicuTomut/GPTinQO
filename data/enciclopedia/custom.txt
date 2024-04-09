@@ -1,0 +1,7 @@
+
+
+To create a custom gate out of all the gates on the screen is straight-forward using Quantum Odyssey's Editor.
+
+/[i]customcreate
+
+/[i]customcreated

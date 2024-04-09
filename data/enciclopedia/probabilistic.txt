@@ -1,0 +1,19 @@
+
+
+The typical example of classical probability would be rolling of a fair dice because it is equally probable that the top face of the die will be any of the 6 numbers on the die: 1, 2, 3, 4, 5, or 6. Another example of classical probability would be tossing an unbiased coin. There is an equal probability that your toss will yield either head or tails. There are many other examples of classical probability problems besides rolling dice. These examples include drawing cards from a deck, guessing on a multiple choice test, selecting jellybeans from a bag, and choosing people for a committee, etc.
+
+The most important notion to understand probabilistic processes is the notion of a probability, in other words, how likely is an event to happen. In the game probabilities can be understood in a simple visual way, the bigger the ball, the higher the probability, the color has no effect on probabilities. Circuits which end with a single ball as an output are deterministic, there is 100% probability of a single event happening. If there are more than one balls, than more than one measurement outcome could potentially happen, and the outcome is probabilistic.
+
+There is a well-defined notion of "how" probabilistic an outcome is which is what is called information entropy, or Shannon entropy. The formula is slightly complicated and involves logarithms, so we won't give it here, but this allows someone to quantify how probabilistic (or in some sense how "random") an outcome is. A single event with a probability of 1 gives a Shannon entropy of 0, the process is deterministic. On the other hand, a fair coin flip has a Shannon entropy (using the base 2 definition), of 1, since it is effectively 1 randomized bit. A probability which is not even say 70%/30% will have a Shannon entropy less than 1, but more than 0, it isn't completely deterministic, but is also less random than a fair coin flip, one outcome is more likely than the other. The Shannon entropy is defined for any number of outcomes, so it allows us to answer complicated questions like "which is more random, three events with probabilities 70%/20%/10%, or only two possible outcomes with 50%/50% probability?" it turns out if you plug the numbers in the 70%/20%/10% is more "random" than 50%/50%, but it would be less random if it was instead 80%/10%/10%. Entropy sounds like a scary concept, but it is really just "fancy counting".
+
+Probabilistic machiines do not preserve information. See the entry <color=green>erases the data</color>
+
+            
+
+<color=green>Probability as a concept</color>
+
+The concept of probability is actually not an easy one to define, in principle if we knew the starting conditions exactly, nothing stops us from predicting the result of a coin flip exactly, this is just classical physics. The reason a coin flip is treated as probabilistic is that this information is not practical to know, ignoring quantum physics for the moment, one could say that the universe is entirely deterministic, but probability is used as a tool to represent gaps in our knowledge, where we don't know an outcome, so we look at different possibilities. 
+
+Can the same thing be done quantum mechanically? 
+
+The current understanding of quantum mechanics which people use says "no", probabilities are fundamentally baked into quantum mechanical theory in a way in which they aren't in classical mechanics. But is this really correct, could there be something going on behind quantum mechanics which looks probabilistic, but is really fully deterministic? The short answer is that there could be, but these kinds of theories always end up being weird and are usually un-testable, putting them more in the realm of philosophy rather than science (not necessarily a bad thing! philosophy can be really interesting, and the philosophical questions around the foundations of quantum mechanics are fascinating).

@@ -1,0 +1,5 @@
+
+
+A superposition in which the amplitude (size of the balls on the screen) is not even, showing a higher likelyhood of the qubit to be in a certain state on measurement.
+
+/[i]unevencontrolledH

@@ -1,0 +1,33 @@
+
+
+We at Quarks Interactive, dream of a world where quantum reasoning becomes part of common reasoning. A world where people no longer call quantum phenomena counter intuitive and beyond real life experience. In fact, they are part of our daily lives, yet, perhaps we fail to notice them.
+
+The easiest way to observe quantum phenomena is if you have three polarised lenses, such as three pairs of polarised sunglasses. Place two of them on top of each other and 90 degrees rotated in any direction. You will observe that no light will be able to pass through the polarised lenses. Now simply add a 3rd lens, just like in our Quarks Interactive’s logo.
+
+         
+
+What you will see is that by adding a 3rd “barrier” (a 3rd lens), somehow now light is able to pass through! We call this phenomenon the quantum Venn paradox and since the invention of polarised glass it has fascinated mankind. This is a simple exercise that can be done in a kindergarten with just three polarised sunglasses. 
+
+         
+
+Here are some key thoughts we want you keep in mind as you discover Quantum Odyssey:
+
+1. A qubit can be thought of as a physical particle that can be controlled and measured by a device in ways that we can encode and read out information from it. The most common way of measuring a qubit is on the three bases: Z-basis, X-basis, Y-basis. Imagine these as slices you could do on an apple to find a surprise (the surprise is the state of the qubit). The best way to think of a single qubit is by putting our visual representation (the colorful balls) on a sphere. Here is how it looks if we flip the sphere using an X gate rotation
+
+/[i]X gate
+
+2. Quantum Superposition is not a mysterious thing particles do; just quantum measurement is. In fact, today we can easily create a magnetic current, or use a special polarised lense to place any particle in superposition, including photons. To understand we have a superposition on a particle, first we must make sure we are able to control and encode information on the particle to become a qubit. Physicists defined the concept of superposition as what occurs when measuring on a specific basis a particle: if a particle is prepared in 0 state in X-basis and we measure in Z-basis, we will always get a perfect superposition between 0 and 1 in Z-basis. If we are aware we should measure in X-basis, we would always get 0 in X-basis. Measuring a quantum particle, forces it to select a state (through an unknown process that happens when we measure) in that particular basis. The H gate, that we use to create superposition and interference, can be thought of as simply an act of applying three times a 90 degrees rotation to our qubit:
+
+/[i]H all bases
+
+3. Entanglement is not a mysterious, faster than light form of information travel. In fact, quantum entanglement can be considered a physical resource. It allows for information transfer at the speed of light, if we are able to also send information about what measurement basis to pick when decoding the entangled qubit pairs. 
+
+4. A measurement basis is not a fixed frame of reference. Imagine you are on Mars and your friend is on Earth. You both hold identical spheres in your hands and you need to draw a 0 and a 1 on the opposite sides of the sphere, in the same place as your friend on Earth. How can you communicate together to make sure that you both draw the 0s and 1s exactly on the same places, on your identical spheres?
+
+5. In the real world, we deal with probability everyday. If we toss a coin 100 times, we expect to get 50 tails and 50 heads and we can’t know after tossing, if the coin was heads or tails before the toss. But what exactly is happening here quantum mechanically? Having perfect information, such as the initial state of the coin (heads or tails), the velocity, air friction and so on would it still be a probabilistic event? Read the entry <color=green>“erases the data”</color> in the Encyclopedia for more information on probabilistic events and quantum determinism. In quantum computing, every event is deterministic and reversible and information is not lost, pre-measurement.
+
+These figures bellow show how a normal toss (first) differs from a "quantum toss" (second). Observe that information of the initial state of the coin is stored in the quantum mechanical phase (there is a red ball which can be used to distinguish both events).
+
+/[i]TossClassical
+
+/[i]TossQuantum

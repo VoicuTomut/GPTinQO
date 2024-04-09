@@ -1,0 +1,7 @@
+
+
+/[i]1bit
+
+The top row of the computation map. Input data is information fed into a data processing system or computer. 
+
+In Quantum Odyssey the blue ball starts its journey as an uncharged (neutral) single bit or bit array.

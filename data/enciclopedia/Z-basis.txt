@@ -1,0 +1,7 @@
+
+
+The basis defined by a single blue ball for the 0 state and a single blue ball for the 1 state, on the sphere:
+
+/[i]all gates in Z
+
+The computational basis in Quantum Odyssey is the Z-basis (also called Z-axis), and is the most common basis used for measurement used by all quantum hardware manufacturers. What this means is, no matter what basis the quantum state is in, all we can measure (by repeated measurements) is the probability to get either 0 or 1 in the Z-basis.  

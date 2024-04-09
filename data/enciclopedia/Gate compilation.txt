@@ -1,0 +1,7 @@
+
+
+This is a very important concept to be aware of. Any number of quantum gates can be compiled in a single gate that has the proprieties of all the other gates combined. This is very easy to do in Quantum Odyssey's Editor:
+
+/[i]customcreate
+
+/[i]customcreated

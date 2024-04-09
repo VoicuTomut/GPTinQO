@@ -1,0 +1,31 @@
+
+
+This is a profoundly important and highly discussed topic in quantum literature. Many scientists argue that quantum computers are <color=green>true probabilistic machines</color>, because of the effect of <color=green>superposition</color>.
+
+    
+
+With the Quantum Odyssey’s visual method, we can now fully observe the effect of superposition and use this to argue that <color=green>this is not the case</color>.
+
+Let’s observe the effect of a <color=green>classical probabilistic process</color> of flipping a perfectly balanced coin flip that we encoded in the <color=green>Hc gate</color> on two separate circuits that define how the coin was before the toss. 
+
+If the coin is tails up before the toss, we encode that as a single bit in a 0 state (on the left) and for the case when it was tail we encode this information in another bit in the 1 state (on the right). If we toss the coin 100 times, we expect it 50 times to land heads (bit state 1) and 50 times to land tails (bit state 0) for both cases, as shown by the sets of blue balls here for both events: 
+
+/[i]TossClassical
+
+As you can see, the output (the blue static balls) is the same in both cases. The case when the bit is flipped by an X gate before the Hc gate describes a coin in the heads state before the toss. The Hc gate (that encodes a classical coin toss) is not a valid operator in quantum computing, because it <color=green>erases the data</color>. Because both when the coin was heads or tail before the toss our output becomes two balls, of equal color and size, if we analyse the output after computation and without seeing the Computation Map, we would  <color=green>have no idea which bit was in the 1 state and which in the 0 state</color>. We completely lost this information!
+
+    
+
+In quantum computing, we argue that all events are fully deterministic (although it would require for us to have the whole information in the Universe to be sure). At very least, we can see in the Computation Map what actually happens if we use the “quantum coin flip”, the <color=green>H gate</color>. 
+
+/[i]TossQuantum
+
+On the left we have a bit in the 0 state, on the right we have a bit in the 1 state and both are placed in superposition.  Observe the static balls and compare with the picture from above, where we used the Hc gate.
+
+As we can easily spot, for the case where the bit is 1, we can see that the output has a <color=green>blue and a red ball</color>, which differs from the case where the bit is 0. The problem here, why so many scientists argue that quantum computation is probabilistic, is because of measurement bases. If we measure the output in the Z-basis we still get random 0 and 1 values (because the balls are in the same places like in the probabilistic case), because it is impossible to measure the global phase (the red color) we have on qubit 1. 
+
+There is however to turn a  <color=green>superposition in a completely deterministic process</color>: if we are aware that we need to switch measurement basis to <color=green>X-basis</color> after the H gate. If we know this and now we analyse the outputs for both algorithms in the X-basis, according to how we defined the X-basis to be,  two <color=blue>blue balls</color>  give us a 0 state, while a  <color=blue>blue</color> and a <color=red>red</color> ball gives us a 1 state. This means that <color=green>by knowing that measurement basis has changed, we know that the output is always deterministic in quantum computing!</color>
+
+To understand how measurement bases work and how important they are on your quest to master quantum computing, play the module called “Basis transforms”. 
+
+Reading the output of an algorithm on quantum hardware is subject to environmental noise, read the entry <color=green>erases the data</color>.

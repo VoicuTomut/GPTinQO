@@ -1,0 +1,27 @@
+
+
+Quantum logic has some properties that clearly distinguish it from classical logic, most notably, the failure of the distributive law of propositional logic: 
+
+p and (q or r) = (p and q) or (p and r),
+
+where the symbols p, q and r are propositional variables. To illustrate why the distributive law fails, consider a particle moving on a line and (using some system of units where the reduced Planck's constant is 1) let 
+
+p = "the particle has momentum in the interval [0, +1/6]" 
+
+q = "the particle is in the interval [−1, 1]"
+
+r = "the particle is in the interval [1, 3]"
+
+Note: The choice of p, q, and r in this example is intuitive but not formally valid (that is, p and (q or r) is also false here); see section "Quantum logic as the logic of observables" below for details and a valid example.
+
+We might observe that:
+
+<color=green>p and (q or r) = true</color>
+
+in other words, that the particle's momentum is between 0 and +1/6, and its position is between −1 and +3. On the other hand, the propositions "p and q" and "p and r" are both false, since they assert tighter restrictions on simultaneous values of position and momentum than is allowed by the uncertainty principle (they each have uncertainty 1/3, which is less than the allowed minimum of 1/2). So, 
+
+<color=green>(p and q) or (p and r) = false</color>
+
+Thus the distributive law fails.
+
+Excerpt from "Quantum logic" entry by Peter Forrest in the Routledge Encyclopedia of Philosophy, Vol. 7 (1998), p. 882ff: "[Quantum logic] differs from the standard sentential calculus ... The most notable difference is that the distributive laws fail, being replaced by a weaker law known as orthomodularity."

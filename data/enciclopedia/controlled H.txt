@@ -1,0 +1,9 @@
+
+
+To create controlled H, you need to place a CTRL gate on a qubit that you want to define as master and a H gate on a qubit you want to define as slave. If the master qubit is 1, then the H gate is applied on the other qubit. If it is 0, then it nothing happens to the quantum state, as shown in this picture:
+
+/[i]controlledH
+
+An interesting case is when our master qubit is in a superposition state (has a H gate on before the CTRL gate). We will see then that the initial state splits in two, to then see the 11 state continue splitting in two more copies, of lower amplitude.
+
+/[i]unevencontrolledH
