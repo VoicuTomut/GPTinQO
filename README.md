@@ -1,6 +1,7 @@
-## Getting started
+## GPT sage in Quantum Odyssey 
 
-### Local usage
+
+### Steps to run the sage:
 1. Clone this repository
 2. Create an virtual env and install dependencies
 ```bash
