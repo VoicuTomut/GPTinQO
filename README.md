@@ -27,30 +27,30 @@ Project Organization
 ------------
 
     │
-    ├── config                                                <- Config files fr differnet elemtnet of the systems
-    │   ├── ...                                               <- 
-    │   └── gpt.toml                                          <- Exmple of congig file for gpt sage      
+    ├── config                                  <- Config files fr differnet elemtnet of the systems
+    │   ├── ...                             
+    │   └── gpt.toml                            <- Exmple of congig file for gpt sage      
     │
     ├── data
-    │   ├── enciclopedia                                           <- QO chapter by chapter
-    │   ├── request_data                                           <- Data from requests
-    │   │    └── history.json                                      <- Dll the Qo info in one file
+    │   ├── enciclopedia                         <- QO chapter by chapter
+    │   ├── request_data                         <- Data from requests
+    │   │    └── history.json                    <- Dll the Qo info in one file
     │   └── Enciclopedia.txt  
     │
-    ├── gpt_sage                                                 <- gpt 
+    ├── gpt_sage                                  <- gpt 
     │   ├── __init__.py                                
-    │   ├── assistant.py                                  <- Sage and evaluator 
-    │   ├── config.py                                     <- Functions used to load ocnfig file
-    │   └── upload_docs.py                                <- FUntions used to upload docs to gpt
+    │   ├── assistant.py                    <- Sage and evaluator 
+    │   ├── config.py                       <- Functions used to load ocnfig file
+    │   └── upload_docs.py                  <- FUntions used to upload docs to gpt
     │
     ├── LICENSE                                                
     │
-    ├── ReadME.md                                               <- Top level README 
+    ├── ReadME.md                                 <- Top level README 
     │   
-    ├── example_run_assistant.py                                <- Example of how to run a gpt sage(assistant)
+    ├── example_run_assistant.py                  <- Example of how to run a gpt sage(assistant)
     │   
     ├── requiremetns.txt                                         
     │   
-    ├── server.py                                               <-  code used to run a flask server.
+    ├── server.py                                 <-  code used to run a flask server.
     │  
-    └── server_test.py                                          <-  code used to sent messages to the server for debugging
+    └── server_test.py                            <-  code used to sent messages to the server for debugging
