@@ -2,6 +2,11 @@
 Code for evaluating answers.
 """
 
+from nltk.translate.ribes_score import sentence_ribes
+from nltk.translate.meteor_score import meteor_score
+from nltk.translate.nist_score import sentence_nist
+from nltk.translate.chrf_score import sentence_chrf
+from nltk.translate.gleu_score import sentence_gleu
 from bert_score import score as bert_score
 from nltk.translate.bleu_score import sentence_bleu
 from rouge import Rouge
@@ -10,9 +15,28 @@ from openai import OpenAI
 from typing import List
 import time
 from box import Box
+from profanity_check import predict, predict_prob
+from nltk import sent_tokenize
+import nltk
+import spacy.cli
+import spacy
+nltk.download("punkt")
+nltk.download("wordnet")
 
 
-# from profanity_check import predict, predict_prob
+
+
+
+# Define the model name
+model_name = "en_core_web_md"
+
+# Check if the model is already installed
+if model_name not in spacy.util.get_installed_models():
+    # If not installed, download the model
+    spacy.cli.download(model_name)
+
+nlp = spacy.load(model_name)
+
 
 class Sage:
     def __init__(self, model: str, instructions: str, files: List[str]):
@@ -109,28 +133,14 @@ class Sage:
             print(run.status)
 
 
+
 class Evaluate:
     def __init__(self, config: Box):
-        """
-        Evaluate is used to evaluate the player answer to a given question with a known answer.
-
-        :param config: config file
-        :type config: Box
-        """
         self.metrics = config.metrics
         self.assistant = Sage(config.model, config.instructions, config.files)
         self.examples = config.examples
 
-    def measure_bert(self, expectation: str, value: str):
-        """
-        Measure the bert score between two texts.
-        :param expectation: expected answer
-        :type expectation: str
-        :param value: given answer
-        :type value: str
-        :return: message
-        :rtype: str
-        """
+    def measure_bert(self, expectation, value):
         # BERTScore
         P, R, F1 = bert_score([expectation], [value], lang="en")
         message = (
@@ -139,21 +149,30 @@ class Evaluate:
         print(message)
         return message
 
-    def measure_blue(self, expectation: str, value: str):
-        # BLEU Score
-        bleu_score = sentence_bleu([expectation], value)
-        message = f"BLEU Score: {bleu_score},"
-        print(f"BLEU Score: {bleu_score},")
-        return message
+    def measure_nltk(self, expectation, value, measure_func: callable):
+        score = measure_func([expectation], value)
+        message = f"{measure_func.__name__} Score: {score}"
+        print(message)
+        return score
 
-    def measure_profan(self, value: str):
-        # message=predict_prob([value])
-        message = 0.5
+    def measure_spacy(
+        self,
+        expectation,
+        value,
+    ):
+        doc1 = nlp(expectation)
+        doc2 = nlp(value)
+        similarity = doc1.similarity(doc2)
+        print("Similarity:", similarity)
+        return similarity
+
+    def measure_profan(self, value):
+        message = predict_prob([value])
         message = f"profanity score:{message[0]}"
         print(message)
         return message
 
-    def measure_rogue(self, expectation: str, value: str):
+    def measure_rogue(self, expectation, value):
         # ROUGE Score
         rouge = Rouge()
         scores = rouge.get_scores(expectation, value)
@@ -162,31 +181,31 @@ class Evaluate:
         print(f"ROUGE Score: {rouge_score},")
         return message
 
-    def measure_gpt(self, question: str, expectation: str, value: str):
-        prompt = f"Knowing the documentation and the fact that the right answer to the question: '{question}' is target: '{expectation}', evaluate and give a short feedback (20 words) on the following answer: '{value}'. Please respect the format from examples : \n ({self.examples}) "
+    def measure_gpt(self, question, expectation, value):
+        prompt = f"Knowing the documentation and the fact that the right answer to the question: '{question}' is target: '{expectation}', evaluate and give a short feedback (20 words) on the following answer: '{value}'. plse respect the ormet from examples : \n ({self.examples}) "
         message = self.assistant.process_message(prompt)
         print(f"GPT Score: {message}")
         message = f"GPT Score: {message}"
         return message
 
-    def measure(self, question: str, expectation: str, value: str):
-        """
-        Pass the question and the expectation and answer tru all the tests.
-        :param question: question
-        :type question: str
-        :param expectation: expected answer
-        :type expectation: str
-        :param value: given answer
-        :type value: str
-        :return: dict with the verdict of different judges
-        :rtype: dict
-        """
+    def measure(self, question, expectation, value):
         performance = {
-            # "bert_sc": self.measure_bert(expectation, value),
-            # "blue": self.measure_blue(expectation, value),
-            # "rogue": self.measure_rogue(expectation, value),
-            # "profan": self.measure_profan(value),
+            "bert_sc": self.measure_bert(expectation, value),
+            "rogue": self.measure_rogue(expectation, value),
+            "profan": self.measure_profan(value),
             "gpt": self.measure_gpt(question, expectation, value),
+            "spacy": self.measure_spacy(expectation, value),
+            "blue": self.measure_nltk(expectation, value, sentence_bleu),
+            "ribes": self.measure_nltk(expectation, value, sentence_ribes),
+            "meteor": self.measure_nltk(
+                sent_tokenize(expectation),
+                sent_tokenize(value),
+                meteor_score,
+            ),
+            "nist": self.measure_nltk(expectation, value, sentence_nist),
+            "chrf": self.measure_nltk(expectation, value, sentence_chrf),
+            "gleu": self.measure_nltk(expectation, value, sentence_gleu),
+
         }
 
         return performance

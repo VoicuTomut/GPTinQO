@@ -5,6 +5,9 @@ rouge==1.0.1
 python-box== 7.1.1
 profanity-check==1.0.3
 toml==0.10.2
+nltk==3.8.1
+alt_profanity_check==1.4.1.post1
+spacy==3.7.4
 ## server
 Flask==3.0.3
 requests~=2.31.0

@@ -5,9 +5,9 @@ import requests
 
 
 # Define the input dictionary
-input_dict = {"question": "Why is superposition important for quantum computing?",
+input_dict = {"question": "Why is entanglement important for quantum computing?",
               "expectation": "Entanglement is crucial for quantum computing because it enables complex computations and correlations that are impossible in classical computings",
-              "value": "Entanglement enables parallel processing, gate operations, error correction, quantum teleportation, and superposition, crucial for quantum computing's power and functionality.",
+              "value":"I love you my sage. Entanglement enables parallel processing, gate operations, error correction, quantum teleportation, and superposition, crucial for quantum computing's power and functionality. ", #"Entanglement enables parallel processing, gate operations, error correction, quantum teleportation, and superposition, crucial for quantum computing's power and functionality.",
               "user_id":"home"}
 
 # Define the URL of the Flask server endpoint
